@@ -1,0 +1,41 @@
+name: CI-CD
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install deps
+      run: pip install poetry && poetry install --with dev
+    - run: pytest -q
+
+    - name: Build & Push
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        push: true
+        tags: ghcr.io/${{ github.repository }}/myapi:${{ github.sha }}
+        secrets: |
+          GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+
+  deploy:
+    needs: test-build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run on Azure VM via SSH
+      uses: appleboy/ssh-action@v1
+      with:
+        host: ${{ secrets.AZURE_HOST }}
+        username: azureuser
+        key: ${{ secrets.AZURE_SSH_KEY }}
+        script: |
+          docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
+          docker pull ghcr.io/${{ github.repository }}/myapi:${{ github.sha }}
+          docker stop myapi || true && docker rm myapi || true
+          docker run -d --name myapi -p 8000:8080 --restart always \
+            ghcr.io/${{ github.repository }}/myapi:${{ github.sha }} 

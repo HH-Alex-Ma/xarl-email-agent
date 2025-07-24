@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  api:
+    image: ghcr.io/<owner>/<repo>/myapi:${TAG:-latest}
+    container_name: myapi
+    restart: always
+    ports:
+      - "8000:8080"
+    env_file:
+      - .env
+    volumes:
+      - ./downloaded_emails:/app/downloaded_emails
+      - ./processed_emails:/app/processed_emails
+      - ./workflow_responses:/app/workflow_responses
+      - ./fonts:/app/fonts 

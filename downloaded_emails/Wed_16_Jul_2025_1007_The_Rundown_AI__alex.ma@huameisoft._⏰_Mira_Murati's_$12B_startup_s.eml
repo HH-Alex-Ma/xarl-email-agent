@@ -1,0 +1,2077 @@
+Received: from SI2PR02MB5978.apcprd02.prod.outlook.com (2603:1096:4:1e6::7) by
+ TYZPR02MB7411.apcprd02.prod.outlook.com with HTTPS; Wed, 16 Jul 2025 10:07:10
+ +0000
+Received: from SI2P153CA0011.APCP153.PROD.OUTLOOK.COM (2603:1096:4:140::14) by
+ SI2PR02MB5978.apcprd02.prod.outlook.com (2603:1096:4:1e6::7) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8922.25; Wed, 16 Jul 2025 10:07:05 +0000
+Received: from SG2PEPF000B66CA.apcprd03.prod.outlook.com
+ (2603:1096:4:140:cafe::37) by SI2P153CA0011.outlook.office365.com
+ (2603:1096:4:140::14) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8964.14 via Frontend Transport; Wed,
+ 16 Jul 2025 10:07:05 +0000
+Authentication-Results: spf=pass (sender IP is 159.183.140.157)
+ smtp.mailfrom=em8370.daily.therundown.ai; dkim=pass (signature was verified)
+ header.d=daily.therundown.ai;dmarc=pass action=none
+ header.from=daily.therundown.ai;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ em8370.daily.therundown.ai designates 159.183.140.157 as permitted sender)
+ receiver=protection.outlook.com; client-ip=159.183.140.157;
+ helo=o171.ptr9046.mail.beehiiv.com; pr=C
+Received: from o171.ptr9046.mail.beehiiv.com (159.183.140.157) by
+ SG2PEPF000B66CA.mail.protection.outlook.com (10.167.240.22) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.8943.21
+ via Frontend Transport; Wed, 16 Jul 2025 10:07:04 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=daily.therundown.ai;
+	h=content-type:date:from:mime-version:subject:reply-to:list-unsubscribe:
+	list-unsubscribe-post:to:cc:content-type:date:from:subject:to;
+	s=b92; bh=PqEiR+8s02SLrBeHhH4fCeM9UObvhuHDasojjW09hiQ=;
+	b=A9mv55cUxyZANwkzvx0gOaOHTpJfT4p+7xo1if5epeLPh0gDmWN5p2gfKgGoHt9WiOYp
+	8VA6LaE/zEeesmFCxbttDTGHDYHkElg55Q1KXWDOrkyvkeiafH6qDBbp4z+VoLwdH/FiFy
+	+Hsk+MpzLYVUbHKb+G4YeD5xHgOjQLIP7NqozzjuuzbX9AbfJbPE2SkNCjqmVyUSd9VpyG
+	c0m1yh7Ai2aiyWHxtRFlE1YKstktnRpURNuLGxfQV4EmzW8524zNB2JzNBfqjSWwnLOFUp
+	73Vee/RP3mvX8dcF+kGQ9yZWTUW03QaUpVa6+Jf2xo9ZBoNfj8M5GAiMOkZmr/3Q==
+Received: by recvd-84f4c5f6f4-2knrh with SMTP id recvd-84f4c5f6f4-2knrh-1-687779A6-58
+	2025-07-16 10:06:30.792024804 +0000 UTC m=+3605760.857411491
+Received: from MzEzNjYwMzI (unknown)
+	by geopod-ismtpd-26 (SG) with HTTP
+	id yghLm-oAR2GaCsB4gQqwVA
+	Wed, 16 Jul 2025 10:06:30.710 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=59eff26f9884f353b566b402919db8b476dfe82b47cf057748487c333904
+Date: Wed, 16 Jul 2025 10:07:01 +0000 (UTC)
+From: The Rundown AI <news@daily.therundown.ai>
+Message-ID: <yghLm-oAR2GaCsB4gQqwVA@geopod-ismtpd-26>
+Subject: =?UTF-8?B?4o+w?= Mira Murati's $12B startup sets launch clock
+Reply-To: The Rundown AI <news@daily.therundown.ai>
+Feedback-ID: =?us-ascii?Q?28c9672c-18b3-4e02-ac1d-76ece05df9f5=3Anewsletter=3A4d03390d-2481-?=
+ =?us-ascii?Q?4299-b949-ffd8b38b4c38=3A8c08a5f75db6ca3?=
+List-Unsubscribe: =?us-ascii?Q?=3Cmailto=3A4d03390d-2481-4299-b949-ffd8b38b4c38+751d7c06-0e76-4ff?=
+ =?us-ascii?Q?0-ac85-58e11f48b687+28c9672c-18b3-4e02-?=
+ =?us-ascii?Q?ac1d-76ece05df9f5=40unsub=2Ebeehiiv=2Ecom=3E=2C?=
+ =?us-ascii?Q?_=3Chttps=3A=2F=2Fwww=2Etherundown=2Eai=2Funsubscribe=2FeyJ0eXAiOiJKV1QiLCJhbGc?=
+ =?us-ascii?Q?iOiJIUzI1NiJ9=2EeyJzdWJzY3JpYmVyX2lkIjoiN?=
+ =?us-ascii?Q?zUxZDdjMDYtMGU3Ni00ZmYwLWFjODUtNThlMTFm?=
+ =?us-ascii?Q?NDhiNjg3IiwicG9zdF9pZCI6IjI4Yzk2NzJjLTE?=
+ =?us-ascii?Q?4YjMtNGUwMi1hYzFkLTc2ZWNlMDVkZjlmNSIsIm?=
+ =?us-ascii?Q?xhc3RfcmVzb3VyY2VfZ3VpZCI6IlBvc3Q6MjhjO?=
+ =?us-ascii?Q?TY3MmMtMThiMy00ZTAyLWFjMWQtNzZlY2UwNWRm?=
+ =?us-ascii?Q?OWY1In0=2Etv7Me4Ol6S-NcwQXZm7GMEnBcEQ23ej?=
+ =?us-ascii?Q?N-nvx=5FbcPQCM=3E?=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+sId: 4d03390d-2481-4299-b949-ffd8b38b4c38
+x-beehiiv-ids: =?us-ascii?Q?{=22account=5Fname=22=3A=22https=3A=2F=2Fwww=2Etherundown=2Eai=2F=22=2C=22campaign=5Fid=22=3A=2228?=
+ =?us-ascii?Q?c9672c-18b3-4e02-ac1d-76ece05df9f5=22=2C=22ca?=
+ =?us-ascii?Q?tegory=22=3A=22newsletter=22=2C=22email=5Fgenerated=5Fa?=
+ =?us-ascii?Q?t=22=3A1752660390=2C=22user=5Fid=22=3A=224d03390d-2481-?=
+ =?us-ascii?Q?4299-b949-ffd8b38b4c38=22}?=
+x-beehiiv-type: newsletter
+x-list-id: 4d03390d-2481-4299-b949-ffd8b38b4c38
+x-list-owner: <mailto:news@daily.therundown.ai>
+x-newsletter: https://www.therundown.ai/p/mira-muratis-12b-startup-sets-launch-clock
+x-newsletter-id: https://www.therundown.ai/
+x-newsletter-signup: https://www.therundown.ai/subscribe
+X-SG-EID: =?us-ascii?Q?u001=2EvjTgaxEIK4Z6shiRUA3RtDCgacyLeo06clZ9=2FcY1MWQti7SHfiMyEQ3DE?=
+ =?us-ascii?Q?jt1d8geDAHeRYlVAT6Fp2q4RpucRFtY6684ai7f?=
+ =?us-ascii?Q?KVSJD3Zo+SZJD1wYA8BypAanvQUc1HZ+k56=2FhH7?=
+ =?us-ascii?Q?RCcAZNKiMPfMqtwR4+7vMTgxiXYHIV6vnbBJPYR?=
+ =?us-ascii?Q?+k8hWZeafiEm7CNo8VMkFHAUbJ2=2FOaox5ajkVk2?=
+ =?us-ascii?Q?ra57tcrg68DGFgYvXA=2FDfN3are3WzF2jKWeBe80?= =?us-ascii?Q?n9yv?=
+X-SG-ID: =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprD1ZcmFObA4po1bG?=
+ =?us-ascii?Q?aUE6gycCCtDGyUgU4TMPUnX6elq5lA+LObuI5uP?=
+ =?us-ascii?Q?OxXb1KJgoCYKTiph=2F5ZkPFs0i+CNG1jmrc4IyXq?=
+ =?us-ascii?Q?06u5lhkQCLzRP25NFSTFiMNep0hZj5cxpud4=2F+V?=
+ =?us-ascii?Q?xV=2FsaivP8+eVFyA71mFirUQa7cw2RO=2F5PpnGSlN?=
+ =?us-ascii?Q?+aQNp6P0E3RLG=2FgYo+1tI2Y79n0ljCO5e2=2FxLM6?=
+ =?us-ascii?Q?ytA92IdufKmXPJDWerSC4p6BPHBjj7kfAUmwiYB?=
+ =?us-ascii?Q?jxDtYqaCjNnkuVs3X7rSbBgHAvly9fkOwja0XOc?=
+ =?us-ascii?Q?iLXXaKgtOVdNaMzNaNW2e7Qf8F6PqBriU=3D?=
+To: "alex.ma@huameisoft.cn" <alex.ma@huameisoft.cn>
+X-Entity-ID: u001.oBU2ZOo8/mG7n42Yjl/juw==
+Return-Path: bounces+31366032-6238-alex.ma=huameisoft.cn@em8370.daily.therundown.ai
+X-MS-Exchange-Organization-ExpirationStartTime: 16 Jul 2025 10:07:05.1315
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 8b8d3988-00e5-47a2-3c18-08ddc450843a
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 201bc36e-e78e-44f5-a3d6-32ca5290534b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: SG2PEPF000B66CA:EE_|SI2PR02MB5978:EE_|TYZPR02MB7411:EE_
+X-MS-Exchange-Organization-AuthSource: SG2PEPF000B66CA.apcprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 8b8d3988-00e5-47a2-3c18-08ddc450843a
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:3;ARA:13230040|1032899013|4022899009|69100299015|2092899012|13012899012|5062899012|3092899012|12012899012|4092899012|3072899012|13102899012|29132699027|8096899003|2066899003|13003099007;
+X-Forefront-Antispam-Report: CIP:159.183.140.157;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SFE;H:o171.ptr9046.mail.beehiiv.com;PTR:o171.ptr9046.mail.beehiiv.com;CAT:NONE;SFS:(13230040)(1032899013)(4022899009)(69100299015)(2092899012)(13012899012)(5062899012)(3092899012)(12012899012)(4092899012)(3072899012)(13102899012)(29132699027)(8096899003)(2066899003)(13003099007);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Jul 2025 10:07:04.0263
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 8b8d3988-00e5-47a2-3c18-08ddc450843a
+X-MS-Exchange-CrossTenant-Id: 201bc36e-e78e-44f5-a3d6-32ca5290534b
+X-MS-Exchange-CrossTenant-AuthSource: SG2PEPF000B66CA.apcprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SI2PR02MB5978
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:06.0431319
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8922.017
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(811242)(255002)(410001)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?MDVTcE4wMzhFaFdQeWE4YklQd2k3N0VpK2RXTUFIcVV0dlZOL1lrdFBiMi96?=
+ =?utf-8?B?TGMraU9TOWRWQ3dwRE11ejN5NEZ0MFFGUFo0elhtSkZzaXVPV0NmZHFGRDFT?=
+ =?utf-8?B?L1hDUnJZcFg2dnArVWY4RjZHYjA1YUQvQ2xQZlhPeVBFSnczWjJ0Wm5GRDQr?=
+ =?utf-8?B?a25WWkd0bnpVenJuL3d5RWlKaDVaR0FzWHl3WTNrb0djcHlsQW05UlF3aldU?=
+ =?utf-8?B?OHZ2NFlSd25hdGhMTkV3eVNvMUlLb2NnTS9IR09rYTZSTXFMWTMvRVd5RGxK?=
+ =?utf-8?B?emtkNzV2U1U0a2EvOURPd050THpiNzBobHlROVZ6ZTdSMEtzL2UwZnc4NWFU?=
+ =?utf-8?B?UVROQTV1ZWFCSkdOTkhPM29QR0F5N2FxZ0Q5dy9CeUpoZzkyTEVUQkJlTXpz?=
+ =?utf-8?B?MjJiNzdVZkN0MVJoNkVRSHo0cXRNZEorbUJiZm9pSE8xbnVGUFNtalcyMWRq?=
+ =?utf-8?B?c2tRRUE3YWZZNFlQNWRieml0MG5MRlZDdGdpN0phRjNrZzJaMXhZZFdwam5w?=
+ =?utf-8?B?SUJLS0Q0cE51ajlZWFpMOVRyQVhLVG5PQng1OUlRTW1PV2ZTNUlJdXNUd0Uy?=
+ =?utf-8?B?ZXZCMlV2Zm1KdHNNMGgyNXJhUUdnZWh0OGlOdk9EelN0ZGVnMzhLRDZ6dDFs?=
+ =?utf-8?B?SkN4b0IyWnd6dVVYODZaU2ZxWDd4UTQ1Wk9yNEliNm1kQU9HSHdKclRTTDRY?=
+ =?utf-8?B?SWdJWDBsK0p2RzdPcEwwRHBVaU53NFo4eDNpNEtyYUJUUGdkS09LY0JhTGdI?=
+ =?utf-8?B?QlhXVk9yNlhaWE1RdUhoRkZHYTNyRDBZN2ZlZlU0QkQwdHAwQU41bVlCejJN?=
+ =?utf-8?B?SStyb0RwdG80OE1xMHVJdzZpUldqNmhrbGNmdUtCbi9wVXgzbkJ4aVZabVB3?=
+ =?utf-8?B?ZXN1UkFhaXdqSUwrT0dNNG5FSjRtd2lBalJyUDdwcW9nMVY2TGpXclBPb2I0?=
+ =?utf-8?B?UEZidTlHWTRqOGx3aHJyRWNuVUNwbXhEcFlKWk1WU2RUZVhRQ3doeEtGV0xh?=
+ =?utf-8?B?MEZncnZFYlJlTDdTeDV0OEQydlUyZFRhYkNpMTBMd1BiV2k2dnMzdElrT1JB?=
+ =?utf-8?B?L1k3T1lJWVZIQ0tWWE1HRm15T3VEZFQxVzd1S3M1ZldVVUhKd0lFS2N5Y0ZZ?=
+ =?utf-8?B?c2RnQUtpOFlsdVY0ZHZVdXVoZkZLdEE2K3ZMWG1KTHZsQ2pQbXplYzlFWk5I?=
+ =?utf-8?B?QkFsOEthS0RjeVNuWFZCd3ovdHdHbkV3YjhnU1Bhckt3VkNJSy8vQkk1aDly?=
+ =?utf-8?B?YlpRc1pDejFVZnIwNTVseERZd21yay9mSnJ0bk5zMlBBS2NTS3BPZmQ2SDAz?=
+ =?utf-8?B?ZnQ2Zy9wR2daWXdDNlU2bjBzNVR4N0ZMQ3I1SzhDWG5aeFhGWHNMTFRvMnBL?=
+ =?utf-8?B?WTkrUEJibjYvQkpoRUlPbVk1L1JEeGlHZXcyWVg2dW9weFRRUlJCM1hwbUx2?=
+ =?utf-8?B?aDZDYVVlSnVNSFBKZHpnY2FOcDJwbkdwVXVVTkNoNUQ2NFd5S3hYc1QvWW5r?=
+ =?utf-8?B?aXprUmRDc3JMVE1qWXpuK2lvaUZWVmRrb1kycHRTcUo0WWhQelp0NWJlNm1X?=
+ =?utf-8?B?NnIzZzFZOEhIaTVaZnF6ZlNMcmRaMUxnM0V2bWVmZmF6RWNMNDUyQ1daLzR1?=
+ =?utf-8?B?RXVhYlRwLytYNXNaME80bVNkb3RFMU1SdkZTZzdRVC9leE9Gbjg2MDZhUXI2?=
+ =?utf-8?B?UFJJMHlYT2dJcjhNRllSclRmemkrNDRWV1NBUlN1NW1ldVdHdGNyY0JUejN5?=
+ =?utf-8?B?MWQ1bzFJTzdBMEJMbjU5MkVRYml0Z1R3d1pmdDhVZVdCTzNsR3lqcHZLaXpP?=
+ =?utf-8?B?b0xzMjVwVlpNYjM1b0tnS2k2MnFGVy9BalNzZUdwNzJ0MkRLb0xmaVVjWlpL?=
+ =?utf-8?B?clRQSUxHVkhZWWxTV3RKV2o0cWV4aktQYjZ1d0RqZWIrQWt1aXhBRHRDQVRk?=
+ =?utf-8?B?YlV2bzdiNDhqWlN4T0VIeHlKQmhrbGpmQm8zUWZUN3J5RlV5eUF1QzI3VmVp?=
+ =?utf-8?B?Y3piZDRCZ3V2aWdOZ2RFcG1VSU1EOVQvUmpHelhqdWtPVFJTTEFJdnE1UWNB?=
+ =?utf-8?B?QnZYY3V6Vzk0M0ZGQkdNTUtZNmtqaVZUU2pna3RFRUxwbHZsNWJUQ2srMkNL?=
+ =?utf-8?B?VWF1eTRuQ0VhNHZSZnZhaTBDMzY1dWpmN0piUEhWamJKdmxUWGJqYXUxbTAv?=
+ =?utf-8?B?LzQ0TEVLSkRNT2tzU1hrLzNUQ2ZVVlJxV0YxMzNtWnhaT3VXTGlSeXFvdVk3?=
+ =?utf-8?B?OEhJZ0FEN0ZGN05LcWYxRm5IWmZwd2lVMXJPME1CUGRiSG8ySkM4ZDJiVTVW?=
+ =?utf-8?B?eXVXNGF2aVBqcGlGbXdleFpvKzlZanZ1eWdwVlRyVEdUeG5vRTd0RDFNUTdV?=
+ =?utf-8?B?dXNSdk1lUmtHNDk5dTAzazJyT2xPeTJSa1dRK1kxZ3FwTDVHR3ZwWk5oVVpH?=
+ =?utf-8?B?OU1kSDJQRFpuZEw0Z3hTRjRhNlY3SENYM0tyWGphMVl2bTJUUkRPekRRQWdj?=
+ =?utf-8?B?ZlJSUWJKMWc3VmV1Z08wNHIrTDAzOEZuTkRMaTZzSngwY20ybmwwYWtVQXEw?=
+ =?utf-8?B?ZlNhUTc2VjhRdW9BRWwvdVZLQTNoQ0ZjdUxkOE5vNHMyVjZxWUd6ZDJjc3o2?=
+ =?utf-8?B?YUV3Wk5CNDk2T1BPK1AxcVM4cWZ5cXkvdFI5cVNYa0dGVEd3NDhtcmNiWUlZ?=
+ =?utf-8?B?N1ZzU3ZGclBTeUJVVk9qV0xsL3ZwQ1FmVmRjdGhWd3JBZmMyRkx3VUlTWTFa?=
+ =?utf-8?B?TSs3VFE3MGYwV3NEczVJdXRYckZkUGRtcnp0YzJZQ3JmWThrQU0xWWI1TmdR?=
+ =?utf-8?Q?bggcQzp7e9LbLGQ1TlF/gLvwPMvHgbamhU40rpAClW?=
+MIME-Version: 1.0
+
+--59eff26f9884f353b566b402919db8b476dfe82b47cf057748487c333904
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+^**[Read Online](https://www.therundown.ai/p/mira-muratis-12b-startup-sets-=
+launch-clock?_bhlid=3D4eaa234680798ad3bdb45514b5705f029891f88c&jwt_token=3D=
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWJzY3JpYmVyX2lkIjoiNzUxZDdjMDYtMG=
+U3Ni00ZmYwLWFjODUtNThlMTFmNDhiNjg3IiwicHVibGljYXRpb25faWQiOiI0ZDAzMzkwZC0yN=
+DgxLTQyOTktYjk0OS1mZmQ4YjM4YjRjMzgiLCJleHAiOjE3NTI4MzMxODYsImlzcyI6Imh0dHBz=
+Oi8vYXBwLmJlZWhpaXYuY29tIiwiaWF0IjoxNzUyNjYwMzg2fQ.DrQm-IGFH7UBa_uIMCXP4Ds_=
+REBSGHbcISz4KEpN5qs)**^^ | ^^**[Sign Up](https://www.therundown.ai/subscrib=
+e)**^^ | ^^**[Advertise](https://therundownai.typeform.com/to/kraZ1TSO)**^
+
+----------
+View image: (https://media.beehiiv.com/cdn-cgi/image/fit=3Dscale-down,forma=
+t=3Dauto,onerror=3Dredirect,quality=3D80/uploads/asset/file/e65088c6-5d5b-4=
+a20-8488-364c4f1778e2/prezi-header.jpg?t=3D1752598433)
+Follow image link: (https://prezi.com/features/prezi-ai/?utm_medium=3Dnewsl=
+etter&utm_source=3Drundown&utm_campaign=3Drundown-main-july-2025&utm_conten=
+t=3Dbetter-presentations)
+Caption:=20
+
+
+----------
+
+----------
+**Good morning, AI enthusiasts.** Former OpenAI CTO Mira Murati has kept he=
+r new startup quiet since launching in February =E2=80=94 but that didn=E2=
+=80=99t stop investors from betting a fresh $2B on whatever she's building.
+
+With Thinking Machine Labs now valued at $12B and promising multimodal AI w=
+ith a =E2=80=9Cmajor open-source component=E2=80=9D in the coming months, t=
+he countdown to their first product has become one of the AI world's most a=
+nticipated reveals.
+
+**_Member note: _**_The Rundown has secured 500 private invitations for Per=
+plexity Comet. Unique codes are _[_available now_](https://app.therundown.a=
+i/perks/perplexity-comet-early-access)_ for full members of The Rundown Uni=
+versity._
+
+=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=
+=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=
+=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=
+=E2=80=94=E2=80=94
+
+**In today=E2=80=99s AI rundown:**
+
+* Thinking Machine Labs raises $2B, nears product launch
+
+* Runway=E2=80=99s Act-Two for AI motion capture
+
+* Automate personalized sales outreach at scale
+
+* AI researchers unite on reasoning transparency
+
+* 4 new AI tools & 4 job opportunities
+
+
+----------
+
+----------
+**LATEST DEVELOPMENTS**
+
+
+----------
+
+----------
+###### THINKING MACHINES LAB
+
+#### =F0=9F=92=B0 [_**Thinking Machine Labs raises $2B, nears product launc=
+h**_](https://x.com/miramurati/status/1945166365834535247)
+
+View image: (https://media.beehiiv.com/cdn-cgi/image/fit=3Dscale-down,forma=
+t=3Dauto,onerror=3Dredirect,quality=3D80/uploads/asset/file/f11f11d9-1702-4=
+8a0-b755-a3e0be2c6312/murati2.jpg?t=3D1752618215)
+Caption: Image source: Getty Images
+
+**The Rundown: **Former OpenAI CTO Mira Murati just [announced](https://x.c=
+om/miramurati/status/1945166365834535247) a new $2B seed raise for her star=
+tup, Thinking Machines Lab AI, also revealing that the secretive company wi=
+ll share its first product in =E2=80=9Cthe next couple of months.=E2=80=9D
+
+**The details: **
+
+* The $2B seed round brings the company=E2=80=99s value to $12B, less than =
+a year after its [creation](https://www.therundown.ai/p/openai-s-ex-cto-lau=
+nches-rival-lab), with no product and little public information on directio=
+n.
+
+* Murati said the startup=E2=80=99s first product will feature =E2=80=9Ca m=
+ajor open-source component=E2=80=9D for researchers and startups building c=
+ustom models.
+
+* She also revealed the lab is building multimodal AI that collaborates wit=
+h users in natural interactions via conversation and sight.
+
+* The Information recently [reported](https://www.theinformation.com/articl=
+es/ex-openai-cto-muratis-startup-plans-compete-openai-others) that TML is p=
+lanning to develop custom AI models to help businesses increase profits.
+
+**Why it matters: **With fierce competition among the current AI leaders, i=
+t=E2=80=99s easy to forget the two former OpenAI heavyweights in TML and SS=
+I are still in stealth mode. Despite little info or product, Murati has had=
+ no shortage of investor (and acquisition) interest =E2=80=94 making the st=
+artup=E2=80=99s first release a big one to watch in the coming months.
+
+
+----------
+
+----------
+###### TOGETHER WITH PREZI
+
+#### **=E2=AD=90=EF=B8=8F **_[**Your best presentation yet, built by AI**](=
+https://prezi.com/features/prezi-ai/?utm_medium=3Dnewsletter&utm_source=3Dr=
+undown&utm_campaign=3Drundown-main-july-2025&utm_content=3Dbetter-presentat=
+ions)_
+
+View image: (https://media.beehiiv.com/cdn-cgi/image/fit=3Dscale-down,forma=
+t=3Dauto,onerror=3Dredirect,quality=3D80/uploads/asset/file/aea3f0bf-5f17-4=
+cc0-9f4a-19a46c6ec93e/BC-3890-RundownAI-Ad1-1024x576.png?t=3D1752598463)
+Follow image link: (https://prezi.com/features/prezi-ai/?utm_medium=3Dnewsl=
+etter&utm_source=3Drundown&utm_campaign=3Drundown-main-july-2025&utm_conten=
+t=3Dbetter-presentations)
+Caption:=20
+
+**The Rundown:** Prezi AI turns boring decks into dynamic presentations tha=
+t get results in meetings, pitches, and high-stakes boardrooms. Prezi has h=
+elped presenters for 15 years=E2=80=94and with AI, it=E2=80=99s even faster=
+. No design skills needed.
+
+**With Prezi, you can:**
+
+* Go from rough ideas or PDFs to polished presentations in seconds
+
+* Stand out with visuals that hold attention and drive real engagement
+
+* Get AI-powered suggestions for content, structure, and design
+
+[Try Prezi AI for free](https://prezi.com/features/prezi-ai/?utm_medium=3Dn=
+ewsletter&utm_source=3Drundown&utm_campaign=3Drundown-main-july-2025&utm_co=
+ntent=3Dbetter-presentations) =E2=80=94 see why 160+ million already have.
+
+
+----------
+
+----------
+###### RUNWAY
+
+#### =F0=9F=8E=AC [_Runway=E2=80=99s Act-Two for AI motion capture_](https:=
+//www.youtube.com/watch?v=3DJW8PHlFD7HM)
+
+View image: (https://media.beehiiv.com/cdn-cgi/image/fit=3Dscale-down,forma=
+t=3Dauto,onerror=3Dredirect,quality=3D80/uploads/asset/file/c8d3a877-853e-4=
+e57-bdd3-3d32d3c67481/runwayact2.jpg?t=3D1752615569)
+Caption: Image source: Runway
+
+**The Rundown: **Runway just [launched](https://www.youtube.com/watch?v=3DJ=
+W8PHlFD7HM) Act-Two, the company=E2=80=99s next-gen motion capture model th=
+at translates single performance videos into fully animated characters with=
+ head, face, body, and hand tracking across artistic styles and outputs.
+
+**The details:**
+
+* The system captures subtle facial expressions, upper body movements, hand=
+s, and backgrounds from a single driving performance video.
+
+* Requiring just a single character reference photo, Act-Two animates and m=
+aps the driving video while maintaining backgrounds and art styles.=20
+
+* Runway claims the model delivers major performance gains over October 202=
+4=E2=80=99s Act-One [release](https://runwayml.com/research/introducing-act=
+-one), particularly in consistency, fidelity, and movement.
+
+* The company has inked partnerships with Hollywood players like [Lionsgate=
+](https://www.therundown.ai/p/lionsgate-partners-with-runway-ai) and [AMC N=
+etworks](https://www.therundown.ai/p/reddit-takes-claude-to-court), pushing=
+ to further infuse AI into filmmaking workflows.
+
+**Why it matters: **While AI adoption in Hollywood is publicly frowned upon=
+, it=E2=80=99s privately being adopted en masse =E2=80=94 and few companies=
+ are pushing that shift harder than Runway. With creative models continuing=
+ to evolve at a wild pace, AI=E2=80=99s use in the industry is coming, whet=
+her fans and actors want it or not.
+
+
+----------
+
+----------
+###### AI TRAINING
+
+#### =F0=9F=93=A7** **_[**Automate personalized sales outreach at scale**](=
+https://app.therundown.ai/guides/how-to-automate-personalized-sales-outreac=
+h-at-scale-with-zapier-agents)_
+
+View image: (https://media.beehiiv.com/cdn-cgi/image/fit=3Dscale-down,forma=
+t=3Dauto,onerror=3Dredirect,quality=3D80/uploads/asset/file/999a3bb6-0d54-4=
+4e1-ab97-bb7c705dfb06/vsnovjwe.png?t=3D1752619532)
+Caption:=20
+
+**The Rundown:** In this tutorial, you will learn how to create a Zapier AI=
+ agent that automatically researches companies from your spreadsheet and dr=
+afts personalized sales emails, saving hours of manual outreach.
+
+**Step-by-step:**
+
+1. Create a new Zapier agent and set the trigger to =E2=80=9COn demand=E2=
+=80=9D
+
+2. Write detailed instructions: research company =E2=86=92 populate contact=
+ info =E2=86=92 draft personalized email =E2=86=92 generate subject and bod=
+y
+
+3. Connect the Google Sheets tool and select your leads spreadsheet with co=
+mpany, name, and email columns
+
+4. Add Gmail integration with =E2=80=9CCreate Draft=E2=80=9D option (not se=
+nd) for review control
+
+5. Test with a small batch, review generated drafts, then scale to the full=
+ lead list.
+
+**Pro tip:** Always use =E2=80=9CCreate Draft=E2=80=9D instead of =E2=80=9C=
+Send Email=E2=80=9D so you can review and refine each message before it goe=
+s out.
+
+
+----------
+
+----------
+###### PRESENTED BY IBM
+
+#### =F0=9F=A4=96** **[_**Agentic AI for APIs**_](https://www.ibm.com/new/a=
+nnouncements/api-agent-in-ibm-api-connect-now-generally-available?utm_conte=
+nt=3DCPWWW&p1=3DDisplay&p2=3D424933073&p3=3D227599223&utm_term=3D15IGO)
+
+View image: (https://media.beehiiv.com/cdn-cgi/image/fit=3Dscale-down,forma=
+t=3Dauto,onerror=3Dredirect,quality=3D80/uploads/asset/file/6091868b-2f4d-4=
+be2-9680-5b7d8e91a394/image_-_2025-07-14T122934.180.jpeg?t=3D1752598572)
+Follow image link: (https://www.ibm.com/new/announcements/api-agent-in-ibm-=
+api-connect-now-generally-available?utm_content=3DCPWWW&p1=3DDisplay&p2=3D4=
+24933073&p3=3D227599223&utm_term=3D15IGO)
+Caption:=20
+
+**The Rundown:** IBM=E2=80=99s API Agent brings agentic AI to API Connect, =
+transforming prompts into production-ready APIs.
+
+**With API Agent, you can:**
+
+* Let AI handle design, validation, and deployment to Code Engine automatic=
+ally
+
+* Manage standards and cut manual steps for fast API delivery
+
+* Harness agentic AI to turn your API ideas into secured, production-ready =
+reality
+
+[Try API Agent today](https://www.ibm.com/new/announcements/api-agent-in-ib=
+m-api-connect-now-generally-available?utm_content=3DCPWWW&p1=3DDisplay&p2=
+=3D424933073&p3=3D227599223&utm_term=3D15IGO).
+
+
+----------
+
+----------
+###### AI RESEARCH
+
+#### =F0=9F=A7=A0 [_**AI researchers unite on reasoning transparency**_](ht=
+tps://tomekkorbak.com/cot-monitorability-is-a-fragile-opportunity/cot_monit=
+oring.pdf)
+
+View image: (https://media.beehiiv.com/cdn-cgi/image/fit=3Dscale-down,forma=
+t=3Dauto,onerror=3Dredirect,quality=3D80/uploads/asset/file/d37dff9b-406c-4=
+a67-aed1-d7a0dce2f2f4/cot1.jpg?t=3D1752613084)
+Caption: Image source: Ideogram / The Rundown
+
+**The Rundown: **Leading researchers from OpenAI, DeepMind, Anthropic, and =
+other major institutions [published](https://tomekkorbak.com/cot-monitorabi=
+lity-is-a-fragile-opportunity/cot_monitoring.pdf) a paper calling for deepe=
+r investigation into monitoring the "chains of thought" in AI reasoning mod=
+els, arguing it could be a vital safety tool.
+
+**The details: **
+
+* The paper highlights =E2=80=9Cchain-of-thought=E2=80=9D (CoT) traces, the=
+ model=E2=80=99s step-by-step problem-solving paths, as a rare window into =
+model decision-making.
+
+* The researchers call for a deeper study of tracking these reasoning proce=
+sses, warning that transparency could erode as models evolve or training sh=
+ifts.
+
+* Notable signatories include OpenAI's Mark Chen, SSI's Ilya Sutskever, Nob=
+el laureate Geoffrey Hinton, and DeepMind co-founder Shane Legg.
+
+* Researchers propose developing standardized evaluations for "monitorabili=
+ty" and incorporating these scores into deployment decisions for frontier m=
+odels.
+
+**Why it matters: **This rare moment of industry consensus highlights a cri=
+tical inflection point where we can still see AI's decision-making process =
+=E2=80=94 and the concern that competitive pressures may eventually lead to=
+ that window being closed if AI labs don=E2=80=99t act to preserve it.=20
+
+
+----------
+
+----------
+**QUICK HITS**
+
+
+----------
+
+----------
+### =F0=9F=9B=A0=EF=B8=8F _**[Trending AI Tools](https://www.rundown.ai/too=
+ls)**_
+
+* =F0=9F=A4=97 [AI Companions](https://x.com/elonmusk/status/19447053838741=
+46513) - xAI=E2=80=99s new Grok-powered interactive avatars
+
+* =F0=9F=97=A3=EF=B8=8F [Voxtral](https://mistral.ai/news/voxtral) - Mistra=
+l=E2=80=99s first open-source voice model for speech understanding
+
+* =F0=9F=93=93 [NotebookLM](https://blog.google/technology/google-labs/note=
+booklm-featured-notebooks) - New featured notebooks for expert advice on sp=
+ecific topics=20
+
+* =F0=9F=93=9A [Claude Directory](https://claude.ai/directory) - A new dire=
+ctory of tools that connect to Claude
+
+
+----------
+
+----------
+### =F0=9F=92=BC _**[AI Job Opportunities](https://jobs.therundown.ai/)**_
+
+* =F0=9F=97=82=EF=B8=8F [Deepmind](https://jobs.therundown.ai/jobs/70776340=
+-administrative-business-partner) - Administrative Business Partner
+
+* =F0=9F=92=A1 [Cresta](https://jobs.therundown.ai/jobs/146470869-demo-engi=
+neer) - Demo Engineer
+
+* =F0=9F=A4=9D [Databricks](https://jobs.therundown.ai/jobs/146202894-assoc=
+iate-account-executive) - Associate Account Executive
+
+* =F0=9F=8F=97=EF=B8=8F [Glean](https://jobs.therundown.ai/jobs/146177787-s=
+olutions-architect-seattle) - Solutions Architect
+
+
+----------
+
+----------
+### =F0=9F=93=B0 _[Everything else in AI today](https://www.therundown.ai/)=
+_
+
+**Mistral **[unveiled](https://mistral.ai/news/voxtral) Voxtral, a low-cost=
+, open-source speech understanding model family that combines transcription=
+ with native Q&A capabilities.
+
+**Google **[revealed](https://blog.google/technology/safety-security/cybers=
+ecurity-updates-summer-2025/) that its AI security agent, Big Sleep, discov=
+ered a critical security flaw that allowed Google to stop the vulnerability=
+ before it was exploited.
+
+**U.S. President Donald Trump **[announced](https://www.cbsnews.com/pittsbu=
+rgh/news/trump-energy-ai-summit-pittsburgh-carnegie-mellon/) over $92B in A=
+I and energy investments at a Pennsylvania summit, saying America=E2=80=99s=
+ destiny is to be the =E2=80=9CAI superpower.=E2=80=9D
+
+**Google **is [investing](https://www.cnbc.com/2025/07/15/google-to-invest-=
+25-billion-in-data-centers-ai-infrastructure-in-pjm.html) $25B in data cent=
+ers and AI infrastructure across the PJM electric grid region, including $3=
+B to modernize Pennsylvania hydropower plants.
+
+**Anthropic **[launched](https://www.anthropic.com/news/claude-for-financia=
+l-services) Claude for Financial Services, a solution that integrates Claud=
+e with market data and enterprise platforms for financial institutions.=20
+
+**Nvidia** [plans](https://www.cnn.com/2025/07/15/business/nvidia-resume-h2=
+0-chip-sales-to-china-intl-hnk) to resume sales of its H20 AI chip to China=
+ after CEO Jensen Huang received assurances from U.S. leadership, with AMD =
+also resuming sales in the region.=20
+
+
+----------
+
+----------
+**COMMUNITY**
+
+
+----------
+
+----------
+### =F0=9F=8E=A5 _**[Join our next live workshop](https://app.therundown.ai=
+/calendar-events/6876cc549b93d50445856b8c)**_
+
+View image: (https://media.beehiiv.com/cdn-cgi/image/fit=3Dscale-down,forma=
+t=3Dauto,onerror=3Dredirect,quality=3D80/uploads/asset/file/c71156f1-0f54-4=
+056-9da5-ec5bea0d54ad/whatevervnsvi.png?t=3D1752642859)
+Follow image link: (https://app.therundown.ai/calendar-events/6876cc549b93d=
+50445856b8c)
+Caption:=20
+
+Join our next workshop this Friday, July 18th, at 4 PM EST with Dr. Alvaro =
+Cintas, The Rundown=E2=80=99s AI professor. By the end of the workshop, you=
+'ll be able to use Perplexity Comet (and other alternatives) to automate yo=
+ur browsing experience.
+
+RSVP **[here](https://app.therundown.ai/calendar-events/6876cc549b93d504458=
+56b8c)**. Not a member? Join **[The Rundown University](https://rundown.ai/=
+ai-university/)** on a 14-day free trial.
+
+
+----------
+
+----------
+See you soon,
+
+_Rowan, Joey, Zach, Alvaro, and Jason=E2=80=94The Rundown=E2=80=99s editori=
+al team_
+
+
+----------
+=E2=80=94=E2=80=94=E2=80=94
+
+You are reading a plain text version of this post. For the best experience,=
+ copy and paste this link in your browser to view the post online:
+https://www.therundown.ai/p/mira-muratis-12b-startup-sets-launch-clock
+
+--59eff26f9884f353b566b402919db8b476dfe82b47cf057748487c333904
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html><html lang=3D"en" xmlns=3D"http://www.w3.org/1999/xhtml" xml=
+ns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com=
+:office:office" style=3D"font-size:16px;"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head><head><!--[if !mso]><!--><meta http-equiv=3D"X-UA-Compatible" content=
+=3D"IE=3Dedge"><!--<![endif]--><meta name=3D"viewport" content=3D"width=3Dd=
+evice-width,initial-scale=3D1"><meta name=3D"x-apple-disable-message-reform=
+atting"><meta name=3D"format-detection" content=3D"telephone=3Dno,address=
+=3Dno,email=3Dno,date=3Dno,url=3Dno"><meta name=3D"color-scheme" content=3D=
+"light"><meta name=3D"supported-color-schemes" content=3D"light"><title>=E2=
+=8F=B0 Mira Murati's $12B startup sets launch clock</title><!--[if mso]><xm=
+l><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerIn=
+ch></o:OfficeDocumentSettings></xml><![endif]--><style>
+  :root { color-scheme: light; supported-color-schemes: light; }
+  body { margin: 0; padding: 0; min-width: 100%!important; -ms-text-size-ad=
+just: 100% !important; -webkit-transform: scale(1) !important; -webkit-text=
+-size-adjust: 100% !important; -webkit-font-smoothing: antialiased !importa=
+nt; }
+  .body { word-wrap: normal; word-spacing:normal; }
+  table.mso { width: 100%; border-collapse: collapse; padding: 0; table-lay=
+out: fixed; }
+  img { border: 0; outline: none; }
+  table {  mso-table-lspace: 0px; mso-table-rspace: 0px; }
+  td, a, span {  mso-line-height-rule: exactly; }
+  #root [x-apple-data-detectors=3Dtrue],
+  a[x-apple-data-detectors=3Dtrue],
+  #MessageViewBody a { color: inherit !important; text-decoration: inherit =
+!important; font-size: inherit !important; font-family: inherit !important;=
+ font-weight: inherit !important; line-height: inherit !important; }
+  span.MsoHyperlink { color: inherit !important; mso-style-priority: 99 !im=
+portant; }
+  span.MsoHyperlinkFollowed { color: inherit !important; mso-style-priority=
+: 99 !important; }
+  .a { background-color:#ffffff; }
+  .b { background-color:#222222; }
+  .c  { background-color:#ffffff; }
+  .d { background-color:#f0f4ff; }
+  .d2 { background-color:#f8f8f8; }
+  .d3 { background-color:#FFFFFF; }
+  h1 a { text-decoration:underline;color:#255bee;font-weight:bold; }
+  h2 a { text-decoration:underline;color:#255bee;font-weight:bold; }
+  h3 a { text-decoration:underline;color:#255bee;font-weight:bold; }
+  h4 a { text-decoration:underline;color:#255bee;font-weight:bold; }
+  h5 a { text-decoration:underline;color:#255bee;font-weight:bold; }
+  h6 a { text-decoration:underline;color:#255bee;font-weight:bold; }
+  h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a, ul, li, ol, p=
+, p a { margin: 0;padding: 0; }
+  h1 { font-family:'Helvetica',Arial,sans-serif;font-weight:700;font-size:2=
+8px;color:#000000;line-height:1.75;padding-bottom:4px;padding-top:16px;mso-=
+margin-top-alt:16px;mso-margin-bottom-alt:4px }
+  h2 { font-family:'Helvetica',Arial,sans-serif;font-weight:700;font-size:2=
+4px;color:#000000;line-height:1.5;padding-bottom:4px;padding-top:16px;mso-m=
+argin-top-alt:16px;mso-margin-bottom-alt:4px }
+  h3 { font-family:'Helvetica',Arial,sans-serif;font-weight:700;font-size:2=
+2px;color:#000000;line-height:1.25;padding-bottom:4px;padding-top:12px;mso-=
+margin-top-alt:12px;mso-margin-bottom-alt:4px }
+  h4 { font-family:'Helvetica',Arial,sans-serif;font-weight:700;font-size:2=
+2px;color:#000000;line-height:1.125;padding-bottom:4px;padding-top:px;mso-m=
+argin-top-alt:px;mso-margin-bottom-alt:4px }
+  h5 { font-family:'Helvetica',Arial,sans-serif;font-weight:400;font-size:1=
+8px;color:#000000;line-height:1;padding-bottom:4px;padding-top:16px;mso-mar=
+gin-top-alt:16px;mso-margin-bottom-alt:4px }
+  h6 { font-family:'Helvetica',Arial,sans-serif;font-weight:400;font-size:1=
+4px;color:#000000;line-height:0.875;padding-bottom:10px;padding-top:12px;ms=
+o-margin-top-alt:12px;mso-margin-bottom-alt:10px }
+  p { font-family:'Helvetica',Arial,sans-serif;font-weight:400;color:#00000=
+0;font-size:16px;line-height:1.5;padding-bottom:8px;padding-top:8px;mso-mar=
+gin-top-alt:8px;mso-margin-bottom-alt:8px; }
+  p a, .e a, ul a, li a, .h a, .h2 a, .h3 a { word-break:break-word;color:#=
+255bee !important;text-decoration:underline;text-decoration-color:#255bee;f=
+ont-weight:bold; }
+  p a span, .e a span, ul a span, li a span { color: inherit }
+  p .bold { font-weight:bold;color:#000000; }
+  p span[style*=3D"font-size"] { line-height: 1.6; }
+  .f p { font-size:12px;line-height:15px;color:#000000;padding:0; }
+  .f p a { color:#000000 !important; }
+  .g p { font-family:'Helvetica',Arial,sans-serif;font-size:14px;line-heigh=
+t:20px;font-weight:normal;margin:0; }
+  .g p a  { text-decoration: underline; }
+  .i p { font-family:'Helvetica',Arial,sans-serif;line-height:1.5;font-size=
+:16px;color:#000000; }
+  .i p a { color:#000000 !important; }
+  .i2 p { font-family:'Helvetica',Arial,sans-serif;line-height:1.5;font-siz=
+e:15px;color:#2D2D2D; }
+  .i2 p a { color:#2D2D2D !important; }
+  .i3 p { font-family:'Helvetica',Arial,sans-serif;line-height:1.8;font-siz=
+e:24px;color:#2D2D2D; }
+  .i3 p a { color:#2D2D2D !important; }
+  .h p a { color:#595959 !important; }
+  .h2 p a { color:#595959 !important; }
+  .h3 p a { color:#595959 !important; }
+  .f p a, .i p a, .i2 p a, .i3 p a, .h p a, .h2 p a, .h3 p a { text-decorat=
+ion:underline; }
+  .j { border-top:2px Solid #494949; }
+  .k p { padding-left:15px;padding-bottom:0px;padding-top:6px;mso-margin-to=
+p-alt:6px;mso-margin-bottom-alt:0px;mso-margin-left-alt:15px; }
+  .o { background-color:#FFFFFF;border:1px solid #F1F1F1;border-radius:6px;=
+ }
+  .o p { font-family:'Helvetica',Arial,sans-serif;padding:0px;margin:0px; }
+  .l p,
+  .l p a, .l a { font-size:14px;line-height:20px;font-weight: bold;color:#2=
+D2D2D;padding-bottom:6px;mso-margin-bottom-alt:6px;text-decoration:none; }
+  .m p,
+  .m p a { font-size:13px;line-height:18px;font-weight:400;color:#2D2D2D;pa=
+dding-bottom:6px;mso-margin-bottom-alt:6px;text-decoration:none; }
+  .n p,
+  .n p a { font-size:12px;line-height:17px;font-weight:400;color:#2D2D2D;pa=
+dding-bottom:6px;mso-margin-bottom-alt:6px;text-decoration:none; }
+  .p { background-color:#FFFFFF;max-width:520px;border:1px solid #E1E8ED;bo=
+rder:1px solid rgba(80, 80, 80, 0.3);border-radius:5px; }
+  .q { font-size:16px;font-family:Helvetica,Roboto,Calibri,sans-serif !impo=
+rtant;border:1px solid #e1e8ed;border:1px solid rgba(80, 80, 80, 0.3);borde=
+r-radius:10px;background-color:#FFFFFF; }
+  .q p { font-size:16px;font-family:system-ui,Helvetica,Roboto,Calibri,sans=
+-serif !important;color:#222222;padding:4px 0; }
+  .r { border:1px solid #E1E8ED !important;border-radius:5px; }
+  .s p { font-size: 14px; line-height: 17px; font-weight: 400; color: #6978=
+82; text-decoration: none; }
+  .t p { font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-heigh=
+t:1.5;font-weight:400;color:#222222;font-style:italic;padding:0px; }
+  .v { border-radius:6px;border:solid 3px #2581ee;background-color:#2581ee;=
+font-family:'Helvetica',Arial,sans-serif;color:#ffffff; }
+  .v a { text-decoration:none;display:block;color:#ffffff; }
+  .w p { font-size:12px;line-height:15px;font-weight:400;color:#FFFFFF; }
+  .w p a { text-decoration: underline !important;color:#FFFFFF !important; =
+}
+  ul { font-family:'Helvetica',Arial,sans-serif;margin:0px 0px 0px 25px !im=
+portant;padding:0px !important;color:#222222;line-height:24px;list-style:di=
+sc;font-size:16px; }
+  ul > li { font-family:'Helvetica',Arial,sans-serif;margin:5px 0px 0px 0px=
+ !important;padding: 0px 0px 0px 0px !important; color: #222222; list-style=
+:disc; }
+  ol { font-family:'Helvetica',Arial,sans-serif;margin: 0px 0px 0px 25px !i=
+mportant;padding:0px !important;color:#222222;line-height:24px;list-style:d=
+ecimal;font-size:16px; }
+  ol > li { font-family:'Helvetica',Arial,sans-serif;margin:5px 0px 0px 0px=
+ !important;padding: 0px 0px 0px 0px !important; color: #222222; list-style=
+:decimal; }
+  .e h3,
+  .e p,
+  .e span { padding-bottom:0px;padding-top:0px;mso-margin-top-alt:0px;mso-m=
+argin-bottom-alt:0px; }
+  .e span,
+  .e li { font-family:'Helvetica',Arial,sans-serif;font-size:16px;color:#00=
+0000;line-height:24px; }
+  .rec { font-family:  ui-sans-serif, system-ui, -apple-system, BlinkMacSys=
+temFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-ser=
+if, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color E=
+moji" !important; }
+  .rec__button:hover { background-color: #f9fafb !important; }
+  .copyright a {color: inherit !important; text-decoration: none !important=
+; font-size: inherit !important; font-family: inherit !important; font-weig=
+ht: inherit !important; line-height: inherit !important;}
+  .txt_social p { padding: 0; word-break: break-all; }
+  .table, .table-c, .table-h { border: 1px solid #C0C0C0; }
+  .table-c { padding:5px; background-color:#FFFFFF; }
+  .table-c p { color: #2D2D2D; font-family:'Helvetica',Arial,sans-serif !im=
+portant;overflow-wrap: break-word; }
+  .table-h { padding:5px; background-color:#F1F1F1; }
+  .table-h p { color: #2A2A2A; font-family:'Trebuchet MS','Lucida Grande',T=
+ahoma,sans-serif !important;overflow-wrap: break-word; }
+  @media only screen and (max-width:667px) {
+    .aa, .w100pc { width: 100% !important; }
+    .bb img { width: 100% !important; height: auto !important; max-width: n=
+one !important; }
+    .cc { padding: 0px 8px !important; }
+    .ee { padding-top:10px !important;padding-bottom:10px !important; }
+    .ff ul, .ff ol { margin: 0px 0px 0px 10px !important;padding: 0px !impo=
+rtant; }
+    .ff li { margin:5px 0px 0px 10px !important; }
+    .r {height:140px !important;}
+    .s p { font-size:13px !important;line-height:15px !important; }
+    .mob-hide {display:none !important;}
+    .mob-show {display: block !important; width: auto !important; overflow:=
+ visible !important; float: none !important; max-height: inherit !important=
+; line-height: inherit !important;}
+    .mob-stack {width:100% !important;display:block !important;}
+    .mob-w-full {width:100% !important;}
+    .mob-block {display:block !important;}
+    .embed-img {padding:0px 0px 12px 0px !important;}
+    .socialShare {padding-top:15px !important;}
+    .rec { padding-left:15px!important;padding-right:15px!important; }
+    .bodyWrapper { padding:10px 4px 10px 4px !important; }
+    .social-mobile {float:left !important;margin-top:10px !important;}
+  }
+  @media screen and (max-width: 480px) {
+    u + .a .gg { width: 100% !important; width: 100vw !important; }
+    .tok-heart { padding-top:75% !important; }
+    .tok-play { padding-top: 250px !important; }
+  }
+  @media screen and (max-width: 320px) {
+    .tok-heart { padding-top:65% !important; }
+  }
+    .f {
+    display: none;
+}
+  .u { border: 1px solid #CACACA !important; border-radius: 2px !important;=
+ background-color: #ffffff !important; padding: 0px 13px 0px 13px !importan=
+t; font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Se=
+goe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif !important;fon=
+t-size: 12px !important; color: #767676 !important; }
+  .u a { text-decoration: none; display: block !important; color: #767676 !=
+important; margin: 0px !important; }
+  .u span, .u img { color: #767676 !important;margin:0px !important; max-he=
+ight:32px !important;background-color:#ffffff !important; }
+</style><!--[if mso]><style type=3D"text/css">
+    h1, h2, h3, h4, h5, h6 {font-family: Arial, sans-serif !important;}
+    body, table, td, p, a, span {font-family: Arial, sans-serif !important;=
+}
+    sup { font-size: 100% !important;vertical-align: .5em !important;mso-te=
+xt-raise: -1.5% !important;line-height: 0 !important; }
+    ul { margin-left:0px !important; margin-right:10px !important; margin-t=
+op:20px !important; margin-bottom:20px !important; }
+    ul li { margin-left: 0px !important; mso-special-format: decimal; }
+    ol { margin-left:0px !important; margin-right:10px !important; margin-t=
+op:20px !important; margin-bottom:20px !important; }
+    ol li { margin-left: 0px !important; mso-special-format: decimal; }
+    li.listItem { margin-left:15px !important; margin-top:0px !important; }
+    .paddingDesktop { padding: 10px 0 !important; }
+    .edm_outlooklist { margin-left: -20px !important; }
+    .embedImage { display:none !important; }
+</style><![endif]--><style></style></head><body class=3D"a" style=3D"margin=
+:0px auto;padding:0px;word-wrap:normal;word-spacing:normal;background-color=
+:#ffffff;"><div role=3D"article" aria-roledescription=3D"email" aria-label=
+=3D"email_name" lang=3D"en" style=3D"font-size:1rem"><div style=3D"display:=
+none;max-height:0px;overflow:hidden;"> PLUS: AI researchers unite on reason=
+ing transparency &nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C </div><table role=3D"none" width=3D"100%" border=3D"0" c=
+ellspacing=3D"0" align=3D"center" cellpadding=3D"0" class=3D"gg"><tr><td al=
+ign=3D"center" valign=3D"top"><table role=3D"none" width=3D"670" border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"0" class=3D"aa" style=3D"width:670px;ta=
+ble-layout:fixed;"><tr><td class=3D"bodyWrapper" align=3D"center" valign=3D=
+"top" style=3D"padding:10px 2px 10px 2px;"><table role=3D"none" width=3D"10=
+0%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tr><=
+td align=3D"center" valign=3D"top" style=3D"border-width:0px 0px 0px 0px;bo=
+rder-style: solid; border-color: #ffffff;border-radius:10px 10px 0px 0px;ba=
+ckground-color:#ffffff;" class=3D"c"><table role=3D"none" width=3D"100%" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tr id=3D"h=
+eader"><td style=3D"padding:15px 15px 0px 15px;"><div style=3D"padding-top:=
+0px;padding-right:0px;padding-bottom:20px;padding-left:0px;"><table role=3D=
+"none" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center"><tr><td class=3D"f" align=3D"Left" valign=3D"top"><p> July 16t=
+h, 2025 &nbsp; | &nbsp; <a href=3D"https://link.mail.beehiiv.com/ss/c/u001.=
+dSnm3kaGd0BkNqLYPjeMf75St_4h4uVDlb2B1USeB_GaypPDlELDfYmCKdprSK8vZqmnnP7FEWU=
+mq3aKDK4-uuVPYpSR1KAj66SgoFgXWil-Uiqo6HmwMWBOWzJCFUJWfIQy95OrakcIxla5EpbNQG=
+OtkJ7XdPnv_qRvOAHMSLcmx1GkiHlfsCE-HTRMvXTyjGc_yjB_1CvKDH500AAx_7IwEvwCbZNxE=
+PEtoX01iYJ2EIY8xSbXnI4s7CC0JQfTSRVR2z8KVSWi0ZhsB9YwtrYfcouJTDghTAAFGhMTJLtr=
+KUp6ZyXP411l21CG6c_E856Bm6xJl6OSIO0Pyi-EfbMq74IHSOROvzLp9eTCWXnYrDm0HsbyKeC=
+5rFqq4oU68fYaKun7DSHke9yVPQaphhpDlFCXzSC7uRB0UXKY3RtCAxIW1aLSytlGGNzm3CzTHj=
+01Ur_C-1sSGN7xmXWopijGTsQ0lh_CAI6Z0ikiUoBfkglRdtnJ3ZwsizLmB4d1nDFGYZiyE4nSs=
+lBa-DFyBns3exYpvvb_GCbvQXXEL8oSG8LWZnPEdojiFdPdkvCbVx7-ig6mRIDliKqAr8AAVAl8=
+To6g23kXRP1R7ki_q-2xQf0R6YzeAeXhmlOuXou6h2JvWc66vXE_TdeY9mtDsf8sFP30wSRLCGZ=
+lZPl2IMmjpn00lehANRWq68ufM5mR9klErjZUl8lt5E3nh4P-OcNZDBg7uLusr2gOGuCrlFqEsW=
+xTAOZma7krfnag_GWfXVF09KkQSgugKUoxn9L4SDq-pWxu2exclxj2K9k5_3AmlMwHoaNHjhZjT=
+4NlW40nPEV5xRCngptrvvLtuWZZrw/4i8/2-GjzmaRQYS-MUqprhuc-g/h0/h001.uWiapktDaZ=
+igczfnKh1AAe0did9A5nSd0PBbghXEVJQ">Read Online</a></p></td></tr><tr><td sty=
+le=3D"height:0px;width:0px;"><div style=3D"height:1px;" data-open-tracking=
+=3D"true"> <img src=3D"https://link.mail.beehiiv.com/ss/o/u001.7o2JdNgFMvCj=
+DUXDAQ6CdA/4i8/2-GjzmaRQYS-MUqprhuc-g/ho.gif" alt=3D"" width=3D"1" height=
+=3D"1" border=3D"0" style=3D"height:1px !important;width:1px !important;bor=
+der-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;m=
+argin-right:0 !important;margin-left:0 !important;padding-top:0 !important;=
+padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !impo=
+rtant;"> </div></td></tr></table></div></td></tr><tr id=3D"content-blocks">=
+<td class=3D"email-card-body" align=3D"center" valign=3D"top" style=3D"padd=
+ing-bottom:15px;"><table role=3D"none" width=3D"100%" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" align=3D"center"><tr><td class=3D"dd" align=3D"=
+right" style=3D"padding:0px 15px;text-align:right;word-break:break-word;"><=
+p style=3D"mso-line-height-alt:150.0%;"><sup><b><a class=3D"link" href=3D"h=
+ttps://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf75St_4h4uVDlb2B=
+1USeB_GaypPDlELDfYmCKdprSK8vZqmnnP7FEWUmq3aKDK4-uhIky6_lqEAjXTPKi6hRc3rTuxH=
+Kg8qcZ0ygcJ_BJ8uudukOGlYIjiDYbaNVdPwHD2CmgOWtSOI-X3R3ZXD_5T8zbvYRY6hy0p4gy0=
+4qxIr1Kj91vAMJdja_5LorMsa8lK9awskdAxB4gozFdd3cPdtkTmkUbPECCn260vXaaJsS1W2cE=
+dSuBMkqizHm2Upf1gHDy0FcjxmhdbX9GbX1lwAPUpY8a58vzNN0XGNNDaQDRDcw9dKyuQp54olg=
+8vZZTdaKzRpJRNmE98v4VGpmy9VCARJaYBbRPp8W3KjP20-VDj_3YiJVizn9xK8TVO5SjD04qtc=
+JfXFXSsDqxwl_tvh2vrDB8IPE-YsMc5kQEypJbcZJeWMEG8JtnpdVHEIwNJ1l5CdqgruiHUdnav=
+yKytQSRXXJZZF4FMEyN0eEX85gP6UedEdDbMkL1nj1MBl4R_AyD_0JCAuAVr_dDrCBB2nevoVDC=
+1cp_VXwnKlXwLz_gW62uPoCqJ5CBl30m_Eq_cWL-3CRizqyWieAfqMC3Fg/4i8/2-GjzmaRQYS-=
+MUqprhuc-g/h1/h001.ZgYfFfUa89Vxae0AOkay51rd7_ziSN1kAtiI4BAqmKc" target=3D"_=
+blank" rel=3D"noopener noreferrer nofollow"><span>Read Online</span></a></b=
+></sup><span style=3D"color:rgb(34, 34, 34);font-family:Helvetica, Arial, s=
+ans-serif;font-size:16px;"><sup> | </sup></span><sup><b><a class=3D"link" h=
+ref=3D"https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf75St_4h=
+4uVDlb2B1USeB_H4wpkqf8EGTk1iM5Wu0HuoFIsKQVYDu_ovIaAd89V_Nvs2jsW_lRswn84NkqT=
+YMu8JVnw2IsjtESfB6_5xHNXcHUPCOYccUJ0ZmNUke5zfs3f1MyadTtIFk3X2RGZcxS5fUrJ8ZG=
+rLrLIVfaEQjPBwQYSAd8bKLj0hu3aSTuZifyFY8wOvrlrzungeVNgNIuEE09bund7rYcUiuzdvP=
+b90p0cV9sDNhHrgdRprj0XuehMxciN2dyjGEJcybaSlrPhAFQDQd6j-jpl8TNnTKMdtxrzrfJ_7=
+z2noFZ1dvCbXLw8qY8euXZQ0AaeFzQHCjNlsqpGv2w5vSB5RxMvb5d1QXmWDtpkXP9MHMz_H72z=
+ozuiuSvgBVeCAjv0yVYAU9Y5AAuHn8Es17OC03OPzS94FKHfjHHTgCdH7MsSePCDKnYB8yN43zd=
+MijIixhueYJHegehEaIjPXiXJAhRKbStuooOFDR5D85czqiPvK-8IABbRU4Xy9-JstSbGTI5yuV=
+xsLc2P37dzQIi-tii8n2lFI-DR-RjmlzNx78Rch2AFB-FXvPZQFgtqE7iN6uEyqfpKvWuITyF9-=
+J1v6pXuxyDs9-eNrytgHVlckzisLBCT1_fIkPAhF_ULuS-aXD86ywkIbSk70Bvc5GGzE2Ofk84B=
+ocxyMo0C2bBRZSl624A1t_yzMKEIqor0Cn6Mgtpr0PF5pD74FC9NOIg-1XlgzT6yprVN1K0zaQQ=
+PCNOBpFKY2VQ/4i8/2-GjzmaRQYS-MUqprhuc-g/h2/h001.25ut77SRRb0jl4gwK40nraGd0r-=
+TyG1c9uAPpMF674U" target=3D"_blank" rel=3D"noopener noreferrer nofollow"><s=
+pan>Sign Up</span></a></b></sup><span style=3D"color:rgb(34, 34, 34);font-f=
+amily:Helvetica, Arial, sans-serif;font-size:16px;"><sup> | </sup></span><s=
+up><b><a class=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/u001.KT4=
+rQsO6sHS_v2VASG2xutt47WToq2lGcecIVNNQSNJJXsTbyja0MNJkdxClNtOPO7bWVC8G5SNwtE=
+qed4o55-00goYqJiaXPJPhuWHyeesA0OI3ZJih68-CfGaEPCcYF2MGS7C-eqpV0iwNmMg5fdViY=
+ow9jNVqm1MSIv3i-nEDSLL9qwSuQTi-xpts415HcxSEW-A0ZxCefOBcuUGP8r3QPjObSt_ysPYf=
+Jy4L_3bKOZ25BIZ9QniI_gQwYITcbClBW2175aFXqcu-BGnyCQl3aMAfre4rBQFkFjMsySs/4i8=
+/2-GjzmaRQYS-MUqprhuc-g/h3/h001.IzUAE4qGBRlrGea2BhdRGiyY9pgtXm1BW0q-oWIrU60=
+" target=3D"_blank" rel=3D"noopener noreferrer nofollow"><span>Advertise</s=
+pan></a></b></sup></p></td></tr><tr><td><table role=3D"none" width=3D"100%"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D""><tr><td bgcolo=
+r=3D"#000000" style=3D"background-color:#000000;border-color:#000000;border=
+-radius:10px;border-style:solid;border-width:2px;padding:0.0px 0.0px 0.0px =
+0.0px;"><table role=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0"><tr><td align=3D"center" valign=3D"top" style=3D"padding-=
+bottom:8px;padding-left:15px;padding-right:15px;padding-top:2px; " class=3D=
+"dd"><table role=3D"none" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"margin:0 auto 0 auto;"><tr><td align=3D"center" valign=3D"top" sty=
+le=3D"width:666px;"><a href=3D"https://link.mail.beehiiv.com/ss/c/u001.yPRm=
+Q1cS76XBKnOKtbP_VlQLpzwqY3L6ODFRZtS4Wkn3rzjNqZr6YneuM4M9hN9L-SpQKKRvt83yLgV=
+FqWhhIKQ79BWT0Q-c9kCHmkRtRHyEeNWTLy4WKium-9KioeIcwxJEddJQt6375B-n3wrynFqFtr=
+YtzIEaZxF4OOEScWU2H7_d8hO3XHei9c4uyZg5s57JK06E1fakcIqKYbSbUB6xJx1hDP5s0wMVX=
+zyxf0Omev2CQy95D1xV4YMlKtyFq-xnoj-C5yceKZo5IC2VbQ/4i8/2-GjzmaRQYS-MUqprhuc-=
+g/h4/h001.3v1Y3gaNngpd44rBjSeyh2kXQGD9BAXIATY0Na6tvfM" rel=3D"noopener nore=
+ferrer nofollow" style=3D"text-decoration:none;" target=3D"_blank"><img src=
+=3D"https://media.beehiiv.com/cdn-cgi/image/fit=3Dscale-down,format=3Dauto,=
+onerror=3Dredirect,quality=3D80/uploads/asset/file/e65088c6-5d5b-4a20-8488-=
+364c4f1778e2/prezi-header.jpg?t=3D1752598433" alt=3D"" height=3D"auto" widt=
+h=3D"666" style=3D"display:block;width:100%;" border=3D"0"></a></td></tr></=
+table></td></tr></table></td></tr></table></td></tr><tr><td class=3D"dd" al=
+ign=3D"left" style=3D"padding:0px 15px;text-align:left;word-break:break-wor=
+d;"><p style=3D"mso-line-height-alt:150.0%;"></p></td></tr><tr><td><table r=
+ole=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" style=3D""><tr><td bgcolor=3D"#FFFFFF" style=3D"background-color:#FFFFFF;=
+border-color:#000000;border-radius:10px;border-style:solid;border-width:2px=
+;padding:5.0px 0.0px 5.0px 0.0px;"><table role=3D"none" width=3D"100%" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tr><td class=3D"dd" align=3D"=
+left" style=3D"padding:0px 15px;text-align:left;word-break:break-word;"><p =
+style=3D"mso-line-height-alt:150.0%;"><span style=3D""><b>Good morning, AI =
+enthusiasts.</b></span><span style=3D""> Former OpenAI CTO Mira Murati has =
+kept her new startup quiet since launching in February =E2=80=94 but that d=
+idn=E2=80=99t stop investors from betting a fresh $2B on whatever she's bui=
+lding.</span></p></td></tr><tr><td class=3D"dd" align=3D"left" style=3D"pad=
+ding:0px 15px;text-align:left;word-break:break-word;"><p style=3D"mso-line-=
+height-alt:150.0%;"><span style=3D"">With Thinking Machine Labs now valued =
+at $12B and promising multimodal AI with a =E2=80=9Cmajor open-source compo=
+nent=E2=80=9D in the coming months, the countdown to their first product ha=
+s become one of the AI world's most anticipated reveals.</span></p></td></t=
+r><tr><td class=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-align:=
+left;word-break:break-word;"><p style=3D"mso-line-height-alt:150.0%;"><span=
+ style=3D""><b><i>Member note: </i></b></span><span style=3D""><i>The Rundo=
+wn has secured 500 private invitations for Perplexity Comet. Unique codes a=
+re </i></span><span style=3D""><a class=3D"link" href=3D"https://link.mail.=
+beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJFlIFSE2-rnn=
+682bpzkWujAEU8DCcllc4Dt9Rqbp_jUvXiHRVWR36T5b2OhPz2N6rVHTJyw3i4GnIK3xEBp34PA=
+NJWXY0mYb-SQjWoattBFgYiJDzF0AVrSPLUKs2wjCtA3jRqo9mGiSnIeEcE9tOykOL1DYQXJIHi=
+KQHqlWPfZoNt8mbSaJ-g4SOt1JZl4EH5Gn60e4d_0Z7u48cZq3VsR_3rybSbIrq9ZBoEfyU_RT-=
+PK0BQe23WjSisrcXeCz2AkkPAO8rIWrsdY6cZ7U1nk/4i8/2-GjzmaRQYS-MUqprhuc-g/h5/h0=
+01.yiPmJPq1u0uRmXZOYmOEGDLgXMgfcNP-saKYI4X2YiM" target=3D"_blank" rel=3D"no=
+opener noreferrer nofollow"><span><i>available now</i></span></a></span><sp=
+an style=3D""><i> for full members of The Rundown University.</i></span></p=
+></td></tr><tr><td align=3D"center" valign=3D"top" style=3D"font-size:0px;l=
+ine-height:0px;padding:12px 0px 12px;" class=3D"dd"><table class=3D"j" role=
+=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" a=
+lign=3D"center"><tr><td> &nbsp; </td></tr></table></td></tr><tr><td class=
+=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-align:left;word-break=
+:break-word;"><p style=3D"mso-line-height-alt:150.0%;"><span style=3D""><b>=
+In today=E2=80=99s AI rundown:</b></span></p></td></tr><tr><td style=3D"pad=
+ding-bottom:10px;padding-left:25px;padding-right:25px;padding-top:0px;" cla=
+ss=3D"ee"><div style=3D"margin-left:0px;" class=3D"edm_outlooklist"><ul sty=
+le=3D"font-weight:400;list-style-type:disc;margin-bottom:8px !important;mar=
+gin-top:8px !important;padding:0px 0px 0px 0px;"><li class=3D"listItem ulte=
+xt"><p style=3D"mso-line-height-alt:150.0%;padding:0px;text-align:left;word=
+-break:break-word;"><span style=3D"">Thinking Machine Labs raises $2B, near=
+s product launch</span></p></li><li class=3D"listItem ultext"><p style=3D"m=
+so-line-height-alt:150.0%;padding:0px;text-align:left;word-break:break-word=
+;"><span style=3D"">Runway=E2=80=99s Act-Two for AI motion capture</span></=
+p></li><li class=3D"listItem ultext"><p style=3D"mso-line-height-alt:150.0%=
+;padding:0px;text-align:left;word-break:break-word;"><span style=3D"">Autom=
+ate personalized sales outreach at scale</span></p></li><li class=3D"listIt=
+em ultext"><p style=3D"mso-line-height-alt:150.0%;padding:0px;text-align:le=
+ft;word-break:break-word;"><span style=3D"">AI researchers unite on reasoni=
+ng transparency</span></p></li><li class=3D"listItem ultext"><p style=3D"ms=
+o-line-height-alt:150.0%;padding:0px;text-align:left;word-break:break-word;=
+"><span style=3D"">4 new AI tools &amp; 4 job opportunities</span></p></li>=
+</ul></div></td></tr></table></td></tr></table></td></tr><tr><td class=3D"d=
+d" align=3D"left" style=3D"padding:0px 15px;text-align:left;word-break:brea=
+k-word;"><p style=3D"mso-line-height-alt:150.0%;"></p></td></tr><tr><td><ta=
+ble role=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D""><tr><td bgcolor=3D"#000000" style=3D"background-color:#00=
+0000;border-color:#000000;border-style:solid;border-width:2px;padding:0.0px=
+ 0.0px 0.0px 0.0px;"><table role=3D"none" width=3D"100%" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0"><tr><td class=3D"dd" align=3D"center" style=
+=3D"padding:0px 15px;text-align:center;word-break:break-word;"><p style=3D"=
+mso-line-height-alt:150.0%;"><span style=3D"color:#FFFFFF;"><b>LATEST DEVEL=
+OPMENTS</b></span></p></td></tr></table></td></tr></table></td></tr><tr><td=
+ class=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-align:left;word=
+-break:break-word;"><p style=3D"mso-line-height-alt:150.0%;"></p></td></tr>=
+<tr><td><table role=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D""><tr><td bgcolor=3D"#FFFFFF" style=3D"backgroun=
+d-color:#FFFFFF;border-color:#000000;border-radius:10px;border-style:solid;=
+border-width:2px;padding:0.0px 0.0px 0.0px 0.0px;"><table role=3D"none" wid=
+th=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tr><td class=
+=3D"dd" align=3D"left" valign=3D"top" style=3D"color:#000000;font-weight:No=
+rmal;padding:0px 15px;text-align:left;"><h6 style=3D"color:#000000;font-wei=
+ght:Normal;mso-line-height-alt:87.5%;"><span style=3D"">THINKING MACHINES L=
+AB</span></h6></td></tr><tr><td class=3D"dd" align=3D"left" valign=3D"top" =
+style=3D"color:#000000;font-weight:Bold;padding:0px 15px;text-align:left;">=
+<h4 style=3D"color:#000000;font-weight:Bold;mso-line-height-alt:112.5%;"><s=
+pan style=3D"">=F0=9F=92=B0 </span><span style=3D""><a class=3D"link" href=
+=3D"https://link.mail.beehiiv.com/ss/c/u001.6k0_SAz8nrOuu_-LoNX1HYZSj-kTYrS=
+7IOsHDlJDD38BYLDTBsAKSmF0YhCu4jSye44_QHSLE-XYblRGH18Cb_zA6-b7Pz9s7AmeMvuGJv=
+hSf7I6xZp6hbkj5rneAyon3Es-BMgsDMKUinLMpZecpUtG9Q9gjvNt8GV2y-mMbIKsJSiKo-iea=
+eNGWyO0XLcDfNrWlapHX1dSADJWaq0eSo7RqpI1YfK_Cc3c7NXxaS8CKrzuDMzqeqMeoTasfjFS=
+DaLmhHT6M1Oxp2I9TwgJZTe-e3_ZhK8Konvtxx2y0cw/4i8/2-GjzmaRQYS-MUqprhuc-g/h6/h=
+001.ugUZdzYtLHT4SyU8U2Ho2JcOCf_W4FNGrXDs-ukdE18" target=3D"_blank" rel=3D"n=
+oopener noreferrer nofollow"><span><span style=3D"text-decoration:underline=
+;"><b>Thinking Machine Labs raises $2B, nears product launch</b></span></sp=
+an></a></span></h4></td></tr><tr><td align=3D"center" valign=3D"top" style=
+=3D"padding-bottom:8px;padding-left:15px;padding-right:15px;padding-top:2px=
+; " class=3D"dd"><table role=3D"none" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" style=3D"margin:0 auto 0 auto;"><tr><td align=3D"center" valign=
+=3D"top" style=3D"width:666px;"><img src=3D"https://media.beehiiv.com/cdn-c=
+gi/image/fit=3Dscale-down,format=3Dauto,onerror=3Dredirect,quality=3D80/upl=
+oads/asset/file/f11f11d9-1702-48a0-b755-a3e0be2c6312/murati2.jpg?t=3D175261=
+8215" alt=3D"" height=3D"auto" width=3D"666" style=3D"display:block;width:1=
+00%;border-radius:0px 0px 0px 0px;border-style:solid;border-width:0px 0px 0=
+px 0px;box-sizing:border-box;border-color:#E5E7EB;" border=3D"0"></td></tr>=
+<tr><td align=3D"left" valign=3D"top" class=3D"t" style=3D"width:666px; pad=
+ding: 4px 0px 4px 0px;"><p><span style=3D"">Image source: Getty Images</spa=
+n></p></td></tr></table></td></tr><tr><td class=3D"dd" align=3D"left" style=
+=3D"padding:0px 15px;text-align:left;word-break:break-word;"><p style=3D"ms=
+o-line-height-alt:150.0%;"><span style=3D""><b>The Rundown: </b></span><spa=
+n style=3D"">Former OpenAI CTO Mira Murati just </span><span style=3D""><a =
+class=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/u001.6k0_SAz8nrOu=
+u_-LoNX1HYZSj-kTYrS7IOsHDlJDD38BYLDTBsAKSmF0YhCu4jSye44_QHSLE-XYblRGH18Cb_z=
+A6-b7Pz9s7AmeMvuGJvhSf7I6xZp6hbkj5rneAyon3Es-BMgsDMKUinLMpZecpUtG9Q9gjvNt8G=
+V2y-mMbIKsJSiKo-ieaeNGWyO0XLcDfNrWlapHX1dSADJWaq0eSnBLYLFH0pUWPehnA130LYruO=
+oo5YkW5gwRjGxAcA2TP8oWrMgBkXJSXb_1b75hZXOnO5jt_PeyK68AnT5aJu8E/4i8/2-GjzmaR=
+QYS-MUqprhuc-g/h7/h001.X3IDT4hlneQtAZ6UVGLl8evm37ogiYFmaeVKctBU6kA" target=
+=3D"_blank" rel=3D"noopener noreferrer nofollow"><span>announced</span></a>=
+</span><span style=3D""> a new $2B seed raise for her startup, Thinking Mac=
+hines Lab AI, also revealing that the secretive company will share its firs=
+t product in =E2=80=9Cthe next couple of months.=E2=80=9D</span></p></td></=
+tr><tr><td class=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-align=
+:left;word-break:break-word;"><p style=3D"mso-line-height-alt:150.0%;"><spa=
+n style=3D""><b>The details: </b></span></p></td></tr><tr><td style=3D"padd=
+ing-bottom:10px;padding-left:25px;padding-right:25px;padding-top:0px;" clas=
+s=3D"ee"><div style=3D"margin-left:0px;" class=3D"edm_outlooklist"><ul styl=
+e=3D"font-weight:400;list-style-type:disc;margin-bottom:8px !important;marg=
+in-top:8px !important;padding:0px 0px 0px 0px;"><li class=3D"listItem ultex=
+t"><p style=3D"mso-line-height-alt:150.0%;padding:0px;text-align:left;word-=
+break:break-word;"><span style=3D"">The $2B seed round brings the company=
+=E2=80=99s value to $12B, less than a year after its </span><span style=3D"=
+"><a class=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/u001.dSnm3ka=
+Gd0BkNqLYPjeMf75St_4h4uVDlb2B1USeB_EgqmHedLjH5Im7Gmh4OtfMgRsJEi0c0s13PEFY6q=
+n3tfwLsy8kasChtYiRXUnTokuHhhzmFa7jlC0b3Gx4tZUwHbkHkTt0xgIwXXuk4ZLEnXFl79l5t=
+YAkWAMOm63dz91s7yjgbJ1wlLEtt60vOEIddLJVyL1VLG2VLghj_Ia0iqFsiGMTScDSrjdRpy69=
+8iZzA4r-ACyJoJXbyTkfw_LsFMrrN_z9RdYQKZg3G-MiUUMxLBXnitQp6ozHEZyUbMo10xSbhWa=
+ju1s46ipEVOIhFvHqJIJAkk43Npv6Y8USLfBwc28iv9nk__22MbKZ8sbL96qp0MUzOi4QqJZN2s=
+aPC3X1FObTfQBFWYMs3LXQu34LsXJSo-Qv9cPfeSR31EmbTDP8RGUkDdGy3ofOF41QPJUjSetmr=
+kjPgE20KP_KZUY1CweHnWZJsn57LZ0gA4Bciq_e51ekjC-_03OIyMhoaDHOt-kV-4yLC1MqStH5=
+-ntdTQyL7mLN3-7PgXb5bOdn5sU_W2ZOOSeGg-YZr9dy6ws2JCl5lvgJXvbebPtb6TJSKw556Tu=
+hgbHqx7jO20n3LkP-kTkwB5x0djNbCikEc4QqdNhMLx7u_P-zSh7jCsjFOXUf-xlCqVFu55ad7m=
+cUZzjfXKL-l69tuuljq39UkvZgrCut-_eMvO4iSHvtG20gUaLwlYe3hVPiz6uZMtLgiher_FTVE=
+w4hB3lWYQfOogobOnKNVStxwMyzWe3y9YWWGdoqN5Jm3NJjYJQ4VLHR66MZf91V_nLzyXESd52R=
+/4i8/2-GjzmaRQYS-MUqprhuc-g/h8/h001.KNNAONz4gG1kC-Ny9MSg66NKkO9Sxl3reuVeemP=
+dwIQ" target=3D"_blank" rel=3D"noopener noreferrer nofollow"><span>creation=
+</span></a></span><span style=3D"">, with no product and little public info=
+rmation on direction.</span></p></li><li class=3D"listItem ultext"><p style=
+=3D"mso-line-height-alt:150.0%;padding:0px;text-align:left;word-break:break=
+-word;"><span style=3D"">Murati said the startup=E2=80=99s first product wi=
+ll feature =E2=80=9Ca major open-source component=E2=80=9D for researchers =
+and startups building custom models.</span></p></li><li class=3D"listItem u=
+ltext"><p style=3D"mso-line-height-alt:150.0%;padding:0px;text-align:left;w=
+ord-break:break-word;"><span style=3D"">She also revealed the lab is buildi=
+ng multimodal AI that collaborates with users in natural interactions via c=
+onversation and sight.</span></p></li><li class=3D"listItem ultext"><p styl=
+e=3D"mso-line-height-alt:150.0%;padding:0px;text-align:left;word-break:brea=
+k-word;"><span style=3D"">The Information recently </span><span style=3D"">=
+<a class=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd=
+0BkNqLYPjeMf4_pVCvgnnuS9csEAS3pWhvGIzCcrtMwZJiLBPy3S6K6oubhdZ249PCZovCqU5uN=
+bfsAGbSbJih651ETcCv-QC2QKj3fxtcEF-HaVLOvaNd4BhXV9Ihha3l0N9kYggMTUoXe80nasWs=
+stdfgx3WPDcOl1IqRtVo7mxr243DnmW2tdnXQDxcv_zxHyaznI6qx3UzqoG-LZ4EI7WQBzJOJwG=
+yDni9OfdFEdl5vSHew01tLN3xu2S4f1ejxXxTJjt0t7OMDSqSyGqH2sEcqOUGQ3iEy1c5AJR0Zi=
+7Io5WnmBCZE0a42NHdsPROLgxE6Pongng6xkV9nBaibssk7MQqJHpI/4i8/2-GjzmaRQYS-MUqp=
+rhuc-g/h9/h001.f-4ZqPfEoZBZ9Ucs4z_GIStR9D9K3fRS8G8BXhLot7w" target=3D"_blan=
+k" rel=3D"noopener noreferrer nofollow"><span>reported</span></a></span><sp=
+an style=3D""> that TML is planning to develop custom AI models to help bus=
+inesses increase profits.</span></p></li></ul></div></td></tr><tr><td class=
+=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-align:left;word-break=
+:break-word;"><p style=3D"mso-line-height-alt:150.0%;"><span style=3D""><b>=
+Why it matters: </b></span><span style=3D"">With fierce competition among t=
+he current AI leaders, it=E2=80=99s easy to forget the two former OpenAI he=
+avyweights in TML and SSI are still in stealth mode. Despite little info or=
+ product, Murati has had no shortage of investor (and acquisition) interest=
+ =E2=80=94 making the startup=E2=80=99s first release a big one to watch in=
+ the coming months.</span></p></td></tr></table></td></tr></table></td></tr=
+><tr><td class=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-align:l=
+eft;word-break:break-word;"><p style=3D"mso-line-height-alt:150.0%;"></p></=
+td></tr><tr><td><table role=3D"none" width=3D"100%" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" style=3D""><tr><td bgcolor=3D"#FFFFFF" style=3D"b=
+ackground-color:#FFFFFF;border-color:#000000;border-radius:10px;border-styl=
+e:solid;border-width:2px;padding:0.0px 0.0px 0.0px 0.0px;"><table role=3D"n=
+one" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tr><t=
+d class=3D"dd" align=3D"left" valign=3D"top" style=3D"color:#000000;font-we=
+ight:Normal;padding:0px 15px;text-align:left;"><h6 style=3D"color:#000000;f=
+ont-weight:Normal;mso-line-height-alt:87.5%;"><span style=3D"">TOGETHER WIT=
+H PREZI</span></h6></td></tr><tr><td class=3D"dd" align=3D"left" valign=3D"=
+top" style=3D"color:#000000;font-weight:Bold;padding:0px 15px;text-align:le=
+ft;"><h4 style=3D"color:#000000;font-weight:Bold;mso-line-height-alt:112.5%=
+;"><span style=3D""><b>=E2=AD=90=EF=B8=8F </b></span><span style=3D""><span=
+ style=3D"text-decoration:underline;"><a class=3D"link" href=3D"https://lin=
+k.mail.beehiiv.com/ss/c/u001.yPRmQ1cS76XBKnOKtbP_VlQLpzwqY3L6ODFRZtS4Wkn3rz=
+jNqZr6YneuM4M9hN9L-SpQKKRvt83yLgVFqWhhIKQ79BWT0Q-c9kCHmkRtRHyEeNWTLy4WKium-=
+9KioeIcwxJEddJQt6375B-n3wrynFqFtrYtzIEaZxF4OOEScWU2H7_d8hO3XHei9c4uyZg5s57J=
+K06E1fakcIqKYbSbUB0R6sKyKHZ13Jgj3AZoJm28lvWeK-pW6ydWVsx0q6u412xd_WQ0vVomJHS=
+ojIblSA/4i8/2-GjzmaRQYS-MUqprhuc-g/h10/h001.YaNWlBJwHIEyTyZJfF6cy11W7t4al_D=
+eKt0UJI4o-e4" target=3D"_blank" rel=3D"noopener noreferrer nofollow"><span>=
+<b>Your best presentation yet, built by AI</b></span></a></span></span></h4=
+></td></tr><tr><td align=3D"center" valign=3D"top" style=3D"padding-bottom:=
+8px;padding-left:15px;padding-right:15px;padding-top:2px; " class=3D"dd"><t=
+able role=3D"none" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=
+=3D"margin:0 auto 0 auto;"><tr><td align=3D"center" valign=3D"top" style=3D=
+"width:666px;"><a href=3D"https://link.mail.beehiiv.com/ss/c/u001.yPRmQ1cS7=
+6XBKnOKtbP_VlQLpzwqY3L6ODFRZtS4Wkn3rzjNqZr6YneuM4M9hN9L-SpQKKRvt83yLgVFqWhh=
+IKQ79BWT0Q-c9kCHmkRtRHyEeNWTLy4WKium-9KioeIcwxJEddJQt6375B-n3wrynFqFtrYtzIE=
+aZxF4OOEScWU2H7_d8hO3XHei9c4uyZg5s57JK06E1fakcIqKYbSbUI0o9TPGfYe7DM3pPtX7m8=
+gTVVBR6dqs7d1P0Yy95MEoU7REbeZbQom6UId_T_YRAQ/4i8/2-GjzmaRQYS-MUqprhuc-g/h11=
+/h001.APofZzt6OFTRcDavi2Pc7hT4sPcxlCzaeHUl7qoBm7I" rel=3D"noopener noreferr=
+er nofollow" style=3D"text-decoration:none;" target=3D"_blank"><img src=3D"=
+https://media.beehiiv.com/cdn-cgi/image/fit=3Dscale-down,format=3Dauto,oner=
+ror=3Dredirect,quality=3D80/uploads/asset/file/aea3f0bf-5f17-4cc0-9f4a-19a4=
+6c6ec93e/BC-3890-RundownAI-Ad1-1024x576.png?t=3D1752598463" alt=3D"" height=
+=3D"auto" width=3D"666" style=3D"display:block;width:100%;border-radius:0px=
+ 0px 0px 0px;border-style:solid;border-width:0px 0px 0px 0px;box-sizing:bor=
+der-box;border-color:#E5E7EB;" border=3D"0"></a></td></tr></table></td></tr=
+><tr><td class=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-align:l=
+eft;word-break:break-word;"><p style=3D"mso-line-height-alt:150.0%;"><span =
+style=3D""><b>The Rundown:</b></span><span style=3D""> Prezi AI turns borin=
+g decks into dynamic presentations that get results in meetings, pitches, a=
+nd high-stakes boardrooms. Prezi has helped presenters for 15 years=E2=80=
+=94and with AI, it=E2=80=99s even faster. No design skills needed.</span></=
+p></td></tr><tr><td class=3D"dd" align=3D"left" style=3D"padding:0px 15px;t=
+ext-align:left;word-break:break-word;"><p style=3D"mso-line-height-alt:150.=
+0%;"><span style=3D""><b>With Prezi, you can:</b></span></p></td></tr><tr><=
+td style=3D"padding-bottom:10px;padding-left:25px;padding-right:25px;paddin=
+g-top:0px;" class=3D"ee"><div style=3D"margin-left:0px;" class=3D"edm_outlo=
+oklist"><ul style=3D"font-weight:400;list-style-type:disc;margin-bottom:8px=
+ !important;margin-top:8px !important;padding:0px 0px 0px 0px;"><li class=
+=3D"listItem ultext"><p style=3D"mso-line-height-alt:150.0%;padding:0px;tex=
+t-align:left;word-break:break-word;"><span style=3D"">Go from rough ideas o=
+r PDFs to polished presentations in seconds</span></p></li><li class=3D"lis=
+tItem ultext"><p style=3D"mso-line-height-alt:150.0%;padding:0px;text-align=
+:left;word-break:break-word;"><span style=3D"">Stand out with visuals that =
+hold attention and drive real engagement</span></p></li><li class=3D"listIt=
+em ultext"><p style=3D"mso-line-height-alt:150.0%;padding:0px;text-align:le=
+ft;word-break:break-word;"><span style=3D"">Get AI-powered suggestions for =
+content, structure, and design</span></p></li></ul></div></td></tr><tr><td =
+class=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-align:left;word-=
+break:break-word;"><p style=3D"mso-line-height-alt:150.0%;"><span style=3D"=
+"><a class=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/u001.yPRmQ1c=
+S76XBKnOKtbP_VlQLpzwqY3L6ODFRZtS4Wkn3rzjNqZr6YneuM4M9hN9L-SpQKKRvt83yLgVFqW=
+hhIKQ79BWT0Q-c9kCHmkRtRHyEeNWTLy4WKium-9KioeIcwxJEddJQt6375B-n3wrynFqFtrYtz=
+IEaZxF4OOEScWU2H7_d8hO3XHei9c4uyZg5s57JK06E1fakcIqKYbSbUMPFG2dVqR678K7sgj2p=
+ZFD5B7965MmzWP-z8bQJ9YacvSdbFIYqXFbne2GL1c4XuA/4i8/2-GjzmaRQYS-MUqprhuc-g/h=
+12/h001.m3idfea0tBxLYmTPJ1zjWfQv4W-CfI7_DeZsNGZrVnI" target=3D"_blank" rel=
+=3D"noopener noreferrer nofollow"><span>Try Prezi AI for free</span></a></s=
+pan><span style=3D""> =E2=80=94 see why 160+ million already have.</span></=
+p></td></tr></table></td></tr></table></td></tr><tr><td class=3D"dd" align=
+=3D"left" style=3D"padding:0px 15px;text-align:left;word-break:break-word;"=
+><p style=3D"mso-line-height-alt:150.0%;"></p></td></tr><tr><td><table role=
+=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" s=
+tyle=3D""><tr><td bgcolor=3D"#FFFFFF" style=3D"background-color:#FFFFFF;bor=
+der-color:#000000;border-radius:10px;border-style:solid;border-width:2px;pa=
+dding:0.0px 0.0px 0.0px 0.0px;"><table role=3D"none" width=3D"100%" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tr><td class=3D"dd" align=3D"le=
+ft" valign=3D"top" style=3D"color:#000000;font-weight:Normal;padding:0px 15=
+px;text-align:left;"><h6 style=3D"color:#000000;font-weight:Normal;mso-line=
+-height-alt:87.5%;"><span style=3D"">RUNWAY</span></h6></td></tr><tr><td cl=
+ass=3D"dd" align=3D"left" valign=3D"top" style=3D"color:#000000;font-weight=
+:Bold;padding:0px 15px;text-align:left;"><h4 style=3D"color:#000000;font-we=
+ight:Bold;mso-line-height-alt:112.5%;"><span style=3D"">=F0=9F=8E=AC </span=
+><span style=3D""><a class=3D"link" href=3D"https://link.mail.beehiiv.com/s=
+s/c/u001.dSnm3kaGd0BkNqLYPjeMf0BF31NlHL63eZOU-sfiPZ0Kzz-JrEu6e3qRJWEMSu0-bO=
+jT2jiccPTiKJkgHnJ9TwXEdO-NgvuJ_2vEskz6qMfc3JgV3QHhtbaJVu0hROz4Cqm1gX2FNhfRA=
+vTEFMH4Bou7D3nJroGx9gAzWGYmTuq1WHx2vl6kEIWj7ZbetiZBL9GgpmNzrMUUWyqbgPhWvUjx=
+LF9mFBgYn3VtGQkEriO4OhOYY9BRaNHSyC9RERs7C2-xCIg2xKyvr9OGl7sRvw/4i8/2-GjzmaR=
+QYS-MUqprhuc-g/h13/h001.maD-tUuGFQFV3Evef5gYcZaEhp-mGjjVm4Qx86LlnoA" target=
+=3D"_blank" rel=3D"noopener noreferrer nofollow"><span><span style=3D"text-=
+decoration:underline;">Runway=E2=80=99s Act-Two for AI motion capture</span=
+></span></a></span></h4></td></tr><tr><td align=3D"center" valign=3D"top" s=
+tyle=3D"padding-bottom:8px;padding-left:15px;padding-right:15px;padding-top=
+:2px; " class=3D"dd"><table role=3D"none" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0" style=3D"margin:0 auto 0 auto;"><tr><td align=3D"center" va=
+lign=3D"top" style=3D"width:666px;"><img src=3D"https://media.beehiiv.com/c=
+dn-cgi/image/fit=3Dscale-down,format=3Dauto,onerror=3Dredirect,quality=3D80=
+/uploads/asset/file/c8d3a877-853e-4e57-bdd3-3d32d3c67481/runwayact2.jpg?t=
+=3D1752615569" alt=3D"" height=3D"auto" width=3D"666" style=3D"display:bloc=
+k;width:100%;border-radius:0px 0px 0px 0px;border-style:solid;border-width:=
+0px 0px 0px 0px;box-sizing:border-box;border-color:#E5E7EB;" border=3D"0"><=
+/td></tr><tr><td align=3D"left" valign=3D"top" class=3D"t" style=3D"width:6=
+66px; padding: 4px 0px 4px 0px;"><p><span style=3D"">Image source: Runway</=
+span></p></td></tr></table></td></tr><tr><td class=3D"dd" align=3D"left" st=
+yle=3D"padding:0px 15px;text-align:left;word-break:break-word;"><p style=3D=
+"mso-line-height-alt:150.0%;"><span style=3D""><b>The Rundown: </b></span><=
+span style=3D"">Runway just </span><span style=3D""><a class=3D"link" href=
+=3D"https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf0BF31NlHL6=
+3eZOU-sfiPZ0Kzz-JrEu6e3qRJWEMSu0-bOjT2jiccPTiKJkgHnJ9TwXEdO-NgvuJ_2vEskz6qM=
+fc3JgV3QHhtbaJVu0hROz4Cqm1gX2FNhfRAvTEFMH4Bou7D3nJroGx9gAzWGYmTuq1WHx2vl6kE=
+IWj7ZbetiZBL9GgpmNzrMUUWyqbgPhWvWrG38JNa6Jmlpo30QCNM8EZ_tOT0wkjwLQZF9a0g6ZR=
+vo29Ign72y5XgNT0DxrdTQ/4i8/2-GjzmaRQYS-MUqprhuc-g/h14/h001.sWtHme6tDXZZR3aa=
+yDS0g1B9Ffoz7oUwqYpVUQlwybE" target=3D"_blank" rel=3D"noopener noreferrer n=
+ofollow"><span>launched</span></a></span><span style=3D""> Act-Two, the com=
+pany=E2=80=99s next-gen motion capture model that translates single perform=
+ance videos into fully animated characters with head, face, body, and hand =
+tracking across artistic styles and outputs.</span></p></td></tr><tr><td cl=
+ass=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-align:left;word-br=
+eak:break-word;"><p style=3D"mso-line-height-alt:150.0%;"><span style=3D"">=
+<b>The details:</b></span></p></td></tr><tr><td style=3D"padding-bottom:10p=
+x;padding-left:25px;padding-right:25px;padding-top:0px;" class=3D"ee"><div =
+style=3D"margin-left:0px;" class=3D"edm_outlooklist"><ul style=3D"font-weig=
+ht:400;list-style-type:disc;margin-bottom:8px !important;margin-top:8px !im=
+portant;padding:0px 0px 0px 0px;"><li class=3D"listItem ultext"><p style=3D=
+"mso-line-height-alt:150.0%;padding:0px;text-align:left;word-break:break-wo=
+rd;"><span style=3D"">The system captures subtle facial expressions, upper =
+body movements, hands, and backgrounds from a single driving performance vi=
+deo.</span></p></li><li class=3D"listItem ultext"><p style=3D"mso-line-heig=
+ht-alt:150.0%;padding:0px;text-align:left;word-break:break-word;"><span sty=
+le=3D"">Requiring just a single character reference photo, Act-Two animates=
+ and maps the driving video while maintaining backgrounds and art styles. <=
+/span></p></li><li class=3D"listItem ultext"><p style=3D"mso-line-height-al=
+t:150.0%;padding:0px;text-align:left;word-break:break-word;"><span style=3D=
+"">Runway claims the model delivers major performance gains over October 20=
+24=E2=80=99s Act-One </span><span style=3D""><a class=3D"link" href=3D"http=
+s://link.mail.beehiiv.com/ss/c/u001.NN3LcSSNlElMIHwAnhfMXQrjuKMaJC_7Mj1w-cq=
+aosnbCrJGW0Qb-4PXJxmZ9yI6awJ2eZg1X9l0JqoefxCC71E4aBCHdbQrZJquZlbTgEhM7gR1AY=
+MCwfhM8AUC5sQhZRHUOQbGjOlawt8sDMridcqJENi3aWCzZsp_IllEugFDpdI8r6Tg876-4ffc9=
+AfA72xKa7GAnT8lbLk9_FmCt_Pru3_rZmWSnRPHMls2FzyhdtYE7V0qQkmd6J0QPch540scuhYI=
+2kYtCtfTMwZZIFMzRl3g9bKXDr4aP5fQGKA/4i8/2-GjzmaRQYS-MUqprhuc-g/h15/h001.Wb5=
+mu8RS3xE8raVMpboJ5sYy2fkk0aszc2oFIV7qupQ" target=3D"_blank" rel=3D"noopener=
+ noreferrer nofollow"><span>release</span></a></span><span style=3D"">, par=
+ticularly in consistency, fidelity, and movement.</span></p></li><li class=
+=3D"listItem ultext"><p style=3D"mso-line-height-alt:150.0%;padding:0px;tex=
+t-align:left;word-break:break-word;"><span style=3D"">The company has inked=
+ partnerships with Hollywood players like </span><span style=3D""><a class=
+=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYP=
+jeMf75St_4h4uVDlb2B1USeB_FQWC7oDeN6YNL3CdOou8ALoL2K-IajxldmBaFwYcLvRRPLO2mJ=
+rYEq4PG9Tttn-etbdrsDQR3GVYBv2a_8_5BU68eAj--lN_jn9mkGbO9yGxJgXqZppNZzfdf_Pla=
+A0zuxaU8FL_jVvO39kBo-Kyalk45mY0vBOc1HH6qZ7iaDMEMyh3v7NuX3kUBpMxS7F7qax9HbFQ=
+GyvX2ut5swvV1FHiWiIbIbW2f3-vdF4_U_iUiWNo6BBAOM0VMrbhq9GzS6EkQwadD3c1mYszTPV=
+MVWb456nKoos2wkRmzbMD9kxascRKfzRwOea2AXXHOeFB6L9KKuq-1ilbNWNhcIsN63Jqqka_nL=
+CG8jIljxL7BgSQMrFaanTFxTgB2b7Eu0i5eKkMj5l_qX3MwGAZVUDP4k0wCix--yBhRvPVZ_2cX=
+0TwEysrU9G4kf_25jHIoAj5X0Tv6BQFuK0P-HoUfSdKZcQduDggDSw0m7T2rXQF9g1ZOEgDUAh8=
+YjJ7RK5xXGnvPS8HL4mtzYyqoYWSS-eAUkI23-jz6Ej82_AiKR7QEbfEUYDkcygo9y3lTXF1gCq=
+CgOuPbpaIAeaxInylmfTmnjZVEWn_M2tuH9JaTAM3dfGPmpCJqEGZ0_KGxEO2wKshTOb7fvsPTg=
+AZdLd4uZRm3SlXXlOZx9p-KZ8gU_rRfWbVe0TR_2JW9GS5UI9vAi921P5OYsbrsy5HtC0jfNwvT=
+n1q1bia-MF6niDAO1KTpDBVcH2BAr8rgWEDzILKkAKde9PYitDLV_zGIEVR9d9fes/4i8/2-Gjz=
+maRQYS-MUqprhuc-g/h16/h001.3rWfubXHjAdB3EHPS6OxT4m-o4dDno8BiBgdaF3Wck4" tar=
+get=3D"_blank" rel=3D"noopener noreferrer nofollow"><span>Lionsgate</span><=
+/a></span><span style=3D""> and </span><span style=3D""><a class=3D"link" h=
+ref=3D"https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf75St_4h=
+4uVDlb2B1USeB_HANmkwcE76lijv95DHzFyymvM4uOz7sXar0VY7WG_NFSGMM3QiayrnZXNA_-L=
+3DfoxYgkGUfheTkzmMdmkGECnjEaBbwGaff_9Vvv-OelgoDMBehjqrM-lgfVcEe88GmsNG06TIy=
+soDyMqh1I7rcB8T75EmZBuvsht2r_EeuTtE2Jm8LVvEerEpX5ZRndvxlNYj40_-adA7A5zIb28S=
+w_atJNWZAtlLqWBJwzOxcMurprOw2c9UaD1nMHB0Fi1mF8HD84o2JAfTV2KTZn8ZKLcaLf8snHJ=
+ErCe-_H7yVHMxZR9BxRe5hVbH7G_JdmluG0Gk-OzZRb8T8xU-NpSv7eQ3lAof156rgvIyX4FO7n=
+t-vwPueQiz36m-6of7Uer2GZn0j02wC9wiU3Vpk4--O-2vtvIT9-vV7MCIzjRtaMK2tUr8r2rgI=
+prrPW5htq-m7UqkpFohasUO2EP5PxHWuHPsBzQVPqGssqK0MYnZxVaGFxois_KZWyKo-TMc-XBD=
+9EBaCbUIlXiLTqIeHODKoiAFdnHDg3Ulsr-E2NfujpAhsecGPYEYMw37eAMmqDx0JL9Os1ODIwK=
+skONt3jVrgL54XwLoaLRsyEJL5nRQB6FG7iL4MhGGdH_NgI1TdQg1RpeKEkIpac1gYQY_qiyJLh=
+aaNNek2-QYurBP-nmh9KQ0SzGp29ThT4WmR8S5sYQqTgzuQF2GoC5EKSIIMLZF2oZs0AiO6QA_q=
+XrFsuTx8cd75UmH7D4i-O_o2LBjI_7P3TaypeawbVXeCIjYTCwgubc/4i8/2-GjzmaRQYS-MUqp=
+rhuc-g/h17/h001.MA3gBOyfP4LnMa4SaI7CGp2wXvppog4kBonIGK98jSE" target=3D"_bla=
+nk" rel=3D"noopener noreferrer nofollow"><span>AMC Networks</span></a></spa=
+n><span style=3D"">, pushing to further infuse AI into filmmaking workflows=
+.</span></p></li></ul></div></td></tr><tr><td class=3D"dd" align=3D"left" s=
+tyle=3D"padding:0px 15px;text-align:left;word-break:break-word;"><p style=
+=3D"mso-line-height-alt:150.0%;"><span style=3D""><b>Why it matters: </b></=
+span><span style=3D"">While AI adoption in Hollywood is publicly frowned up=
+on, it=E2=80=99s privately being adopted en masse =E2=80=94 and few compani=
+es are pushing that shift harder than Runway. With creative models continui=
+ng to evolve at a wild pace, AI=E2=80=99s use in the industry is coming, wh=
+ether fans and actors want it or not.</span></p></td></tr></table></td></tr=
+></table></td></tr><tr><td class=3D"dd" align=3D"left" style=3D"padding:0px=
+ 15px;text-align:left;word-break:break-word;"><p style=3D"mso-line-height-a=
+lt:150.0%;"></p></td></tr><tr><td><table role=3D"none" width=3D"100%" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D""><tr><td bgcolor=3D"#=
+FFFFFF" style=3D"background-color:#FFFFFF;border-color:#000000;border-radiu=
+s:10px;border-style:solid;border-width:2px;padding:0.0px 0.0px 0.0px 0.0px;=
+"><table role=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0"><tr><td class=3D"dd" align=3D"left" valign=3D"top" style=3D"col=
+or:#000000;font-weight:Normal;padding:0px 15px;text-align:left;"><h6 style=
+=3D"color:#000000;font-weight:Normal;mso-line-height-alt:87.5%;"><span styl=
+e=3D"">AI TRAINING</span></h6></td></tr><tr><td class=3D"dd" align=3D"left"=
+ valign=3D"top" style=3D"color:#000000;font-weight:Bold;padding:0px 15px;te=
+xt-align:left;"><h4 style=3D"color:#000000;font-weight:Bold;mso-line-height=
+-alt:112.5%;">=F0=9F=93=A7<span style=3D""><b>&nbsp;</b></span><span style=
+=3D""><span style=3D"text-decoration:underline;"><a class=3D"link" href=3D"=
+https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1E=
+gItxTfJFstKjgpUyJTS2zOCV9e7voGlXrJ_hf5_OY6ZqDjjSLD2MS1VUfT6rbjIil1TmMgJu95j=
+M5M-fHK4omjBewzXOo6zSYZG78mAYmziqFGaRv-2gEklcWzV8vvU-dXZNsd7Okdnd3xG3Ya-TNJ=
+EbeVd7MCZEcVTvD3OQY5pSH6R63zD22s8Wuxwzhow68i5lhB_rcOkb4VcTRmY_FkZkfN9r7-Pyv=
+bjRzMlz5bIFLYe_SWjXIn0lL8TT0Lkjs945JEJ2cDTOBKvtcaivT3MSF29avb3EtpOt_f0rfAwe=
+4pL5hQXGy98JUEO009BauK1H6CD8/4i8/2-GjzmaRQYS-MUqprhuc-g/h18/h001.B_dWHNVcEg=
+qP-L6XHAfB9qSAH7-Prm2XPR8q2eG4X5s" target=3D"_blank" rel=3D"noopener norefe=
+rrer nofollow"><span><b>Automate personalized sales outreach at scale</b></=
+span></a></span></span></h4></td></tr><tr><td align=3D"center" valign=3D"to=
+p" style=3D"padding-bottom:8px;padding-left:15px;padding-right:15px;padding=
+-top:2px; " class=3D"dd"><table role=3D"none" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" style=3D"margin:0 auto 0 auto;"><tr><td align=3D"center=
+" valign=3D"top" style=3D"width:666px;"><img src=3D"https://media.beehiiv.c=
+om/cdn-cgi/image/fit=3Dscale-down,format=3Dauto,onerror=3Dredirect,quality=
+=3D80/uploads/asset/file/999a3bb6-0d54-44e1-ab97-bb7c705dfb06/vsnovjwe.png?=
+t=3D1752619532" alt=3D"" height=3D"auto" width=3D"666" style=3D"display:blo=
+ck;width:100%;border-radius:0px 0px 0px 0px;border-style:solid;border-width=
+:0px 0px 0px 0px;box-sizing:border-box;border-color:#E5E7EB;" border=3D"0">=
+</td></tr></table></td></tr><tr><td class=3D"dd" align=3D"left" style=3D"pa=
+dding:0px 15px;text-align:left;word-break:break-word;"><p style=3D"mso-line=
+-height-alt:150.0%;"><span style=3D""><b>The Rundown:</b></span><span style=
+=3D""> In this tutorial, you will learn how to create a Zapier AI agent tha=
+t automatically researches companies from your spreadsheet and drafts perso=
+nalized sales emails, saving hours of manual outreach.</span></p></td></tr>=
+<tr><td class=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-align:le=
+ft;word-break:break-word;"><p style=3D"mso-line-height-alt:150.0%;"><span s=
+tyle=3D""><b>Step-by-step:</b></span></p></td></tr><tr><td style=3D"padding=
+-bottom:10px;padding-left:25px;padding-right:25px;padding-top:0px;" class=
+=3D"ee"><div style=3D"margin-left:0px;" class=3D"edm_outlooklist"><ol start=
+=3D"1" style=3D"list-style-type:decimal;margin:0px 0px;padding:0px 0px 0px =
+0px;"><li class=3D"listItem ultext"><p style=3D"mso-line-height-alt:150.0%;=
+padding:0px;text-align:left;word-break:break-word;"><span style=3D"">Create=
+ a new Zapier agent and set the trigger to =E2=80=9COn demand=E2=80=9D</spa=
+n></p></li><li class=3D"listItem ultext"><p style=3D"mso-line-height-alt:15=
+0.0%;padding:0px;text-align:left;word-break:break-word;"><span style=3D"">W=
+rite detailed instructions: research company =E2=86=92 populate contact inf=
+o =E2=86=92 draft personalized email =E2=86=92 generate subject and body</s=
+pan></p></li><li class=3D"listItem ultext"><p style=3D"mso-line-height-alt:=
+150.0%;padding:0px;text-align:left;word-break:break-word;"><span style=3D""=
+>Connect the Google Sheets tool and select your leads spreadsheet with comp=
+any, name, and email columns</span></p></li><li class=3D"listItem ultext"><=
+p style=3D"mso-line-height-alt:150.0%;padding:0px;text-align:left;word-brea=
+k:break-word;"><span style=3D"">Add Gmail integration with =E2=80=9CCreate =
+Draft=E2=80=9D option (not send) for review control</span></p></li><li clas=
+s=3D"listItem ultext"><p style=3D"mso-line-height-alt:150.0%;padding:0px;te=
+xt-align:left;word-break:break-word;"><span style=3D"">Test with a small ba=
+tch, review generated drafts, then scale to the full lead list.</span></p><=
+/li></ol></div></td></tr><tr><td class=3D"dd" align=3D"left" style=3D"paddi=
+ng:0px 15px;text-align:left;word-break:break-word;"><p style=3D"mso-line-he=
+ight-alt:150.0%;"><span style=3D""><b>Pro tip:</b></span><span style=3D""> =
+Always use =E2=80=9CCreate Draft=E2=80=9D instead of =E2=80=9CSend Email=E2=
+=80=9D so you can review and refine each message before it goes out.</span>=
+</p></td></tr></table></td></tr></table></td></tr><tr><td class=3D"dd" alig=
+n=3D"left" style=3D"padding:0px 15px;text-align:left;word-break:break-word;=
+"><p style=3D"mso-line-height-alt:150.0%;"></p></td></tr><tr><td><table rol=
+e=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D""><tr><td bgcolor=3D"#FFFFFF" style=3D"background-color:#FFFFFF;bo=
+rder-color:#000000;border-radius:10px;border-style:solid;border-width:2px;p=
+adding:0.0px 0.0px 0.0px 0.0px;"><table role=3D"none" width=3D"100%" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tr><td class=3D"dd" align=3D"le=
+ft" valign=3D"top" style=3D"color:#000000;font-weight:Normal;padding:0px 15=
+px;text-align:left;"><h6 style=3D"color:#000000;font-weight:Normal;mso-line=
+-height-alt:87.5%;"><span style=3D"">PRESENTED BY IBM</span></h6></td></tr>=
+<tr><td class=3D"dd" align=3D"left" valign=3D"top" style=3D"color:#000000;f=
+ont-weight:Bold;padding:0px 15px;text-align:left;"><h4 style=3D"color:#0000=
+00;font-weight:Bold;mso-line-height-alt:112.5%;">=F0=9F=A4=96<span style=3D=
+"font-weight:600;"><b>&nbsp;</b></span><span style=3D"font-weight:600;"><a =
+class=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0Bk=
+NqLYPjeMfzRa9FUcKH2jIvEubBoGbXCEwjdIhjHrwqLs1hHH2l5rpAK6T25DNWRSArkTbu34CMn=
+mzIdvaVCNyMsix8U-ORlQRPknUFyNd_4q8HV945rP6LBixcXPlZjyE0qxI1TTjsr0kS8WHFK5Ia=
+f-cx1hePSNiQBUafLvhcTRicJt2enDYYMzwhIeTvbCbxlTs_b6JrYug2fH2Dkx3EjjTCdqnnNsJ=
+XguNng7wjpQcJL4sHvR2mI6QcoyP_ANKCpJyRWHqh1fjAnlR4VUJeXpAchsxdr0kcqdFjCdGIhI=
+282weFXQWTUpKAAqcnSBNllRBxQjF5RKeyPdk-SXMV2Cn8fIHBwzC0qTrf84iVNfx0qkoRdYjuK=
+Wy_DKyZZCvKpOat9VlIlknS9sIVfFS76ZrV5rAns7tgJE1aGaUK9lgA1S4UZC/4i8/2-GjzmaRQ=
+YS-MUqprhuc-g/h19/h001.IBVPWBrUcCrFeIC9-4t3RgXpyREWqYiLv1WD8vcpEeA" target=
+=3D"_blank" rel=3D"noopener noreferrer nofollow"><span><span style=3D"text-=
+decoration:underline;"><b>Agentic AI for APIs</b></span></span></a></span><=
+/h4></td></tr><tr><td align=3D"center" valign=3D"top" style=3D"padding-bott=
+om:8px;padding-left:15px;padding-right:15px;padding-top:2px; " class=3D"dd"=
+><table role=3D"none" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"margin:0 auto 0 auto;"><tr><td align=3D"center" valign=3D"top" style=
+=3D"width:666px;"><a href=3D"https://link.mail.beehiiv.com/ss/c/u001.dSnm3k=
+aGd0BkNqLYPjeMfzRa9FUcKH2jIvEubBoGbXCEwjdIhjHrwqLs1hHH2l5rpAK6T25DNWRSArkTb=
+u34CMnmzIdvaVCNyMsix8U-ORlQRPknUFyNd_4q8HV945rP6LBixcXPlZjyE0qxI1TTjsr0kS8W=
+HFK5Iaf-cx1hePSNiQBUafLvhcTRicJt2enDYYMzwhIeTvbCbxlTs_b6JrYug2fH2Dkx3EjjTCd=
+qnnNsJXguNng7wjpQcJL4sHvR2mI6QcoyP_ANKCpJyRWHqh1fjAnlR4VUJeXpAchsxdr0kcqdFj=
+CdGIhI282weFXQWTUpKAAqcnSBNllRBxQjF5RKeyPdk-SXMV2Cn8fIHBzWiDTweHOQVapghWe52=
+8rFDZJpmC6l-4mG5vUTymTBj9q5ZWeJGixM-GBpJlrswPGzHzSnodIGsyl7DXEby6PK/4i8/2-G=
+jzmaRQYS-MUqprhuc-g/h20/h001.0hJw7-1ner1_I1Wcdhwt5HGTb7a-eyFS7cWSe46s5qA" r=
+el=3D"noopener noreferrer nofollow" style=3D"text-decoration:none;" target=
+=3D"_blank"><img src=3D"https://media.beehiiv.com/cdn-cgi/image/fit=3Dscale=
+-down,format=3Dauto,onerror=3Dredirect,quality=3D80/uploads/asset/file/6091=
+868b-2f4d-4be2-9680-5b7d8e91a394/image_-_2025-07-14T122934.180.jpeg?t=3D175=
+2598572" alt=3D"" height=3D"auto" width=3D"666" style=3D"display:block;widt=
+h:100%;border-radius:0px 0px 0px 0px;border-style:solid;border-width:0px 0p=
+x 0px 0px;box-sizing:border-box;border-color:#E5E7EB;" border=3D"0"></a></t=
+d></tr></table></td></tr><tr><td class=3D"dd" align=3D"left" style=3D"paddi=
+ng:0px 15px;text-align:left;word-break:break-word;"><p style=3D"mso-line-he=
+ight-alt:150.0%;"><span style=3D""><b>The Rundown:</b></span><span style=3D=
+""> IBM=E2=80=99s API Agent brings agentic AI to API Connect, transforming =
+prompts into production-ready APIs.</span></p></td></tr><tr><td class=3D"dd=
+" align=3D"left" style=3D"padding:0px 15px;text-align:left;word-break:break=
+-word;"><p style=3D"mso-line-height-alt:150.0%;"><span style=3D""><b>With A=
+PI Agent, you can:</b></span></p></td></tr><tr><td style=3D"padding-bottom:=
+10px;padding-left:25px;padding-right:25px;padding-top:0px;" class=3D"ee"><d=
+iv style=3D"margin-left:0px;" class=3D"edm_outlooklist"><ul style=3D"font-w=
+eight:400;list-style-type:disc;margin-bottom:8px !important;margin-top:8px =
+!important;padding:0px 0px 0px 0px;"><li class=3D"listItem ultext"><p style=
+=3D"mso-line-height-alt:150.0%;padding:0px;text-align:left;word-break:break=
+-word;"><span style=3D"">Let AI handle design, validation, and deployment t=
+o Code Engine automatically</span></p></li><li class=3D"listItem ultext"><p=
+ style=3D"mso-line-height-alt:150.0%;padding:0px;text-align:left;word-break=
+:break-word;"><span style=3D"">Manage standards and cut manual steps for fa=
+st API delivery</span></p></li><li class=3D"listItem ultext"><p style=3D"ms=
+o-line-height-alt:150.0%;padding:0px;text-align:left;word-break:break-word;=
+"><span style=3D"">Harness agentic AI to turn your API ideas into secured, =
+production-ready reality</span></p></li></ul></div></td></tr><tr><td class=
+=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-align:left;word-break=
+:break-word;"><p style=3D"mso-line-height-alt:150.0%;"><span style=3D""><a =
+class=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0Bk=
+NqLYPjeMfzRa9FUcKH2jIvEubBoGbXCEwjdIhjHrwqLs1hHH2l5rpAK6T25DNWRSArkTbu34CMn=
+mzIdvaVCNyMsix8U-ORlQRPknUFyNd_4q8HV945rP6LBixcXPlZjyE0qxI1TTjsr0kS8WHFK5Ia=
+f-cx1hePSNiQBUafLvhcTRicJt2enDYYMzwhIeTvbCbxlTs_b6JrYug2fH2Dkx3EjjTCdqnnNsJ=
+XguNng7wjpQcJL4sHvR2mI6QcoyP_ANKCpJyRWHqh1fjAnlR4VUJeXpAchsxdr0kcqdFjCdGIhI=
+282weFXQWTUpKAAqcnSBNllRBxQjF5RKeyPdk-SXMV2Cn8fIHBy7lgmSID-jCTBvZecWxaMV151=
+ASvR9Tgo5USqV845O9zEv8fY_UNdyHRwqc_pZinNhIE9IzoLtBBYhF-fqy01j/4i8/2-GjzmaRQ=
+YS-MUqprhuc-g/h21/h001.4jh0_yHzIW7Sr432XtXDNVS9QIPuMxKGxB3-J7yaNq8" target=
+=3D"_blank" rel=3D"noopener noreferrer nofollow"><span>Try API Agent today<=
+/span></a></span><span style=3D"">.</span></p></td></tr></table></td></tr><=
+/table></td></tr><tr><td class=3D"dd" align=3D"left" style=3D"padding:0px 1=
+5px;text-align:left;word-break:break-word;"><p style=3D"mso-line-height-alt=
+:150.0%;"></p></td></tr><tr><td><table role=3D"none" width=3D"100%" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D""><tr><td bgcolor=3D"#F=
+FFFFF" style=3D"background-color:#FFFFFF;border-color:#000000;border-radius=
+:10px;border-style:solid;border-width:2px;padding:0.0px 0.0px 0.0px 0.0px;"=
+><table role=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0"><tr><td class=3D"dd" align=3D"left" valign=3D"top" style=3D"colo=
+r:#000000;font-weight:Normal;padding:0px 15px;text-align:left;"><h6 style=
+=3D"color:#000000;font-weight:Normal;mso-line-height-alt:87.5%;"><span styl=
+e=3D"">AI RESEARCH</span></h6></td></tr><tr><td class=3D"dd" align=3D"left"=
+ valign=3D"top" style=3D"color:#000000;font-weight:Bold;padding:0px 15px;te=
+xt-align:left;"><h4 style=3D"color:#000000;font-weight:Bold;mso-line-height=
+-alt:112.5%;">=F0=9F=A7=A0<span style=3D"">&nbsp;</span><span style=3D""><a=
+ class=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/u001.KT4rQsO6sHS=
+_v2VASG2xug65oYs4g0h1j2Ll3d2C0wz2jfZ5iK95n1B6IlbyU4F_jhxhldFJ6EO1SSH0RPdNJu=
+lxb5MHM7cmQDLYnfn9x3nsHje2mdFmzvhlQjuykLgdT8bwx0LdPlp55HWktRngsWRHhtJYHukrg=
+Tu2KtZvy0YU2CG0Pd2HESEqfQtIE6iKazDHI_ni378OkpPn4Kc0oEvH8mBZ1hko6QUFJWcLW3bt=
+7J--3RtpZU-DdKIwpAZlcTRf17bCOE6an524aD6hum0vGRNjC5VXPdZq4xTi4o0Su6xoOJUx39z=
+oEIYS4HdIM0-Ssy16h5n0F5VWDTb5ig/4i8/2-GjzmaRQYS-MUqprhuc-g/h22/h001.1MfiKPO=
+QfZZlg3NJhMLtKRDHTyO5U4tLkwd8EUxjkGY" target=3D"_blank" rel=3D"noopener nor=
+eferrer nofollow"><span><span style=3D"text-decoration:underline;"><b>AI re=
+searchers unite on reasoning transparency</b></span></span></a></span></h4>=
+</td></tr><tr><td align=3D"center" valign=3D"top" style=3D"padding-bottom:8=
+px;padding-left:15px;padding-right:15px;padding-top:2px; " class=3D"dd"><ta=
+ble role=3D"none" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D=
+"margin:0 auto 0 auto;"><tr><td align=3D"center" valign=3D"top" style=3D"wi=
+dth:666px;"><img src=3D"https://media.beehiiv.com/cdn-cgi/image/fit=3Dscale=
+-down,format=3Dauto,onerror=3Dredirect,quality=3D80/uploads/asset/file/d37d=
+ff9b-406c-4a67-aed1-d7a0dce2f2f4/cot1.jpg?t=3D1752613084" alt=3D"" height=
+=3D"auto" width=3D"666" style=3D"display:block;width:100%;border-radius:0px=
+ 0px 0px 0px;border-style:solid;border-width:0px 0px 0px 0px;box-sizing:bor=
+der-box;border-color:#E5E7EB;" border=3D"0"></td></tr><tr><td align=3D"left=
+" valign=3D"top" class=3D"t" style=3D"width:666px; padding: 4px 0px 4px 0px=
+;"><p><span style=3D"">Image source: Ideogram / The Rundown</span></p></td>=
+</tr></table></td></tr><tr><td class=3D"dd" align=3D"left" style=3D"padding=
+:0px 15px;text-align:left;word-break:break-word;"><p style=3D"mso-line-heig=
+ht-alt:150.0%;"><span style=3D""><b>The Rundown: </b></span><span style=3D"=
+">Leading researchers from OpenAI, DeepMind, Anthropic, and other major ins=
+titutions </span><span style=3D""><a class=3D"link" href=3D"https://link.ma=
+il.beehiiv.com/ss/c/u001.KT4rQsO6sHS_v2VASG2xug65oYs4g0h1j2Ll3d2C0wz2jfZ5iK=
+95n1B6IlbyU4F_jhxhldFJ6EO1SSH0RPdNJulxb5MHM7cmQDLYnfn9x3nsHje2mdFmzvhlQjuyk=
+LgdT8bwx0LdPlp55HWktRngsWRHhtJYHukrgTu2KtZvy0YU2CG0Pd2HESEqfQtIE6iKazDHI_ni=
+378OkpPn4Kc0oEvH8mBZ1hko6QUFJWcLW3bt7J--3RtpZU-DdKIwpAZlcTRf17bCOE6an524aD6=
+husCqWJoaYnPqGmp3mv9MssPKD6YOOOuJBP0C6xAVI8lc5wILCS2P6F4YFU8tpqAxsQ/4i8/2-G=
+jzmaRQYS-MUqprhuc-g/h23/h001.w67MV9fZbupusQit2H_qTv2W3ROhXnse_dkjA9eRbss" t=
+arget=3D"_blank" rel=3D"noopener noreferrer nofollow"><span>published</span=
+></a></span><span style=3D""> a paper calling for deeper investigation into=
+ monitoring the &quot;chains of thought&quot; in AI reasoning models, argui=
+ng it could be a vital safety tool.</span></p></td></tr><tr><td class=3D"dd=
+" align=3D"left" style=3D"padding:0px 15px;text-align:left;word-break:break=
+-word;"><p style=3D"mso-line-height-alt:150.0%;"><span style=3D""><b>The de=
+tails: </b></span></p></td></tr><tr><td style=3D"padding-bottom:10px;paddin=
+g-left:25px;padding-right:25px;padding-top:0px;" class=3D"ee"><div style=3D=
+"margin-left:0px;" class=3D"edm_outlooklist"><ul style=3D"font-weight:400;l=
+ist-style-type:disc;margin-bottom:8px !important;margin-top:8px !important;=
+padding:0px 0px 0px 0px;"><li class=3D"listItem ultext"><p style=3D"mso-lin=
+e-height-alt:150.0%;padding:0px;text-align:left;word-break:break-word;"><sp=
+an style=3D"">The paper highlights =E2=80=9Cchain-of-thought=E2=80=9D (CoT)=
+ traces, the model=E2=80=99s step-by-step problem-solving paths, as a rare =
+window into model decision-making.</span></p></li><li class=3D"listItem ult=
+ext"><p style=3D"mso-line-height-alt:150.0%;padding:0px;text-align:left;wor=
+d-break:break-word;"><span style=3D"">The researchers call for a deeper stu=
+dy of tracking these reasoning processes, warning that transparency could e=
+rode as models evolve or training shifts.</span></p></li><li class=3D"listI=
+tem ultext"><p style=3D"mso-line-height-alt:150.0%;padding:0px;text-align:l=
+eft;word-break:break-word;"><span style=3D"">Notable signatories include Op=
+enAI's Mark Chen, SSI's Ilya Sutskever, Nobel laureate Geoffrey Hinton, and=
+ DeepMind co-founder Shane Legg.</span></p></li><li class=3D"listItem ultex=
+t"><p style=3D"mso-line-height-alt:150.0%;padding:0px;text-align:left;word-=
+break:break-word;"><span style=3D"">Researchers propose developing standard=
+ized evaluations for &quot;monitorability&quot; and incorporating these sco=
+res into deployment decisions for frontier models.</span></p></li></ul></di=
+v></td></tr><tr><td class=3D"dd" align=3D"left" style=3D"padding:0px 15px;t=
+ext-align:left;word-break:break-word;"><p style=3D"mso-line-height-alt:150.=
+0%;"><span style=3D""><b>Why it matters: </b></span><span style=3D"">This r=
+are moment of industry consensus highlights a critical inflection point whe=
+re we can still see AI's decision-making process =E2=80=94 and the concern =
+that competitive pressures may eventually lead to that window being closed =
+if AI labs don=E2=80=99t act to preserve it. </span></p></td></tr></table><=
+/td></tr></table></td></tr><tr><td class=3D"dd" align=3D"left" style=3D"pad=
+ding:0px 15px;text-align:left;word-break:break-word;"><p style=3D"mso-line-=
+height-alt:150.0%;"></p></td></tr><tr><td><table role=3D"none" width=3D"100=
+%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D""><tr><td bgco=
+lor=3D"#000000" style=3D"background-color:#000000;border-color:#000000;bord=
+er-style:solid;border-width:2px;padding:0.0px 0.0px 0.0px 0.0px;"><table ro=
+le=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+><tr><td class=3D"dd" align=3D"center" style=3D"padding:0px 15px;text-align=
+:center;word-break:break-word;"><p style=3D"mso-line-height-alt:150.0%;"><s=
+pan style=3D"color:#FFFFFF;"><b>QUICK HITS</b></span></p></td></tr></table>=
+</td></tr></table></td></tr><tr><td class=3D"dd" align=3D"left" style=3D"pa=
+dding:0px 15px;text-align:left;word-break:break-word;"><p style=3D"mso-line=
+-height-alt:150.0%;"></p></td></tr><tr><td><table role=3D"none" width=3D"10=
+0%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D""><tr><td bgc=
+olor=3D"#FFFFFF" style=3D"background-color:#FFFFFF;border-color:#000000;bor=
+der-radius:10px;border-style:solid;border-width:2px;padding:0.0px 0.0px 0.0=
+px 0.0px;"><table role=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0"><tr><td class=3D"dd" align=3D"left" valign=3D"top" sty=
+le=3D"color:#000000;font-weight:Bold;padding:0px 15px;text-align:left;"><h3=
+ style=3D"color:#000000;font-weight:Bold;mso-line-height-alt:125.0%;"><span=
+ style=3D"">=F0=9F=9B=A0=EF=B8=8F </span><span style=3D""><span style=3D"te=
+xt-decoration:underline;"><b><a class=3D"link" href=3D"https://link.mail.be=
+ehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf_DKThdpaPaB9_aROy42m38SWULb4gYNTf9=
+_76RMjqVZPTvY2-tPH0ookACNgroqx2Ixjo4iQErggh0XUKwSeWPQ0BJtFGbFiiehTvitEKFbUz=
+jwRAGfUxAX76fnr1Pox_KYhsFBYofN8Ogu2ZME18ZwHMDjtfcBPw7Q6Mqdq3QWfu3cONjNeozGn=
+yGaimMpHv8ZJ_uDH1Q8OLU2wFhK3ZzLeUC2rgtq3xDLsIUU2JkB/4i8/2-GjzmaRQYS-MUqprhu=
+c-g/h24/h001.YhaV8ynnu1s5AOpAnerh_G254TjAO0Ha1sLS9GT90B4" target=3D"_blank"=
+ rel=3D"noopener noreferrer nofollow"><span>Trending AI Tools</span></a></b=
+></span></span></h3></td></tr><tr><td style=3D"padding-bottom:10px;padding-=
+left:25px;padding-right:25px;padding-top:0px;" class=3D"ee"><div style=3D"m=
+argin-left:0px;" class=3D"edm_outlooklist"><ul style=3D"font-weight:400;lis=
+t-style-type:disc;margin-bottom:8px !important;margin-top:8px !important;pa=
+dding:0px 0px 0px 0px;"><li class=3D"listItem ultext"><p style=3D"mso-line-=
+height-alt:150.0%;padding:0px;text-align:left;word-break:break-word;"> =F0=
+=9F=A4=97<span style=3D"">&nbsp;</span><span style=3D""><a class=3D"link" h=
+ref=3D"https://link.mail.beehiiv.com/ss/c/u001.6k0_SAz8nrOuu_-LoNX1HeRS2C90=
+t4q6i6SLQ6cZHmN6R91FoCfJt1eZFOOpdTDvUWjzMwXBytKeewCTL5ncMkmmP9pfcgHq0ftLpnk=
+8kxyv-vdFvKjDi3uP9IFLNEh_Q8I2T-nQJUsmlJ7MAAaNom_OY9MCIjsgzQ9pFjTTA6jtVjq9uj=
+ILBdnss5_5t_67so8IL47LoUaJ50PqxWO3kzMy1L7kL35dmFeTSVQ7w4owjvQkc3pFSLPYQNgUT=
+13qoY9hs22d0n4nAMhinwd_rwEaYVOzJ35N_8plH_u75OE/4i8/2-GjzmaRQYS-MUqprhuc-g/h=
+25/h001.ta1gJ7k9kpoInpdKBtAa1HVbjqwxb3WJzDZplMJB-wk" target=3D"_blank" rel=
+=3D"noopener noreferrer nofollow"><span>AI Companions</span></a></span><spa=
+n style=3D""> - xAI=E2=80=99s new Grok-powered interactive avatars</span></=
+p></li><li class=3D"listItem ultext"><p style=3D"mso-line-height-alt:150.0%=
+;padding:0px;text-align:left;word-break:break-word;"><span style=3D"">=F0=
+=9F=97=A3=EF=B8=8F </span><span style=3D""><a class=3D"link" href=3D"https:=
+//link.mail.beehiiv.com/ss/c/u001.BKH0F2yLXfXXfZz4rVL6MAw2457WV2gBpMF40_0G_=
+srfvPvemTA_W8QiFBPCeI8rVY9gQyDyJApnLk7XEXSFDJ4BA5MRxK02QzSa07RfyAnmcBFaZanU=
+s_RLQEibMqHWnXZvAk4h3QXehGVrxKJLRB7Y4efUpldjz0ZTzibJHt6adj70MKrKV-pdctUF-xA=
+9hFMUU0mq7Yib4-HyT2mRQP4lPQlg6wh9vARwJka-tXeI9Zgu8C1wpxg5oneJNOu9ovdPEPXyQJ=
+YNHph2KRsDDQ/4i8/2-GjzmaRQYS-MUqprhuc-g/h26/h001.61WpEM0yOVlD8KGsG3qwfOcV-8=
+xEp_1Zw-zbxa1i5rA" target=3D"_blank" rel=3D"noopener noreferrer nofollow"><=
+span>Voxtral</span></a></span><span style=3D""> - Mistral=E2=80=99s first o=
+pen-source voice model for speech understanding</span></p></li><li class=3D=
+"listItem ultext"><p style=3D"mso-line-height-alt:150.0%;padding:0px;text-a=
+lign:left;word-break:break-word;"> =F0=9F=93=93<span style=3D"">&nbsp;</spa=
+n><span style=3D""><a class=3D"link" href=3D"https://link.mail.beehiiv.com/=
+ss/c/u001.u02qJFHqR61XIkDbYtOHoGBwLYBcRMfMmLR2JTsZhAHHwXl2T59fkGQNGjGjCpdzZ=
+IS24LkJP01nfTSUaoobw8LUzv--AvV7XcoxnALOlgfMdCME3rnsB7QHg7jaZeRe-g4hi8zxzun1=
+1OxYtnPhp6f6pf83iE_pSK0esOACrNc_kV-HQBEF714sI96e1w3hVvaV0uPQ5fPCK6UbHPxNf3R=
+nVMbk4JE8u1BJRLcxS4GkLfBxi9uoGQHq6Re7dL-Izr5Z5MWKRTr-XyUZ6tQ0AQkIVRHdtoIv_A=
+xCZCnRI9z9WO8qm2l33lgstGHGUxyF/4i8/2-GjzmaRQYS-MUqprhuc-g/h27/h001.s9PLW9DR=
+FzBrd_Olq_g3oaH5eLrCS0C-XhRNDufCNWs" target=3D"_blank" rel=3D"noopener nore=
+ferrer nofollow"><span>NotebookLM</span></a></span><span style=3D""> - New =
+featured notebooks for expert advice on specific topics </span></p></li><li=
+ class=3D"listItem ultext"><p style=3D"mso-line-height-alt:150.0%;padding:0=
+px;text-align:left;word-break:break-word;"><span style=3D"">=F0=9F=93=9A </=
+span><span style=3D""><a class=3D"link" href=3D"https://link.mail.beehiiv.c=
+om/ss/c/u001.a3gBHu6_kDRL6l3yEfNWAfnammT6wSM-7IcFHcmD10plzdpi5vS0AA0Qrlj2m6=
+83-5ncz1hgXbgqTA1GujhVvpf9nBYW4LiryXLfF5M_UfTKdWw1F2RovD_w1-R1TrQT_KxgOhtbK=
+6IykI-Ox5yDbwhtkm3bkCTX8X-sHvwDap27ZZY9cAzsgALj8O-JU6goR6KtdRTkLgCkk45GV-Gh=
+Zd48341DeOLdV3F7RJmk9TigDZWZHznhwZLpi5jOitXC/4i8/2-GjzmaRQYS-MUqprhuc-g/h28=
+/h001.OlTwO6fPz1kz7mktGI-FLBblH9gFkk-7CiG5fSsfORQ" target=3D"_blank" rel=3D=
+"noopener noreferrer nofollow"><span>Claude Directory</span></a></span><spa=
+n style=3D""> - A new directory of tools that connect to Claude</span></p><=
+/li></ul></div></td></tr></table></td></tr></table></td></tr><tr><td class=
+=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-align:left;word-break=
+:break-word;"><p style=3D"mso-line-height-alt:150.0%;"></p></td></tr><tr><t=
+d><table role=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" style=3D""><tr><td bgcolor=3D"#FFFFFF" style=3D"background-colo=
+r:#FFFFFF;border-color:#000000;border-radius:10px;border-style:solid;border=
+-width:2px;padding:0.0px 0.0px 0.0px 0.0px;"><table role=3D"none" width=3D"=
+100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tr><td class=3D"dd"=
+ align=3D"left" valign=3D"top" style=3D"color:#000000;font-weight:Bold;padd=
+ing:0px 15px;text-align:left;"><h3 style=3D"color:#000000;font-weight:Bold;=
+mso-line-height-alt:125.0%;">=F0=9F=92=BC<span style=3D"">&nbsp;</span><spa=
+n style=3D""><span style=3D"text-decoration:underline;"><b><a class=3D"link=
+" href=3D"https://link.mail.beehiiv.com/ss/c/u001.ptzCNad3P3I6BL6vWVKYhCO2O=
+KetLNBcNgLqPSjInJyrzZyyit7MB2y6Z0p1M6skG9mSial45jtKBFxk1-j4t47OdO6zs_DT3GZv=
+36_yFTlERmX9Pj0oKpayQVysWFNZKD_ScJQBrGxmhV_lXe8ZyB9BjUiBU4V4MpPIEey6VkNXaR3=
+9wBwYzNz4Nxscz90xiHDl8eGOqkHJ4w5-BOA7ukC_uLvrdT7Qpto6dT-9HjNPO_bhcU3XyHNMBe=
+KTnIgL/4i8/2-GjzmaRQYS-MUqprhuc-g/h29/h001.4efnR5QN8Uowm8RcFOUvlMB9zMNG5qXK=
+PI-ZRbDiuoI" target=3D"_blank" rel=3D"noopener noreferrer nofollow"><span>A=
+I Job Opportunities</span></a></b></span></span></h3></td></tr><tr><td styl=
+e=3D"padding-bottom:10px;padding-left:25px;padding-right:25px;padding-top:0=
+px;" class=3D"ee"><div style=3D"margin-left:0px;" class=3D"edm_outlooklist"=
+><ul style=3D"font-weight:400;list-style-type:disc;margin-bottom:8px !impor=
+tant;margin-top:8px !important;padding:0px 0px 0px 0px;"><li class=3D"listI=
+tem ultext"><p style=3D"mso-line-height-alt:150.0%;padding:0px;text-align:l=
+eft;word-break:break-word;"><span style=3D"">=F0=9F=97=82=EF=B8=8F </span><=
+span style=3D""><a class=3D"link" href=3D"https://link.mail.beehiiv.com/ss/=
+c/u001.ptzCNad3P3I6BL6vWVKYhCO2OKetLNBcNgLqPSjInJyAUTbkQdP0HFQlGXuLpZVAeZ8L=
+AXrkJDiBEGkJmn0NDZjbEU6L4pSZIaR4FDWCp1tcWXZBQymZ_Fo6VwXspFd8M0Dn40ag2P38T8t=
+2TyokVw9TVkIyU9bIzXaIQfbHmgRNDp5dk7_8rqlapuMRQqjvwbd3tyKqp85BwYJYBUV11yfzy6=
+7L110H2ZJX9PiUQGJa-qXSkF7QOjvp1dh4u6dDnGp4VpKAY7CEqsCTUqONmeres4T-iL7oJt5xe=
+SazaIcOmaaWX2f_-wfXt05P450a/4i8/2-GjzmaRQYS-MUqprhuc-g/h30/h001.Pi1G2oGUCda=
+7rdDUhyoN-3M919hsPnmzr-013yu2BDw" target=3D"_blank" rel=3D"noopener norefer=
+rer nofollow"><span>Deepmind</span></a></span><span style=3D""> - Administr=
+ative Business Partner</span></p></li><li class=3D"listItem ultext"><p styl=
+e=3D"mso-line-height-alt:150.0%;padding:0px;text-align:left;word-break:brea=
+k-word;"> =F0=9F=92=A1<span style=3D"">&nbsp;</span><span style=3D""><a cla=
+ss=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/u001.ptzCNad3P3I6BL6=
+vWVKYhCO2OKetLNBcNgLqPSjInJw4EvYe0ibbemWW-Z23DqLVN0ajpUWmSPOt9PCe1kV64VKGNO=
+t0g1XwKI6G8v0RrX9jNu3iyFiCnS1I5zwTYS2sP6JkvAn_QCeRbhl6vDM-fxgPfgGOueOHPiIoK=
+zaBH8O1ju0DKXqiGa72O8kZdXf3TMLrwqNJOvjEhPDZJEEmWekWUemvkdUbdW42xpHjFsf0NTwG=
+EW-WRW6BN6tH8d0DtqE7PZebm-ONay0H_5cGlk0z_t6XdKEg3KAcE-wy6UM/4i8/2-GjzmaRQYS=
+-MUqprhuc-g/h31/h001.fYe-a-Fsc5nR_2LC7F22u9OWE04kZ4zjjy1vcBHdQHo" target=3D=
+"_blank" rel=3D"noopener noreferrer nofollow"><span>Cresta</span></a></span=
+><span style=3D""> - Demo Engineer</span></p></li><li class=3D"listItem ult=
+ext"><p style=3D"mso-line-height-alt:150.0%;padding:0px;text-align:left;wor=
+d-break:break-word;"> =F0=9F=A4=9D<span style=3D"">&nbsp;</span><span style=
+=3D""><a class=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/u001.ptz=
+CNad3P3I6BL6vWVKYhCO2OKetLNBcNgLqPSjInJyhzfVO6nl4uTdHyS3SW2UFpp6MBBcvY9MQ_g=
+KrOCymhe4jXoWq1RPkbvNKp8yGpsZw8dbney6zoRh1dPsAYjmD7Em_ra4yiHUGzK-M-FtewZtUO=
+BlktrrnXcCRdrn9yg6etPO6Pi70bmObnDGWq0AuuQPIgCOECm68Ub6rxXSnz2NPu6dVjC6TUvUI=
+KXoUcEKEfcuGVrxL_mimhFL0AHuBMg1f6XmPzS5zuaz1SbNVd89p2tEv9xPnxe9ReKp28Q_8V6v=
+AZVmz88yZ76MBl0qc/4i8/2-GjzmaRQYS-MUqprhuc-g/h32/h001.yB1ITEZRDvBoLS-cp8IyS=
+Si-2wFLeJC0no8IAErGuGw" target=3D"_blank" rel=3D"noopener noreferrer nofoll=
+ow"><span>Databricks</span></a></span><span style=3D""> - Associate Account=
+ Executive</span></p></li><li class=3D"listItem ultext"><p style=3D"mso-lin=
+e-height-alt:150.0%;padding:0px;text-align:left;word-break:break-word;"><sp=
+an style=3D"">=F0=9F=8F=97=EF=B8=8F </span><span style=3D""><a class=3D"lin=
+k" href=3D"https://link.mail.beehiiv.com/ss/c/u001.ptzCNad3P3I6BL6vWVKYhCO2=
+OKetLNBcNgLqPSjInJwVNmj8kH23GjweuqGyFUwvMbv1WnE5mPjQkLuIZTdvTCsp-uC0gYhRRGj=
+dfpi_H9xvQ8oWDbJQZKFwot1yvbdEiUcKry4AcUNyPy1e-11rBtvuMep9QYAK6rwptRXD8dIHnX=
+SniqgSIvsxRsTVRUqi-5wvM5sY2GiyhsYvca079YIsT2GsF1AywVIcNkmORGp1ql3Xw9oieDHM2=
+0HUDhnE-UDDT1ecfK02_JtqyI8y5pb9NwvJIr5vr2jdraJ4ckJeTbM7CS4Hweotzb1GEW53/4i8=
+/2-GjzmaRQYS-MUqprhuc-g/h33/h001.5tUKCzzmSbcsE321muyQi8CUdFA4zQuJ5IS-Vm6br5=
+k" target=3D"_blank" rel=3D"noopener noreferrer nofollow"><span>Glean</span=
+></a></span><span style=3D""> - Solutions Architect</span></p></li></ul></d=
+iv></td></tr></table></td></tr></table></td></tr><tr><td class=3D"dd" align=
+=3D"left" style=3D"padding:0px 15px;text-align:left;word-break:break-word;"=
+><p style=3D"mso-line-height-alt:150.0%;"></p></td></tr><tr><td><table role=
+=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" s=
+tyle=3D""><tr><td bgcolor=3D"#FFFFFF" style=3D"background-color:#FFFFFF;bor=
+der-color:#000000;border-radius:10px;border-style:solid;border-width:2px;pa=
+dding:0.0px 0.0px 0.0px 0.0px;"><table role=3D"none" width=3D"100%" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tr><td class=3D"dd" align=3D"le=
+ft" valign=3D"top" style=3D"color:#000000;font-weight:Bold;padding:0px 15px=
+;text-align:left;"><h3 style=3D"color:#000000;font-weight:Bold;mso-line-hei=
+ght-alt:125.0%;">=F0=9F=93=B0<span style=3D"">&nbsp;</span><span style=3D""=
+><span style=3D"text-decoration:underline;"><a class=3D"link" href=3D"https=
+://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf75St_4h4uVDlb2B1USe=
+B_EWu6NGmSKrLF3KTZEGmu0FMGw2aylDQdQ8oxAtHaSxGUgppSZfJqt7cGmZgI0psa-NmWxgihu=
+J7j5P28dPV8fOKqjpsvz7lZSpv-JVIj8BzBB6LhCdnkJWRFk-_zf8phVsFh4Zqmo6nUx9PJdZqR=
+KAlT_20nZBSq7qTUQCPKUIgUa5R9DHFln6KHkUjL9ppnKYfAxisA2pW3Du8ixtYvK8sRtL67hUb=
+cmKLBPyc4SoTJxBDEQSqQjNLpKtE3doUS2XvlibjBWBCi_uRxRXda0j7lIvC6EEIun7L8UqZpwp=
+Q2URLGgvHORNiwUBRhI_eIRLi5z9uaMEAR5QyY7fxGnJ39BpDcAGhIONrOqidwPMIuy0wLLio1k=
+fxa_Rr102rLEMDheTNYTX1oJfFUBJ7Rzm0m3Q_G_0Oouqz5s5aqZBxFAfHfnbyq9jh3ujasVxPz=
+7UFWisBD4jN1ygRhDseppPxoLkj0io5q-ubkRR8hXG7EmgrEE2DIoHpFzsqAcqUqAfbFEJjjjDe=
+CTkO_oQUwMQlQ8t7AEaVqrzpCX7vx1bIVAZxvMqgqU4p9hy9J9XfeELAh9cl1D5vgZCGIj6apTq=
+g1izZ5qLUo55wyUSUlSq3lBOdgyJ7DM5QpYto9OI_YdwJ0zLvHcTDFMnA-iKl8X_Mg4RXuRyhAY=
+JeuVF5Po_A34pgCBYG5bEJgQrGIJr6U9V2N3O0wtZgBa71qLwMGjfOLKYZegRyBflI0aPqeaDcw=
+/4i8/2-GjzmaRQYS-MUqprhuc-g/h34/h001.PbnWPmhHgKXjnwu61tjq99suXL0OO067UrbrHw=
+oc6rM" target=3D"_blank" rel=3D"noopener noreferrer nofollow"><span>Everyth=
+ing else in AI today</span></a></span></span></h3></td></tr><tr><td class=
+=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-align:left;word-break=
+:break-word;"><p style=3D"mso-line-height-alt:150.0%;"><span style=3D""><b>=
+Mistral </b></span><span style=3D""><a class=3D"link" href=3D"https://link.=
+mail.beehiiv.com/ss/c/u001.BKH0F2yLXfXXfZz4rVL6MAw2457WV2gBpMF40_0G_srfvPve=
+mTA_W8QiFBPCeI8rVY9gQyDyJApnLk7XEXSFDJ4BA5MRxK02QzSa07RfyAnmcBFaZanUs_RLQEi=
+bMqHWnXZvAk4h3QXehGVrxKJLRB7Y4efUpldjz0ZTzibJHt6adj70MKrKV-pdctUF-xA94USgaV=
+_04IEn966vRlrwC_LMK7zsZRHLeNG8B3VF6ObcX26EkoyH2ieN_n2ai9YpB6QIluJzc1zZkEO3X=
+89nRg/4i8/2-GjzmaRQYS-MUqprhuc-g/h35/h001.PgBETIzWWessvjC_wYKruEaqUlBby6M1W=
+VV6iRDRUTg" target=3D"_blank" rel=3D"noopener noreferrer nofollow"><span>un=
+veiled</span></a></span><span style=3D""> Voxtral, a low-cost, open-source =
+speech understanding model family that combines transcription with native Q=
+&amp;A capabilities.</span></p></td></tr><tr><td class=3D"dd" align=3D"left=
+" style=3D"padding:0px 15px;text-align:left;word-break:break-word;"><p styl=
+e=3D"mso-line-height-alt:150.0%;"><span style=3D""><b>Google </b></span><sp=
+an style=3D""><a class=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/=
+u001.u02qJFHqR61XIkDbYtOHoGBwLYBcRMfMmLR2JTsZhAHPZteM2hZDfiD-HL0bncIF9wyyKU=
+ZWX-aLiZr6EC-tHj36wlms3TQpyN8HU3QSYPph4TdQxWi109_Z3p7GkTllX6wA0i9HG0-5Jc1vo=
+PHdULifDIyDBTDWfAVkkxzGOanWFCElpwBTyPNvmZ71VMK_MKvrW5lf6qmiD8dbnbtOmOQIZ7cJ=
+QEVYkeEdPz_fxdpakiGKcVdhY2-YBM0XkxL8bav2TtqtVTF85_w6avWqUo4StNGq7Sm6PrbYySe=
+7vLr3E6FhUBmrqTKT5HItIQB4CjJKirz0zpEQnhkuUkWVIg/4i8/2-GjzmaRQYS-MUqprhuc-g/=
+h36/h001.8ATiHtXn7Oo2_Qiq8JdVLMFsm8DFE0KWu-9pxIIvtkw" target=3D"_blank" rel=
+=3D"noopener noreferrer nofollow"><span>revealed</span></a></span><span sty=
+le=3D""> that its AI security agent, Big Sleep, discovered a critical secur=
+ity flaw that allowed Google to stop the vulnerability before it was exploi=
+ted.</span></p></td></tr><tr><td class=3D"dd" align=3D"left" style=3D"paddi=
+ng:0px 15px;text-align:left;word-break:break-word;"><p style=3D"mso-line-he=
+ight-alt:150.0%;"><span style=3D""><b>U.S. President Donald Trump </b></spa=
+n><span style=3D""><a class=3D"link" href=3D"https://link.mail.beehiiv.com/=
+ss/c/u001.dSnm3kaGd0BkNqLYPjeMf_FkzdFM2Zj1tBmdqDhPldfgNO9KnWsAyGwPWQ2l_qC5d=
+6n1IcIoltnDJc7HwKrFA-GnJffGt9TXkzuf41LnMdHXuN9nhX8qIrwnX6dAU8inJi7ld-e1JfwK=
+6C1An6lqZL7daMfmmiy6ms2H7M7AULDSezSSu3EVtFej-8iy-uJOoyWac5hDzeXG7cfjJGlqvOy=
+KZqt9PzeEnaTE4P1_r4p3aU8FLwtJCcjWTAz_bwBwMtKcIfTAw_1GYxIJ0u83qiF_uMW2ghC_X3=
+nGdQOIDmj4kLjMu79v4KmrcLy535ds_eddzd4nlXT9StXRkRAacg/4i8/2-GjzmaRQYS-MUqprh=
+uc-g/h37/h001.WGygPQYYzcCorIRYRQC0uCI7CrE2d8OhEGoVjPW6BQY" target=3D"_blank=
+" rel=3D"noopener noreferrer nofollow"><span>announced</span></a></span><sp=
+an style=3D""> over $92B in AI and energy investments at a Pennsylvania sum=
+mit, saying America=E2=80=99s destiny is to be the =E2=80=9CAI superpower.=
+=E2=80=9D</span></p></td></tr><tr><td class=3D"dd" align=3D"left" style=3D"=
+padding:0px 15px;text-align:left;word-break:break-word;"><p style=3D"mso-li=
+ne-height-alt:150.0%;"><span style=3D""><b>Google </b></span><span style=3D=
+"">is </span><span style=3D""><a class=3D"link" href=3D"https://link.mail.b=
+eehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMfyzbPJdh2qAj8kGiBAmrmvaPtifelUHF6o=
+AWMs5Blm5fFx-YxpYT-FtyHooHycwh-C-1YmReA8GDB9nNU9eCLVGM5QDeeNw6u1Sfi7f2nboRo=
+dW0V_FW9g8T1UKumfcyzrVXo186eyj9bN3jDv97EDnFu1dL_2maL6W-2wPjrJZCityw_FBdHyY5=
+IPrqXmeXAbeS6UCewG3p385Z8CwVdPp5Brf7CkKVJBrqRekJcerhpj5oLMQhP6VtPVpG93jKkMj=
+dXkkpMvsWpE2bbH4UJjfE7eaMwTuNpFlWHdRkHJWp20NKEu1CbLqOW4Yf3BlJHI4tNYreAnBaj5=
+36KJT3bB0/4i8/2-GjzmaRQYS-MUqprhuc-g/h38/h001.NvP0ML1_l8fm3fKjvLAdmfb8LjOHZ=
+R4Wl0oeHbKvzDY" target=3D"_blank" rel=3D"noopener noreferrer nofollow"><spa=
+n>investing</span></a></span><span style=3D""> $25B in data centers and AI =
+infrastructure across the PJM electric grid region, including $3B to modern=
+ize Pennsylvania hydropower plants.</span></p></td></tr><tr><td class=3D"dd=
+" align=3D"left" style=3D"padding:0px 15px;text-align:left;word-break:break=
+-word;"><p style=3D"mso-line-height-alt:150.0%;"><span style=3D""><b>Anthro=
+pic </b></span><span style=3D""><a class=3D"link" href=3D"https://link.mail=
+.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf937MUSrYzK6JzB2n81ON3xsWKo-5K2w=
+dIjMsqALxPuJkEgfo5c4gmy9iU52HSUeavCg_6fCLgAZvOBjNsWHNFeTPyRMc9keK8OrXy6el7e=
+PBYmOzH6ioXoBzkmQfKoAA5xwfJ_uHQQuIUE9sjm5KoahREncFEYuup9stBnEly-8-WEENSW8hW=
+kB0Hf_NcKOhSmjqdCeSQgyFLd0FPPCvIcEOnHXAyNt7fItU7N1KtKedrExYmrZpua8Y44M-0aSv=
+Imo3HlU8QkaoQO7EV50uxs/4i8/2-GjzmaRQYS-MUqprhuc-g/h39/h001.5oz16esVYMxa47Wo=
+HgjNSivYV5gdX_iTu3Va7AEZMGo" target=3D"_blank" rel=3D"noopener noreferrer n=
+ofollow"><span>launched</span></a></span><span style=3D""> Claude for Finan=
+cial Services, a solution that integrates Claude with market data and enter=
+prise platforms for financial institutions. </span></p></td></tr><tr><td cl=
+ass=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-align:left;word-br=
+eak:break-word;"><p style=3D"mso-line-height-alt:150.0%;"><span style=3D"">=
+<b>Nvidia</b></span><span style=3D"">&nbsp;</span><span style=3D""><a class=
+=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYP=
+jeMf9dPeOgbqaHm-Y4uhItLwOp_ju793eIvwVqDq2GKxfQgY8mPVygXNxha_p_LEhs1ihqf0WDC=
+pxW0D5xqIIdd-6UySWvwBsqMHAVl7doLA0MbXyVG7HWYWK8i8vwPbwoYtsnq5CPlSjK-SXBsi_O=
+N9R7f2H51D3VpsaADjZaTJScXtYTsKZk1youn3C5A_trXt_h6EX6bLB03jKF-z3qPDRPxeOJ0W3=
+CDq1PgzG1NfOuq9pokjb524vHZO3ZXR9l8TZnW8oruexA2U48v5ZfGbW8eNnp3k7DJv6kMsNR67=
+yVpZpF-70L675N-2ebee4GX4A/4i8/2-GjzmaRQYS-MUqprhuc-g/h40/h001.qJrRpuM_Tt53I=
+qN-HOJfj8cXttnKq2bI4VcbJqYZXUc" target=3D"_blank" rel=3D"noopener noreferre=
+r nofollow"><span>plans</span></a></span><span style=3D""> to resume sales =
+of its H20 AI chip to China after CEO Jensen Huang received assurances from=
+ U.S. leadership, with AMD also resuming sales in the region. </span></p></=
+td></tr></table></td></tr></table></td></tr><tr><td class=3D"dd" align=3D"l=
+eft" style=3D"padding:0px 15px;text-align:left;word-break:break-word;"><p s=
+tyle=3D"mso-line-height-alt:150.0%;"></p></td></tr><tr><td><table role=3D"n=
+one" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=
+=3D""><tr><td bgcolor=3D"#000000" style=3D"background-color:#000000;border-=
+color:#000000;border-style:solid;border-width:2px;padding:0.0px 0.0px 0.0px=
+ 0.0px;"><table role=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0"><tr><td class=3D"dd" align=3D"center" style=3D"padding:0=
+px 15px;text-align:center;word-break:break-word;"><p style=3D"mso-line-heig=
+ht-alt:150.0%;"><span style=3D"color:#FFFFFF;"><b>COMMUNITY</b></span></p><=
+/td></tr></table></td></tr></table></td></tr><tr><td class=3D"dd" align=3D"=
+left" style=3D"padding:0px 15px;text-align:left;word-break:break-word;"><p =
+style=3D"mso-line-height-alt:150.0%;"></p></td></tr><tr><td><table role=3D"=
+none" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=
+=3D""><tr><td bgcolor=3D"#FFFFFF" style=3D"background-color:#FFFFFF;border-=
+color:#000000;border-radius:10px;border-style:solid;border-width:2px;paddin=
+g:0.0px 0.0px 0.0px 0.0px;"><table role=3D"none" width=3D"100%" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0"><tr><td class=3D"dd" align=3D"left" v=
+align=3D"top" style=3D"color:#000000;font-weight:Bold;padding:0px 15px;text=
+-align:left;"><h3 style=3D"color:#000000;font-weight:Bold;mso-line-height-a=
+lt:125.0%;">=F0=9F=8E=A5<span style=3D"">&nbsp;</span><span style=3D""><spa=
+n style=3D"text-decoration:underline;"><b><a class=3D"link" href=3D"https:/=
+/link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJ=
+EyhyxN8R8UWGdj3PMuUSqebLbyd_dOBpGP8UK-2v7Mj7tY-B96fOwz20TAjdcyoNOTfS9vO95TY=
+B_1SvrHniuy9QchMwumR2hFQ8lGbP_aaGLPSgPuVW8sTf2J_nFSQfMhuQ2sAOnK4bjyuTF42OSH=
+KWNS-I9AEgqI-thON5aYxxlF4Lz9dATTqU_OoyEjWb2ltso1VDXP1aHk8x0eFtu_lG37JioQ7CK=
+ZDrqbXNRcURugFlwQPq4VY9M2AhHjO2G7P3XxMHa-jyqMe8XGTTkr/4i8/2-GjzmaRQYS-MUqpr=
+huc-g/h41/h001.CS2SzkIjxdo7yZoTWkNSRz05LBXh2V7e4XYUv3eR8FY" target=3D"_blan=
+k" rel=3D"noopener noreferrer nofollow"><span>Join our next live workshop</=
+span></a></b></span></span></h3></td></tr><tr><td align=3D"center" valign=
+=3D"top" style=3D"padding-bottom:8px;padding-left:15px;padding-right:15px;p=
+adding-top:2px; " class=3D"dd"><table role=3D"none" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" style=3D"margin:0 auto 0 auto;"><tr><td align=3D"=
+center" valign=3D"top" style=3D"width:666px;"><a href=3D"https://link.mail.=
+beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJEyhyxN8R8UW=
+Gdj3PMuUSqebLbyd_dOBpGP8UK-2v7Mj7tY-B96fOwz20TAjdcyoNOTfS9vO95TYB_1SvrHniuy=
+9QchMwumR2hFQ8lGbP_aaGLPSgPuVW8sTf2J_nFSQfMhuQ2sAOnK4bjyuTF42OSHKWNS-I9AEgq=
+I-thON5aYxxlF4Lz9dATTqU_OoyEjWb1Op1IxiB2eIW88hT_zvZVb7tOh8Sx6FeC3P8U8fEYakA=
+so_FUoUMuCJZYC2Dba3QB-ptyq2XuKnoerGQ-MbjNI/4i8/2-GjzmaRQYS-MUqprhuc-g/h42/h=
+001.0FU9IpkerD7nJ-lpD1OfHzRur7adIIrYDXfSkhRqjxA" rel=3D"noopener noreferrer=
+ nofollow" style=3D"text-decoration:none;" target=3D"_blank"><img src=3D"ht=
+tps://media.beehiiv.com/cdn-cgi/image/fit=3Dscale-down,format=3Dauto,onerro=
+r=3Dredirect,quality=3D80/uploads/asset/file/c71156f1-0f54-4056-9da5-ec5bea=
+0d54ad/whatevervnsvi.png?t=3D1752642859" alt=3D"" height=3D"auto" width=3D"=
+666" style=3D"display:block;width:100%;" border=3D"0"></a></td></tr></table=
+></td></tr><tr><td class=3D"dd" align=3D"left" style=3D"padding:0px 15px;te=
+xt-align:left;word-break:break-word;"><p style=3D"mso-line-height-alt:150.0=
+%;"><span style=3D"">Join our next workshop this Friday, July 18th, at 4 PM=
+ EST with Dr. Alvaro Cintas, The Rundown=E2=80=99s AI professor. By the end=
+ of the workshop, you'll be able to use Perplexity Comet (and other alterna=
+tives) to automate your browsing experience.</span></p></td></tr><tr><td cl=
+ass=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-align:left;word-br=
+eak:break-word;"><p style=3D"mso-line-height-alt:150.0%;"><span style=3D"">=
+RSVP </span><span style=3D""><b><a class=3D"link" href=3D"https://link.mail=
+.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJEyhyxN8R8U=
+WGdj3PMuUSqebLbyd_dOBpGP8UK-2v7Mj7tY-B96fOwz20TAjdcyoNOTfS9vO95TYB_1SvrHniu=
+y9QchMwumR2hFQ8lGbP_aaGLPSgPuVW8sTf2J_nFSQfMhuQ2sAOnK4bjyuTF42OSHKWNS-I9AEg=
+qI-thON5aYxxlF4Lz9dATTqU_OoyEjWb3kNf2mwExXmYo5hKVp7P76MzIQs-5vpIHKMN_TDOD8H=
+2Su1dMLV0Gk6BXOIhe10iVaAZt_PYz_pJEnc-j6xi0i/4i8/2-GjzmaRQYS-MUqprhuc-g/h43/=
+h001.7IurhIM1QSDoVdJQjXCSc6Fkmv-MsWmtWTHq6AGzlB4" target=3D"_blank" rel=3D"=
+noopener noreferrer nofollow"><span>here</span></a></b></span><span style=
+=3D"">. Not a member? Join </span><span style=3D""><b><a class=3D"link" hre=
+f=3D"https://link.mail.beehiiv.com/ss/c/u001.NN3LcSSNlElMIHwAnhfMXU6KHmur7b=
+waQblVUOresUDRGu9zQCOecTRqc_0N_j4BogYt4fC92j_CK6d5Q79nHQ0cKO4l8XXjXNlTWT8r2=
+EbKDekwLi7S-gPg9apaHOeFhhpc2A3ETWZBpiS_LzeJO-YGCCTMTKO7ON7QpCSX1i1clfzibDOM=
+eP0e2KCc23dmTW-XTz3pvk7Lje9njFb90DhBUqkuMi7Lg1AbuwU8UeukTqSrOZ08vGwrJsX6ont=
+AUXc9Pb1kQ3m2Qkw0FcCppA/4i8/2-GjzmaRQYS-MUqprhuc-g/h44/h001.hh4i8_4asScutMJ=
+tpiSW9ja9U6SfuaCkfaj_fEIKHXk" target=3D"_blank" rel=3D"noopener noreferrer =
+nofollow"><span>The Rundown University</span></a></b></span><span style=3D"=
+"> on a 14-day free trial.</span></p></td></tr></table></td></tr></table></=
+td></tr><tr><td class=3D"dd" align=3D"left" style=3D"padding:0px 15px;text-=
+align:left;word-break:break-word;"><p style=3D"mso-line-height-alt:150.0%;"=
+></p></td></tr><tr><td><table role=3D"none" width=3D"100%" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0" style=3D""><tr><td bgcolor=3D"#FFFFFF" sty=
+le=3D"background-color:#FFFFFF;border-color:#000000;border-radius:10px;bord=
+er-style:solid;border-width:2px;padding:0.0px 0.0px 0.0px 0.0px;"><table ro=
+le=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+><tr><td class=3D"e" align=3D"left" valign=3D"top" style=3D"padding:15px 15=
+px 8px;"><h3 style=3D"">That's it for today!</h3><p style=3D"">Before you g=
+o we=E2=80=99d love to know what you thought of today's newsletter to help =
+us improve The Rundown experience for you.</p></td></tr><tr><td class=3D"ee=
+ e " style=3D"padding:0px 15px 15px;"><div style=3D"margin-left:0px;" class=
+=3D"edm_outlooklist"><table role=3D"none" border=3D"0" cellspacing=3D"4" ce=
+llpadding=3D"0" align=3D"left" style=3D"min-width:300px;"><tr><td style=3D"=
+width:100%;border:1px solid rgba(50, 50, 50, 0.17);padding:6px 12px; border=
+-radius:4px;"><a style=3D"font-style:normal;text-decoration:none;" href=3D"=
+https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf75St_4h4uVDlb2=
+B1USeB_E10kZbxTKUcaUGWe6T1cw3jJ_rhJAAdhA-a57LkuMgT7ZkUFa_DVrGVW2lwkZ-2VbwfI=
+AZMQlGIrFItJb0FggJmPLIa7MLoWxS_V8Skkv_ZQ4JbPvTERd39mcVwl_k53-PN8O7SLptIaqeQ=
+1n0Xon_7IBo1HUaUzIaQHRK02OxpPTFkbOwSLm0CC21FrDCOCZbVI_hmfOVjk-uV2T7N5H7caI-=
+xadc_5Glh3tYgYyf0IijGQqJgcqhyDl3LKFWvjo4kqNmSmSt50CGax3jG2nwwij1NkGm6lrTYgj=
+DHA6dDllYKgaAyCbdDh05SVnKybu85U1inQxc4rHERd4ycUQbNjU8PgrUobcPxt2jgT8jaW0Yhw=
+3xj4RjjMQtwQ72YQq2MPgnUI6zcf9g4aJjYUszu6VhHQOK8UjOFmMmEfUwR5Mi-fiUtpx39ZJfD=
+cO16VKie1AvZSAPkyGOGTnEdvH_gF7sTYE1Vd1LGR7OzE_m-Xa0yZNKlqAbA1sFUNhzsrR88rkq=
+RX-XtQck0aB59XbeYVVG0DrpPuztX7kkJghwbkbW1RblJ098NHyQ2B8KCHk7RCDoUIiwMb2Tyl9=
+gc3-JCo0IWONSSc6GHByBiCdvS6yoW-l_BayV-KQoaWNCe8t47b8rHhfWIDdWGY_RU9p8B9L_UB=
+MKtuOY5cYKoh837oi2iBonIQlwlM7HztPLNXByvLCarGc2AfIT5SFWmF_W3EX5dvPrARTyJd39f=
+DJ34FyoeRYQ3131c3N7EJw3_E-1kTtURujGuV0uz8orX6wcxipR_uHvHk56n1UVVKA7VjF0opKO=
+H-oXO-aGD_t_sEA/4i8/2-GjzmaRQYS-MUqprhuc-g/h45/h001.zLZ-f5wnMoY9HQDZlD4XHU9=
+KPJYRyDqWXkeu59LIvS4"><p style=3D"font-size:14px;color:inherit;"> =E2=AD=90=
+=EF=B8=8F=E2=AD=90=EF=B8=8F=E2=AD=90=EF=B8=8F=E2=AD=90=EF=B8=8F=E2=AD=90=EF=
+=B8=8F Nailed it </p></a></td></tr><tr><td style=3D"width:100%;border:1px s=
+olid rgba(50, 50, 50, 0.17);padding:6px 12px; border-radius:4px;"><a style=
+=3D"font-style:normal;text-decoration:none;" href=3D"https://link.mail.beeh=
+iiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf75St_4h4uVDlb2B1USeB_E10kZbxTKUcaUGW=
+e6T1cw3jJ_rhJAAdhA-a57LkuMgT7ZkUFa_DVrGVW2lwkZ-2VYN2-fF6Asnl1MF6wGxUlvF8S72=
+_jIMAvhMiMQ14d9nSiR5s3MbReAqlzGLv3qfKyM8l0kvxSYbBXkSBt8jtUwhthuHgEl8neGP42_=
+Sc1dkF5DJDRw2yRjU5zCnvJzQ6UEXvpn9rBoqDAUYospNTMfustKQ_WWcwxuiQXDi9juM2oKrWf=
+Ho6VTHeCDGzWs1b1gfmQBLwDl9fpo3subOiTNmeOSrofTALzrVSh-Q5gucYF2wa75UMDwyGtRS1=
+u_ANJTvl78qC_HPS540-KjlLrJo-B79_GM_MvFgAi97Dh01JURXAAX5sj9dvFnVlDA9m0Sa0Ek2=
+Rd7zd_gZz8ArBEgNjtcPd3jqpIkz3Sc1XAF8rJJb6v_X1XdFg0nF_pSqwZgL1dtz3Ss792zhNZx=
+SFCnS9yGxhGq7Bqn7xXwfQJjyE8m58mFi9pnx8j8QOqIMEvuv5ApnYUA-wwyfJMfaKW8PB5YxA-=
+sQkuZ6lMXvT9Ic_1_XXcyJAQPyhIoWpVUx6Yf1I-OCZoz5pvnqe5RaYxntzPGOClSAJVOay2d29=
+cA_D7ei7QR2BgNbY3YN4MSePt8E3b4NAvzKaUt82Rf4MZzhmR5NxJc3qn3I29-TvZCGf0aMAuhv=
+JW-UQqhU5mELz5b4u5qojhb0JG7WZUzkCxsquCT7QpLeckCsV_AXS28ke-LxBjczs3VuAfcq0E9=
+_odlIHoV7MMv-Vje3jPxDlD3vpGiiQ_EeVLKVkqOARvxdgCNgRvdfBF1Mp7wpKdjL8-E/4i8/2-=
+GjzmaRQYS-MUqprhuc-g/h46/h001.oSyOpieE-fd_vdyj6E_nq6m34jcv0NjvoF3sBSfVsLg">=
+<p style=3D"font-size:14px;color:inherit;"> =E2=AD=90=EF=B8=8F=E2=AD=90=EF=
+=B8=8F=E2=AD=90=EF=B8=8F Average </p></a></td></tr><tr><td style=3D"width:1=
+00%;border:1px solid rgba(50, 50, 50, 0.17);padding:6px 12px; border-radius=
+:4px;"><a style=3D"font-style:normal;text-decoration:none;" href=3D"https:/=
+/link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf75St_4h4uVDlb2B1USeB_=
+E10kZbxTKUcaUGWe6T1cw3jJ_rhJAAdhA-a57LkuMgT7ZkUFa_DVrGVW2lwkZ-2VYV04V4piidd=
+mnd8y9qE4i3-k1Eh7MZ_g6aUo7_92Bp5EWt0SVw27y17m1NgAMpF9KugHA7Ky2CE8-aZWB4csbr=
+XnDsigYeyvpupPlgSS6J_2AysbVxvatth0Uqhvr7YzwjQQyapMyZoEQtt02Ed5D-nwnk3fvq_9m=
+tAuzXvWif0JQM13uXkFR4q_v4NP-RQfrNKWXYzF7_JxO5U_y1DBgrVTB1b1MhndBPfUphA9pcIy=
+piIF4KCVZdLhzlB-tHUWsnVjkbZCahbdRdxQhDUBbaufJOQf6zJSyhSahEQAUqqIgV4dMA0Ogqn=
+cHSD7yjWgQ2OA38c0OywP7PcVDmhgd-RIFlQOxVK86ekeGODA9Y4sqBIYv00jUI-s4R1BhDhzmZ=
+xDUt3zN92DCe_VFhYcJcNx2RZLNVw15NyCbqpionfP8-D6Z555aGcx2vA45N03PQ0M33iSo3k_t=
+DbLJAs-0UbGKOtcx18ETLEP2_u7L7enBICdIRx6cDDo0n7lO3x3pv7RfDbxEvFg9JuEBVgULC0W=
+pYDXvXkA5xTerxOACjipwUpt8bpFjv2Y6ew9XyJav8JMsWQihjiXkZIDOjzXSd_6f5K_XnAQ8j_=
+FeNqO6Bxv5DWUMJrPgZTH4-ci0oZ5RSbv5RRYSRxJYs9DSEqb648bIP03dl0cG6UmWpaA5Qj33d=
+LsrTso02bWIBYixk-ZTsJ1FUU0NPgGOSg0zc-_0wBxNcAasAxHrBMTktr-YlvttHl4VQ1AMPB6b=
+SxLXWZik/4i8/2-GjzmaRQYS-MUqprhuc-g/h47/h001.bh874osl9gzAvFonhbLSWAuUMhnGF9=
+oXOUBUDexZFsk"><p style=3D"font-size:14px;color:inherit;"> =E2=AD=90=EF=B8=
+=8F Fail </p></a></td></tr></table></div></td></tr><tr><td class=3D"dd" ali=
+gn=3D"left" style=3D"padding:0px 15px;text-align:left;word-break:break-word=
+;"><p style=3D"mso-line-height-alt:150.0%;"><span style=3D"">See you soon,<=
+/span></p></td></tr><tr><td class=3D"dd" align=3D"left" style=3D"padding:0p=
+x 15px;text-align:left;word-break:break-word;"><p style=3D"mso-line-height-=
+alt:150.0%;"><span style=3D""><i>Rowan, Joey, Zach, Alvaro, and Jason=E2=80=
+=94The Rundown=E2=80=99s editorial team</i></span></p></td></tr></table></t=
+d></tr></table></td></tr></table></td></tr></table></td></tr><tr><td align=
+=3D"center" valign=3D"top"><table role=3D"none" width=3D"100%" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tr><td><tr><td class=
+=3D"b" align=3D"center" valign=3D"top" bgcolor=3D"#222222" style=3D"padding=
+:0px 0px 0px 0px;border-style:solid;border-width: 0px 0px 0px 0px;border-co=
+lor: #ffffff;border-bottom-left-radius:10px;border-bottom-right-radius:10px=
+;"><table role=3D"none" width=3D"100%" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" align=3D"center"><tr><td align=3D"center" valign=3D"top" bgcol=
+or=3D"#255bee" style=3D"padding:12px"><table role=3D"none" width=3D"100%" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tr><td><s=
+pan style=3D"padding-left:1px;"></span></td><td align=3D"center" valign=3D"=
+middle" width=3D"75" style=3D"width:75px;"><a href=3D"https://link.mail.bee=
+hiiv.com/ss/c/u001.KT4rQsO6sHS_v2VASG2xupM-pq8N3JAdCf8W79jjoS08JjE4uBIAS4_x=
+q5rVj_2sC4AahLq_scIr3u8X_VVErRhr_JO5zSQgzwMI2Yqd03wZ67tlIaGWD82pMCW8te-PZTM=
+EA7Du-0Q2nOZJyeiEbQWQK7GnudpNf3_KiYDEnvy2qdfgSEacgk5tJCV-oSt9BrkgByek9TS97-=
+OFIzI_SOpOSklgJ7Y3FrjfB-GH4Yy_ELWuy0vmZQ33FCsE-aNajdrni73OtuPoHAaxQdpyQA/4i=
+8/2-GjzmaRQYS-MUqprhuc-g/h48/h001.5LR8GlryfDwkFkVk_nDkKKsKaxmZLT42cjLd17e78=
+XA" style=3D"text-decoration:none;"><img width=3D"22" height=3D"22" alt=3D"=
+tw" border=3D"0" style=3D"display:block;max-width:22px;color:Light" src=3D"=
+https://media.beehiiv.com/cdn-cgi/image/fit=3Dscale-down,format=3Dauto,oner=
+ror=3Dredirect,quality=3D80/static_assets/x_light.png"></a></td><td align=
+=3D"center" valign=3D"middle" width=3D"75" style=3D"width:75px;"><a href=3D=
+"https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf1e7JMP5b6PDmC=
+YdhQ7iJ-gM3-SOxYsbNCuU6Bh1BmqHmnANOa4I2fY3y8Bnh69vVcMtZUYPHtuYb_CiFJnZ_AQL5=
+o-vpBWnAXu2QRScI1qA0CsgWhdz8-G9fmgSkCuIDxnMCh8b741cFea8m0yMdMKLaAAD3giAco0k=
+Tz937WlLILFTqd1S4lVGA2IArx7jCEQI6i7PmxZlZOyMWCXf0uGGPFd0z_3iotk6mBPYsQ-LS-D=
+G1A6m38w4bZnBfpPtHA/4i8/2-GjzmaRQYS-MUqprhuc-g/h49/h001.iQbfeW6IUsVnW58Bocx=
+Vmwp5EmKFvGb-WlKC-cNqBLk" style=3D"text-decoration:none;"><img width=3D"22"=
+ height=3D"22" alt=3D"ig" border=3D"0" style=3D"display:block;max-width:22p=
+x;color:Light" src=3D"https://media.beehiiv.com/cdn-cgi/image/fit=3Dscale-d=
+own,format=3Dauto,onerror=3Dredirect,quality=3D80/static_assets/instagram_l=
+ight.png"></a></td><td align=3D"center" valign=3D"middle" width=3D"75" styl=
+e=3D"width:75px;"><a href=3D"https://link.mail.beehiiv.com/ss/c/u001.qfYj2N=
+CVNYWxQpHjnkNP6ZIMYEvaSMAESv24GZdjnG1BXkJmsTHXv9UxhDwCZR7_rNIWMKP0KpQaK4fiV=
+X9kpE3OeuWht7Tag7bLr-AHr9qqt_a4X5UBwDFgBCU0luafLfSqRvWpJWKgYchS0H2MMqkDvF2l=
+ahDo3aXYajVM5fEM2LpvwbKHPkUhUe8eu1_H35QM7nI6UhzEQjeCqJ7g95YlIptzOjiZjMQMgi7=
+8L6Op4K_eJe0TouZkpP3z1YvT5CM4e2SxkjppIQ23G6hTMA/4i8/2-GjzmaRQYS-MUqprhuc-g/=
+h50/h001.AJRMsOv6vcL-Lg13QB8mdvPNgIT54WS1AJ1p44WSXqM" style=3D"text-decorat=
+ion:none;"><img width=3D"22" height=3D"22" alt=3D"in" border=3D"0" style=3D=
+"display:block;max-width:22px;color:Light" src=3D"https://media.beehiiv.com=
+/cdn-cgi/image/fit=3Dscale-down,format=3Dauto,onerror=3Dredirect,quality=3D=
+80/static_assets/linkedin_light.png"></a></td><td><span style=3D"padding-le=
+ft:1px;"></span></td></tr></table></td></tr><tr><td class=3D"dd" align=3D"c=
+enter" style=3D"padding:0px 15px;text-align:center;word-break:break-word;">=
+<p style=3D"mso-line-height-alt:150.0%;"><span style=3D"color:#FFFFFF;font-=
+size:0.8rem;">Want to sponsor us and get in front of 1,000,000+ AI enthusia=
+sts?</span><span style=3D"color:#FFFFFF;font-size:0.8rem;"><b>&nbsp;</b></s=
+pan><span style=3D"color:#FFFFFF;font-size:0.8rem;"><b><a class=3D"link" hr=
+ef=3D"https://link.mail.beehiiv.com/ss/c/u001.KT4rQsO6sHS_v2VASG2xutt47WToq=
+2lGcecIVNNQSNJJXsTbyja0MNJkdxClNtOPO7bWVC8G5SNwtEqed4o55-00goYqJiaXPJPhuWHy=
+eesA0OI3ZJih68-CfGaEPCcYF2MGS7C-eqpV0iwNmMg5fdViYow9jNVqm1MSIv3i-nEDSLL9qwS=
+uQTi-xpts415HcxSEW-A0ZxCefOBcuUGP8tQuH-d_z2Ohf75nr_mene0HVRz2VQZXW8P1840bsV=
+cDdHKUVcv8imwXgtUAB3pVHLuPEZMWX4fCjYnEO6tYOwE/4i8/2-GjzmaRQYS-MUqprhuc-g/h5=
+1/h001.Z8lqqfW5YZ_Jp5u4wA6sXPehQ-DXmXwnxYiA-Bl_ulI" target=3D"_blank" rel=
+=3D"noopener noreferrer nofollow"><span>Get in touch</span></a></b></span><=
+span style=3D"color:#FFFFFF;font-size:0.8rem;"><b>.</b></span></p></td></tr=
+><tr><td class=3D"dd" align=3D"center" style=3D"padding:0px 15px;text-align=
+:center;word-break:break-word;"><p style=3D"mso-line-height-alt:150.0%;"><s=
+pan style=3D"color:#FFFFFF;font-size:0.8rem;">Looking for more free AI reso=
+urces?</span><span style=3D"color:#FFFFFF;font-size:0.8rem;"><b>&nbsp;</b><=
+/span><span style=3D"color:#FFFFFF;font-size:0.8rem;"><b><a class=3D"link" =
+href=3D"https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf75St_4=
+h4uVDlb2B1USeB_E01PZL2p3Jv5gOI9-ncVxTDbEA4LpSYufBFV3YuSdVICElA6Vw3udLknJg6D=
+TT8EIWKRf055N6gti0U4u2GVwwY9SqgnkXslcNnrVEJnuDUjLBF_88s4E92BSg-LsLrO0v3jM8t=
+znRv6m_-DyYu796KcCG1RTbf7zZlqxPSaYmN1MECkA9DZMyE5Rpgg03_gzy24eLypcQEz0EV_kc=
+0ZRKqxDHBBtzbgS7Owfp3bKBvM-W3guimV6IFsNuRpt5RkdldT5g7tjsTKonDMzgCza2KZ7xT66=
+RkyU3Zpq_yOI3Yq-4xrKCjFOnD9BCTKTWTmxL-OjEjTPULCp3wiPPn7QLE1y7TjWnHcYTd3EoQJ=
+CvmT1u30VRXHTNe-jvXpWc7tXc0Jcs-BI27z02wAOZmOm--x5s1wk-2PdKI8vg40ur_6Y9SWqH9=
+siUFO3t5D7ECSdzn8unSHIicFP0Aw4V0-WBV37P942l02BnbDbLyy0HTeQr34Arljg3Axi05z6G=
+AeLNs7atVxPESgoV0AQbTuSMBfJmH72J1G76EtGDJ3F7Fz8K5SkKeqrcuIWbdq0W-capYAYdFlF=
+WRFtR3DdpwZBD/4i8/2-GjzmaRQYS-MUqprhuc-g/h52/h001.iF5bMntIxEKxx3Len0r5pAdzQ=
+2iMV1J_j0HoxLgi-PQ" target=3D"_blank" rel=3D"noopener noreferrer nofollow">=
+<span>Join our referral program</span></a></b></span><span style=3D"color:#=
+FFFFFF;font-size:0.8rem;"><b>.</b></span></p></td></tr><tr><td class=3D"dd"=
+ align=3D"center" style=3D"padding:0px 15px;text-align:center;word-break:br=
+eak-word;"><p style=3D"mso-line-height-alt:150.0%;"><span style=3D"color:#F=
+FFFFF;font-size:0.8rem;">Was this email forwarded to you? </span><span styl=
+e=3D"color:#FFFFFF;font-size:0.8rem;"><b><a class=3D"link" href=3D"https://=
+link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf75St_4h4uVDlb2B1USeB_H=
+4wpkqf8EGTk1iM5Wu0HuoFIsKQVYDu_ovIaAd89V_Nvs2jsW_lRswn84NkqTYMu8JVnw2IsjtES=
+fB6_5xHNXcHUPCOYccUJ0ZmNUke5zfs3f1MyadTtIFk3X2RGZcxS5fUrJ8ZGrLrLIVfaEQjPBwj=
+dcyrzzFvSEDCsQEvSmVkfWXttdpYdi5fNHkmZf6BOnt2O7H6Nkzqv8r8SJdV9G_CCxoOpsKV2WE=
+2uVqN7wp_wRfGUpEd1N10zWTkvSyJDAMRkxOuu2hJQZLX5QICX1VRhuN7ScfT7TV7ARFc9SS3Vi=
+VUgPRPp_jB3BIm7kQW7020oVzo1zs5zMABKtLZFMZyVKf7XsSavLPFfpY3BAdjwIDIPxcLXinC5=
+CoQiO-tJrrHbgYTkjrHn0njaIGVSVMq-pi9Yzuc8_nd9SnU7G4wu353bb8mKy38Xf5Nw0YwjMoQ=
+CpRyKturnl5rxwSlqyraJ_Xb0sDlrx3mGV_GuXN8gRY-s-ISBUnYk3-zo2HQxLUz0OEEJJ_t_md=
+9IQsNsd9Z2EMVaYL9le108LnEh4r4yFijeOIWv_g0QXEfbOKNqWGfTp3cAPlbNGWUwjDa5Lc1zT=
+giZ5TovGGKrzSgFFbeFwR4ZzHyOPoIAv1iLpS1bzyzKz7UxZpA2FT-qsXvzqINvAj7bBgCASCO_=
+mq-eEvgxhx5dPnvvKatJZLOaCXbWRUELYI4ghIr9qL3WaMWitzrE1NHMeGE5QBgiMqbsq0ew/4i=
+8/2-GjzmaRQYS-MUqprhuc-g/h53/h001.c4tE3_WlDxpd0qCMIBq3kcifh72-uM6mWqYP81H5y=
+UA" target=3D"_blank" rel=3D"noopener noreferrer nofollow"><span>Sign up fo=
+r free here</span></a></b></span><span style=3D"color:#FFFFFF;font-size:0.8=
+rem;"><b>.</b></span></p></td></tr><tr><td class=3D"dd" align=3D"center" st=
+yle=3D"padding:0px 15px;text-align:center;word-break:break-word;"><p style=
+=3D"mso-line-height-alt:150.0%;"><span style=3D"color:#FFFFFF;font-size:0.8=
+rem;">Interested in podcasts? </span><span style=3D"color:#FFFFFF;font-size=
+:0.8rem;"><b><a class=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/u=
+001.eCbm_1zon7G0lMoXTECWay9Klwe_9Q5JwYYR35vHVJGhLTKAvXkEGfjpivf9ppHpk-tjqtq=
+zAvPi3L3y79Rl45HdLkIxKpowF43fTv6uHd0hcXUaRDF04G3QYkkTWTKcYenmuOHp8MXfl1G9p8=
+wNdV9aSEI609NC1yWq4sFLudwmkUJPr1P4MrzOmc289GPWEjWiFxhGRNr_XPVeyLZjXX7PRd3t7=
+XCU28yH6rJCBEgTcCUVagAntyifTJp4OgiEC1inkow4ccjU1zp7AZ1hIV6BKJLVSahK7TwWRQk0=
+ncM/4i8/2-GjzmaRQYS-MUqprhuc-g/h54/h001.yTeB7nOUb7oKWzpE6Xksm93Px7jF2tDHN_0=
+tfMiI9Ok" target=3D"_blank" rel=3D"noopener noreferrer nofollow"><span>Chec=
+k out ours here</span></a></b></span><span style=3D"color:#FFFFFF;font-size=
+:0.8rem;"><b>.</b></span></p></td></tr><tr><td class=3D"dd" align=3D"center=
+" style=3D"padding:0px 15px;text-align:center;word-break:break-word;"><p st=
+yle=3D"mso-line-height-alt:150.0%;"><span style=3D"color:#FFFFFF;font-size:=
+0.8rem;">Go deeper? </span><span style=3D"color:#FFFFFF;font-size:0.8rem;">=
+<b><a class=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/u001.NN3LcS=
+SNlElMIHwAnhfMXU6KHmur7bwaQblVUOresUDRGu9zQCOecTRqc_0N_j4BogYt4fC92j_CK6d5Q=
+79nHQ0cKO4l8XXjXNlTWT8r2EbKDekwLi7S-gPg9apaHOeFhhpc2A3ETWZBpiS_LzeJO-YGCCTM=
+TKO7ON7QpCSX1i1clfzibDOMeP0e2KCc23dmio4uXZjPLP5hrLCWf4B875xClHEY1cPmzpeD0Pg=
+H2d--XJu7xdYInGpoOViIJBA2od-TIVpQ3t3NdaxyyFcecw/4i8/2-GjzmaRQYS-MUqprhuc-g/=
+h55/h001.E4BgPMsmoVzYHBR6-uu2hEy43xevMcrK0jGpfpZZnnY" target=3D"_blank" rel=
+=3D"noopener noreferrer nofollow"><span>Join the AI University</span></a></=
+b></span><span style=3D"color:#FFFFFF;font-size:0.8rem;"><b>.</b></span></p=
+></td></tr><tr><td class=3D"w" align=3D"center" valign=3D"top" style=3D"pad=
+ding:15px 15px 15px 15px;"><table role=3D"none" width=3D"100%" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tr><td align=3D"cent=
+er" valign=3D"top"><p style=3D"font-family:'Verdana',Geneva,sans-serif;colo=
+r:#FFFFFF!important;"> Update your email preferences or unsubscribe <a clas=
+s=3D"link" href=3D"https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLY=
+PjeMf75St_4h4uVDlb2B1USeB_E01PZL2p3Jv5gOI9-ncVxTDbEA4LpSYufBFV3YuSdVICElA6V=
+w3udLknJg6DTT8EIgtORbh7pfUF8LDIiCVm7QZZEown-RJZ2yYDScwHJ898BdlkRk6Tb5UFhc9H=
+IhbIFxauxZQOxvQi_yFyMZeG6kotLLkFI2SvFQdrlstQDo3gY_SX_8IbQqqdei65QIAaLFNP1OU=
+qfQdDQvRjprRf4EfPlWd8YjhDtLekrI_4C1xnwIut166pL0xeX-6R-3O9cetQTrdU6k9NOtMonR=
+OnqfT1_n0SNIxkzb-lXi-aPawQJIHTyK5AnXwbjpYnrnHj5q5RpfvCsoEXGt_FHriZS6v4iHxDM=
+EBwATsqoj7Pt7JE32QjVJpbIyaDoiyQAjYWaDn3cC1oybs5zRsGR4XmUMB_JyAz9OrI1uRDGlf9=
+265iU8eT-LcvaAHEVVcrPyNvX595wDbdNDvakOu5hf8ckvzzXbJkxgcempVQnwU7hOGkrxrJbaP=
+NCr0QOTJNzRoyXVF_HUL3IEaVujZJKIlNOIg5Y5vqZlWLK4f1xQKETLbuJXSNp6cqmVZjhFJZ9u=
+DhtvQedcPEa42GVLbCYTidHElq-Ja-2gHiPFnM_Eeeu2efM-PnWOgRTo7VrexJ3V4V72bkcXpqI=
+wV3_UKUPS6PXhI2k9Ac-B2AIa8bRQyBs0EuoPNHwmhFDDYgLpbuNjqSKh0SJnIb0vwwMIgOsp7F=
+vfLze6ZEAq91MoRLSQmxbEHsHqL8Nar68X4kc7vEKUs2g5zmqDIYS6Y9NMzZwpzZOJzwWDix0sD=
+fnMvk8GLrisomlqtqW8xSbwcACATzic5Xo/4i8/2-GjzmaRQYS-MUqprhuc-g/h56/h001.pFhw=
+fYw7_4quJZ6BUG6ydMQTmfz3qv9eQ3YHu-l-uPs" style=3D"text-decoration:underline=
+;text-decoration-color:#FFFFFF!important;color:#FFFFFF!important;"> here</a=
+></p><p class=3D"copyright" style=3D"font-family:'Verdana',Geneva,sans-seri=
+f;color:#FFFFFF!important;"> =C2=A9 2025 The Rundown AI, Inc </p><p style=
+=3D"font-family:'Verdana',Geneva,sans-serif;color:#FFFFFF!important;"> 333 =
+Seymour St<br>Vancouver, BC V6B 5A7, Canada </p></td></tr><tr><td align=3D"=
+left" valign=3D"top" height=3D"2" style=3D"height:2px;"><a href=3D"https://=
+link.mail.beehiiv.com/ss/c/u001.ZY5Y0CT8KZaZ1y9TVLsmf6uO2vouLFfIznWZ2Yby_C1=
+SB8SyYBSwcbEWTHuL52vR-hX-3WehUqBjDqOtziuN0PvhXXzd1cEzSgi3be22bYY/4i8/2-Gjzm=
+aRQYS-MUqprhuc-g/h57/h001.1AU0SIMwKaBuymzf4lXF5wm1McF_8vT0GrObhtSAJyM" styl=
+e=3D"color: #222222 !important; cursor: default; font-size: 1px; text-decor=
+ation: none;"> Terms of Service </a></td></tr></table></td></tr></table></t=
+d></tr></td></tr></table></td></tr></table></td></tr></table></td></tr></ta=
+ble></div></body></html>=
+
+--59eff26f9884f353b566b402919db8b476dfe82b47cf057748487c333904--

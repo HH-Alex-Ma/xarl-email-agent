@@ -1,0 +1,773 @@
+Received: from SEZPR02MB5616.apcprd02.prod.outlook.com (2603:1096:101:4e::10)
+ by TYZPR02MB7411.apcprd02.prod.outlook.com with HTTPS; Wed, 16 Jul 2025
+ 08:05:25 +0000
+Received: from TYXPR01CA0061.jpnprd01.prod.outlook.com (2603:1096:403:a::31)
+ by SEZPR02MB5616.apcprd02.prod.outlook.com (2603:1096:101:4e::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8922.32; Wed, 16 Jul
+ 2025 08:05:21 +0000
+Received: from OSA0EPF000000CD.apcprd02.prod.outlook.com
+ (2603:1096:403:a:cafe::b8) by TYXPR01CA0061.outlook.office365.com
+ (2603:1096:403:a::31) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8943.19 via Frontend Transport; Wed,
+ 16 Jul 2025 08:05:21 +0000
+Authentication-Results: spf=pass (sender IP is 199.15.214.201)
+ smtp.mailfrom=bounce5.email.microsoft.com; dkim=pass (signature was verified)
+ header.d=email.microsoft.com;dkim=pass (signature was verified)
+ header.d=mktdns.com;dmarc=pass action=none
+ header.from=email.microsoft.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ bounce5.email.microsoft.com designates 199.15.214.201 as permitted sender)
+ receiver=protection.outlook.com; client-ip=199.15.214.201;
+ helo=bounce3.email.microsoft.com; pr=C
+Received: from bounce3.email.microsoft.com (199.15.214.201) by
+ OSA0EPF000000CD.mail.protection.outlook.com (10.167.240.59) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8922.22 via Frontend Transport; Wed, 16 Jul 2025 08:05:21 +0000
+X-MSFBL: pIOKgxBW1Ua8MEGnpjx64hnOyho+DSUmUT2iHhu6/Zo=|eyJnIjoiYmctc2pkLTE
+	3NCIsImIiOiJkdnAtMTk5LTE1LTIxNC0yMDAiLCJ1IjoiMTU3LUdRRS0zODI6MDo
+	yMzAxNDkzOjg5OTAwMTA6MjAyNjQ5NzE6MTk3MTI3Nzo5OjY5NzA0NTQ6MTY3NTE
+	yODEyNS0yMDQiLCJyIjoiYWxleC5tYUBodWFtZWlzb2Z0LmNuIn0=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1752653120;
+	s=m1; d=email.microsoft.com; i=@email.microsoft.com;
+	h=List-Unsubscribe:List-Unsubscribe-Post:Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=Kq4MpqPfoK3GzbDoLfjrc0t8jm2qqOaMXy52ucKNoLw=;
+	b=JJMj1X4rVpXOhhuhbGbkn53LIkMFZqvmRCYLvjqi/pSVE88K9yfwfRRuuJProSa+
+	mDKtm2gL3W6WjxAPgjArS7xCIiWFa27VnfeO5jBbBxJWZs9DseYGPBs/afY3mUcp1XQ
+	VylXpIdRutuHXFpfHhVcVTSSz0tO0/LRJjLEvqWA=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1752653120;
+	s=m1; d=mktdns.com; i=@mktdns.com;
+	h=List-Unsubscribe:List-Unsubscribe-Post:Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=Kq4MpqPfoK3GzbDoLfjrc0t8jm2qqOaMXy52ucKNoLw=;
+	b=nuQPX5Fhik72srkxuVR5eX+oedH8ZQ45H3h6Rt7pXANI+ORKuOdevE7uHtGFKH0+
+	v+BmhuT8/kcJSl9k7fFinHTArgRhNFKu8dLMgYv0p0zRyqpQtXoYMj/BwQPL6qJ8QFC
+	Ih6s72Bq8vgjoRMxwvuETyMMh8Dy7hzqhoQQ4e3M=
+Date: Wed, 16 Jul 2025 03:05:20 -0500 (CDT)
+From: Microsoft Azure Team <azure@email.microsoft.com>
+Reply-To: replyto@microsoft.com
+To: alex.ma@huameisoft.cn
+Message-ID: <186261670.29719207.1752653120868@sjmktmail-batch1b.marketo.org>
+Subject: =?UTF-8?Q?[=E5=B9=BF=E5=91=8A]_AD_?=
+ =?UTF-8?Q?=E5=8F=82=E5=8A=A0=E6=88=91=E4=BB=AC?=
+ =?UTF-8?Q?=E4=B8=BE=E5=8A=9E=E7=9A=84_?=
+ =?UTF-8?Q?Microsoft_Azure_=E5=9C=A8?=
+ =?UTF-8?Q?=E7=BA=BF=E6=8A=80=E6=9C=AF=E5=85=AC?=
+ =?UTF-8?Q?=E5=BC=80=E8=AF=BE=EF=BC=9A=E4=BD=BF?=
+ =?UTF-8?Q?=E7=94=A8_Azure_A?=
+ =?UTF-8?Q?I_=E5=BC=80=E5=8F=91=E8=87=AA=E5=B7=B1=E7=9A=84=E5=AE=9A?=
+ =?UTF-8?Q?=E5=88=B6_Copilot?=
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_29719206_1703413578.1752653120868"
+X-Binding: bg-sjd-174
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <https://emails.microsoft.com/u/MTU3LUdRRS0zODIAAAGbsTz1YAD2OKbU-QU3td4TSLjulYuoMMXwmM7_Jm4uZrRQkgDBPOIEAhNgTXkmlMy8hpOPo3s=?emailAddress=MTU3LUdRRS0zODIAAAGbsTz1X_tLi_AtNpwjhK5DGuLW27zpYWAp__ZnaGf7NaVCG4au-DbAAFPM4jPC8NtQqvmdBaY>, <mailto:OVCFOYS2IJSHIVZXIU2TKM2JLBLG4OKIIFJUGT3RINVFIOKYKA4XEY3YGAYEGOKTPB2E2PI=.6970454.1971277.9@unsub-sj.mktomail.com>
+X-MarketoID: 157-GQE-382:0:2301493:8990010:20264971:1971277:9:6970454:1675128125-204
+X-PVIQ: mkto-157GQE382-000001-000006-970454
+X-Mailfrom: 157-GQE-382.0.6970454.0.0.1971277.9.1675128125-204@bounce5.email.microsoft.com
+X-MktArchive: false
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+Return-Path: 157-GQE-382.0.6970454.0.0.1971277.9.1675128125-204@bounce5.email.microsoft.com
+X-MS-Exchange-Organization-ExpirationStartTime: 16 Jul 2025 08:05:21.5114
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: b6811a3d-cdc6-49fa-42d7-08ddc43f82ee
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 201bc36e-e78e-44f5-a3d6-32ca5290534b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: OSA0EPF000000CD:EE_|SEZPR02MB5616:EE_|TYZPR02MB7411:EE_
+X-MS-Exchange-Organization-AuthSource: OSA0EPF000000CD.apcprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: b6811a3d-cdc6-49fa-42d7-08ddc43f82ee
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|13102899012|2092899012|5083199021|4092899012|3072899012|13012899012|12012899012|3092899012|5062899012|4022899009|1032899013|69100299015|6062899009|5082899009|13003099007|2066899003|4076899003|8096899003;
+X-Forefront-Antispam-Report: CIP:199.15.214.201;CTRY:US;LANG:zh-cn;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:bounce3.email.microsoft.com;PTR:bounce3.email.microsoft.com;CAT:NONE;SFS:(13230040)(13102899012)(2092899012)(5083199021)(4092899012)(3072899012)(13012899012)(12012899012)(3092899012)(5062899012)(4022899009)(1032899013)(69100299015)(6062899009)(5082899009)(13003099007)(2066899003)(4076899003)(8096899003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Jul 2025 08:05:21.0533
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: b6811a3d-cdc6-49fa-42d7-08ddc43f82ee
+X-MS-Exchange-CrossTenant-Id: 201bc36e-e78e-44f5-a3d6-32ca5290534b
+X-MS-Exchange-CrossTenant-AuthSource: OSA0EPF000000CD.apcprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SEZPR02MB5616
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.4782174
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8922.017
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?MnZYWFB5ZDUxTkRXK1ZKcEdpdmFpaTJXUUZCd1d0WFlUaXRsTnV5a2F4b3hy?=
+ =?utf-8?B?ZCtqRk5tckRhN1VEVzZGTjAyU2J2UThwdDVkcURLWkRmeDV6Ri9CY1BlaDcw?=
+ =?utf-8?B?N0svdlVMU2doOFpkTE4rUk9HUC9aSlZjcEVQM2llcE96Lzk2NHRjaXFzeFM3?=
+ =?utf-8?B?cEpRaytaNGJLb3Vyc0t6M2hMMTZYcDVDSFZvcTIvMmljbzBYRk5TaXJSdWww?=
+ =?utf-8?B?NTZyWGJYcnMrWkRpWWkrM1BiZDNpQ0JlT3ZucEdTWUJXZG9UMXU0Y043bE1j?=
+ =?utf-8?B?SE1HRWgrNzA5YmZRL3UrMmxDY3gxM3NOZXh4MEdIME0weVlpY3h6R24zZlZn?=
+ =?utf-8?B?YkR4YVNqc1VBb3VYVEc0T3F5eitBYlBqZWYzQU1LSCtCaklBbmpWWk9nYWpl?=
+ =?utf-8?B?MnpBbUxDajE3aGFqU3loREcrSERJQzE1cTRQWmFqNzRIR1o4eVpkYXhIQUV3?=
+ =?utf-8?B?aDRVRWhRNFJhN1RLdHgwS2IwbWd3cjVXWHV0WFdqRFdYY1UvcGcwM2l3Tld1?=
+ =?utf-8?B?d3A3cXdzcGZUdUxkdzdKZ3FIZitPWFJ3NmxGVHQ4aGhteE1xbDdsWFpHZ2ln?=
+ =?utf-8?B?dVNNTTlCZzdKa2VFMWFuZUgzNGtNSGExS3c1dTZOMHVaclJiZmVjcENPbDdJ?=
+ =?utf-8?B?c1pLMzY0bHVhaFZvbkU1MjhJMDJ2MmZFc2NMT1JPYW84cGxSbGJpNnlrODRn?=
+ =?utf-8?B?QmZjNmRpck91STBsM2RGQmk4YW5xL1FHM0dmU1IzcmlHRUpJYXY1b0tSVWxo?=
+ =?utf-8?B?ZG02ZjZsbm5LUmc2eE1mdjJPQ1R3SGRvRXpzTDlBYVJrdnVCRWJYZ0FaY2s3?=
+ =?utf-8?B?S3NZVDlOUzJMZk9Ja3NuZldPWlh1Q2QrV1NKMUhsVW5aTElzczNuT1lPTkJx?=
+ =?utf-8?B?eGphWjVGSXJ3Mi90VmU2cTkvejZSQ0Y5U3kyZEFHR1FTa0Q0Y0Z3Y1NGcnBB?=
+ =?utf-8?B?YWtJNDlhTjZMalZmZC91bU1NdThnM3BmVTJBVmRpVFFUZFFTcTZTcTVsbWtN?=
+ =?utf-8?B?cVhDTDY5dk4zUnJ5RXJGLzZQYzdBcm14ek1IT1hyVGJUNnpRbGtzTW5ieDNB?=
+ =?utf-8?B?MkxIK0xnZUFuWjM3OTVJRVFOaGxtTGlVM0FraDRMUTJiV3I4RXFmQ2dHS295?=
+ =?utf-8?B?Z211QkJmUkd3anNWUU9BWGVkR1ZCdUltZUx3d2VuZGp1c0ZLSjlnU1JBalFk?=
+ =?utf-8?B?ZUE5aTl5YmlFa1hvZ0g1cXJaK25UK254Q1hVYWZuY0RDWiswMjVZTGpOc0Zu?=
+ =?utf-8?B?N1ZUdVRPZ285K0hVai9LcnpJaks2cVZDUHczTWhyVmo5S0NrdWVVUXB4SjVO?=
+ =?utf-8?B?VmIvQWIrVm03Ty83V2pOUkNHclYvY0N6UW5pTVVmUXlJbTVXZnNDak5tRlRi?=
+ =?utf-8?B?RGJxRklYZ1hpc0FDUXZCK2ZvOGhvTHpXZGplYitkbXcxd2t3VVFJT1hORU9E?=
+ =?utf-8?B?aCt1VFNHNkJ0d0dIY1FQb2VkanV5dmhGaEk1RlJ1NlZXWEM5MjNMMkJRMkxq?=
+ =?utf-8?B?TEQ5SE92TlV0NGdHbWdvcjhjWWJ6anI3OXIwVVdFRENDNzdUU2pRaVRLMDFj?=
+ =?utf-8?B?UUlxM3RSYkd0MGxJaDNtaXZtNkw3VEo3SlcyNnh1UFZteWhSU1YxWVN6bEFz?=
+ =?utf-8?B?ZnB0Y3U3ZmRKVG5VbGp2Ym5EODNDOUdPME1HcTlMZ3dwWG9kSC8yMGx6YTAw?=
+ =?utf-8?B?eEQ5OFRRRXZYYmZuVnRBanJVWVI1M1N1M1Z4bFJMWXlqaURDcnR1bThkNHYy?=
+ =?utf-8?B?TVQ3cWNvR3RRenZQOU0xbEJ3MXcxTGVtMmJjR2oraHNHWDJtcEp5YlJDQVFs?=
+ =?utf-8?B?dTFSaktQenJwUUsyd1UrRlMreTJleDJXUjltR0JFNWZ4eWgwbm1TdG9Xajh3?=
+ =?utf-8?B?Mm9Reml1RStBTnJVMlpnWE5zb3lkekozQ2w5WGdtNkIrVHpCTktoMk1qVitN?=
+ =?utf-8?B?NDY4NlZmN1VwSkV5aXg3bTFoakYvUVFqYkZxNkE4cjgyNU1EcUJ4bTVxaUxw?=
+ =?utf-8?B?azdZUmRGVEk0cm00aUJ5ak9mVCtoTXkwR1ZrZmhMU3Q1Rm81YTBHUU5EWmFI?=
+ =?utf-8?B?b280Q0g3b05wUUlyWWU5Q2RVem45SXAzbXk5enkvRlk2N0Y2aU5FdjE0OUNH?=
+ =?utf-8?B?VXZCSFBZUjh0endyeFZ2RWRqaGdBd2VLakh4aGNIVHBqUWhjcDRxUkZxb1RQ?=
+ =?utf-8?B?RTR1VlRsM0FoZmZGeFNRZGdxUWZOK29teVN3a1haM3FOSDVPc3dJZjhoa0pU?=
+ =?utf-8?B?NzBablQzZEZGeW5UTjdzeUtCQ3ZtVDJZNWFYaEl5Y1VQN1lYZVBIMThoTDdt?=
+ =?utf-8?B?L0IxUXZXWjBiVy9jQUFleTdYbnlweEZYNE9JNUYzNVlOMnUydnRJTzJZK0Iw?=
+ =?utf-8?B?Y3NPdVIwWktOdUdhdkNKMi9YMHNPODBxQWJMZHBHTUJSNERVTU5kZ2NyWWZB?=
+ =?utf-8?B?NjRkNUEyMDVZZUFVRnBaWFZKQytxc3VLekpKblYyTUpQZFBEdW5veGRyYmpV?=
+ =?utf-8?B?ZjZqZWFwOG92U2VpY1BnNXM1Y3JoRmg0dXp4TWZYeTdpS2s5cU41aW9QNVdw?=
+ =?utf-8?B?ZXgwczJ5L0N0aXF6c3QvZjVBZ1pXZldEYVZ5dmZPVlptT3BXRUw5WnBpSFIy?=
+ =?utf-8?B?cmhHajVJOWFHekl5dlVmWWRtaGIxbEV0b1NRQTFxWWFkYjd2ckc3RFRxQ0Vr?=
+ =?utf-8?B?UDBDcXVIaDRueXF1cmxYR3F1NzNObEt1bjZZQ3BWUzhTRUZBWk9rSWJaRkJT?=
+ =?utf-8?B?VGFUdnNmeitMcm1Wc2tLS2NERjNPUGhLZVVtWnBDeUZSRkZHVjROQkVtbGMz?=
+ =?utf-8?B?Rlltb0tVU3dvdUVzejd2WTNOcFlmblJ4VitzdHlaYk1sWThCUTFaVU9yMFVi?=
+ =?utf-8?B?c0hWLzdUQ3Y5N1FvNVd3dktjcUM5SVZQKythSUlnNExJejR6RFpBQWlXNFdw?=
+ =?utf-8?B?VVcxNnZYWGJBSkpjVE5GSWhSc2t3blM4d2RsKzQ2bnBBTmdsU3c9PQ==?=
+MIME-Version: 1.0
+
+------=_Part_29719206_1703413578.1752653120868
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+=E6=9F=A5=E7=9C=8B=E6=AD=A4=E7=94=B5=E5=AD=90=E9=82=AE=E4=BB=B6=E6=97=B6=E9=
+=81=87=E5=88=B0=E9=97=AE=E9=A2=98 | =E4=BB=A5=E7=BD=91=E9=A1=B5=E5=BD=A2=E5=
+=BC=8F=E6=9F=A5=E7=9C=8B <[[https://emails.microsoft.com/v/MTU3LUdRRS0zODIA=
+AAGbsTz1YEh6eGhkpcHGcV3mnBCTd4Frm_gTYWwaHN_f2vkJ_0w_ubl_QR2rO_G4P9T4bRmXA8A=
+=3D]]>
+
+
+<[[https://azure.microsoft.com]]>
+ <[[https://azure.microsoft.com]]>
+
+Microsoft Azure =E5=9C=A8=E7=BA=BF=E6=8A=80=E6=9C=AF=E5=85=AC=E5=BC=80=E8=
+=AF=BE=EF=BC=9A</br>=E4=BD=BF=E7=94=A8 Azure AI =E5=BC=80=E5=8F=91=E8=87=AA=
+=E5=B7=B1=E7=9A=84=E5=AE=9A=E5=88=B6 Copilot
+
+
+
+<p>=E9=80=9A=E8=BF=87 Microsoft Learn =E5=85=8D=E8=B4=B9=E5=8F=82=E5=8A=A0 =
+Microsoft Azure =E5=9C=A8=E7=BA=BF=E6=8A=80=E6=9C=AF=E5=85=AC=E5=BC=80=E8=
+=AF=BE=EF=BC=8C=E8=B0=83=E6=95=B4=E6=8A=80=E8=83=BD=E5=B9=B6=E6=8E=8C=E6=8F=
+=A1=E6=89=80=E9=9C=80=E5=B7=A5=E5=85=B7=EF=BC=8C=E4=BB=A5=E4=BE=BF=E5=9C=A8=
+ AI =E6=94=AF=E6=8C=81=E7=9A=84=E4=B8=96=E7=95=8C=E4=B8=AD=E4=BF=9D=E6=8C=
+=81=E8=89=AF=E5=A5=BD=E5=8F=91=E5=B1=95=E5=8A=BF=E5=A4=B4=E3=80=82=E5=8F=82=
+=E5=8A=A0=E6=88=91=E4=BB=AC=E4=B8=BE=E5=8A=9E=E7=9A=84=E2=80=9C=E4=BD=BF=E7=
+=94=A8 Azure AI Studio =E5=BC=80=E5=8F=91=E4=BD=A0=E8=87=AA=E5=B7=B1=E7=9A=
+=84=E8=87=AA=E5=AE=9A=E4=B9=89=E5=8A=A9=E6=89=8B=E7=A8=8B=E5=BA=8F=E2=80=9D=
+=E6=B4=BB=E5=8A=A8=EF=BC=8C=E4=BA=86=E8=A7=A3=E5=A6=82=E4=BD=95=E5=88=9B=E5=
+=BB=BA=E8=87=AA=E5=AE=9A=E4=B9=89=E5=8A=A9=E6=89=8B=E7=A8=8B=E5=BA=8F=E3=80=
+=82=E4=BD=A0=E5=B0=86=E6=9F=A5=E7=9C=8B=E5=92=8C=E6=AF=94=E8=BE=83=E8=AF=AD=
+=E8=A8=80=E6=A8=A1=E5=9E=8B=EF=BC=8C=E9=80=89=E6=8B=A9=E6=9C=80=E9=80=82=E5=
+=90=88=E4=BD=A0=E7=9A=84=E7=BB=88=E7=BB=93=E7=82=B9=E7=9A=84=E6=A8=A1=E5=9E=
+=8B=EF=BC=8C=E5=B9=B6=E4=BA=86=E8=A7=A3=E5=A6=82=E4=BD=95=E5=B0=86=E8=BF=99=
+=E4=BA=9B=E6=A8=A1=E5=9E=8B=E9=83=A8=E7=BD=B2=E5=88=B0=E8=81=8A=E5=A4=A9=E5=
+=BA=94=E7=94=A8=E7=A8=8B=E5=BA=8F=E4=B8=AD=E3=80=82</p>  <p>=E4=BD=A0=E8=BF=
+=98=E5=B0=86=E6=8E=A2=E7=B4=A2=E5=A6=82=E4=BD=95=E4=BD=BF=E7=94=A8 Azure AI=
+ =E6=8F=90=E7=A4=BA=E6=B5=81=E6=9D=A5=E5=BE=AE=E8=B0=83=E5=92=8C=E5=A2=9E=
+=E5=BC=BA=E6=A8=A1=E5=9E=8B=E6=80=A7=E8=83=BD=EF=BC=8C=E4=BA=86=E8=A7=A3=E4=
+=BC=98=E5=8C=96=E7=AD=96=E7=95=A5=EF=BC=8C=E5=8C=85=E6=8B=AC=E6=8F=90=E7=A4=
+=BA=E5=B7=A5=E7=A8=8B=E5=92=8C=E6=A3=80=E7=B4=A2=E5=A2=9E=E5=BC=BA=E7=94=9F=
+=E6=88=90=EF=BC=8C=E4=BB=A5=E4=BE=BF=E4=BD=BF=E7=94=A8=E6=95=B0=E6=8D=AE=E5=
+=AE=9A=E5=88=B6=E6=A8=A1=E5=9E=8B=E3=80=82</p>  <p>=E5=AE=8C=E6=88=90=E6=AD=
+=A4=E5=9F=B9=E8=AE=AD=E5=90=8E=EF=BC=8C=E4=BD=A0=E5=B0=86=E6=9C=89=E8=B5=84=
+=E6=A0=BC=E4=BB=A5 50% =E7=9A=84=E6=8A=98=E6=89=A3=E5=8F=82=E5=8A=A0<a href=
+=3D "https://emails.microsoft.com/MTU3LUdRRS0zODIAAAGbsTz1YCthsbLwQtakKFNE8=
+eF9ne6HlSlcV6y7QS1LNZL_ovqvshBysWEQw0Cr_qSoIIUJaAE=3D" alt=3D"" >=E2=80=9CM=
+icrosoft Azure AI =E5=9F=BA=E7=A1=80=E7=9F=A5=E8=AF=86=E2=80=9D=E8=AE=A4=E8=
+=AF=81=E8=80=83=E8=AF=95</a>=E3=80=82</p>    <https://emails.microsoft.com/=
+dc/_t9-i3gzVsFmsu9sv-WtquvHITt0VCtx2nXeMINZRIs_Wha-90wJJ1ndot_tEu6g/MTU3LUd=
+RRS0zODIAAAGbsTz1YFHlytjWPXBjx620w349lRIjNMXh-wVorVWvj5o9atIpFS4Nr0BiHUTzYY=
+QCPQB267A=3D> <p>=E4=BD=A0=E5=B0=86=E6=9C=89=E6=9C=BA=E4=BC=9A=EF=BC=9A<ul>=
+<li>=E4=BA=86=E8=A7=A3=E5=A6=82=E4=BD=95=E9=85=8D=E7=BD=AE=E8=AF=AD=E8=A8=
+=80=E6=A8=A1=E5=9E=8B=E9=83=A8=E7=BD=B2=E3=80=82</li><li>=E6=8E=A2=E7=B4=A2=
+=E4=BC=98=E5=8C=96=E7=AD=96=E7=95=A5=E4=BB=A5=E6=8F=90=E9=AB=98=E6=A8=A1=E5=
+=9E=8B=E6=80=A7=E8=83=BD=E3=80=82</li><li>=E4=BA=86=E8=A7=A3=E5=A6=82=E4=BD=
+=95=E4=BD=BF=E7=94=A8=E6=8F=90=E7=A4=BA=E6=B5=81=E6=9E=84=E5=BB=BA=E8=87=AA=
+=E5=AE=9A=E4=B9=89=E5=8A=A9=E6=89=8B=E7=A8=8B=E5=BA=8F=EF=BC=8C=E5=B9=B6=E4=
+=BD=BF=E7=94=A8=E6=95=B0=E6=8D=AE=E5=AE=9E=E7=8E=B0=E6=8E=A5=E5=9C=B0=E3=80=
+=82</li><li>=E4=B8=8E Microsoft =E4=B8=93=E5=AE=B6=E8=81=8A=E5=A4=A9 - =E8=
+=AE=A9=E4=B8=93=E5=AE=B6=E4=B8=BA=E4=BD=A0=E8=A7=A3=E7=AD=94=E6=9C=89=E5=85=
+=B3=E6=9E=84=E5=BB=BA=E5=8A=A9=E6=89=8B=E7=A8=8B=E5=BA=8F=E7=9A=84=E7=96=91=
+=E9=97=AE=E3=80=82</li></ul></p>  <p>=E5=8F=82=E5=8A=A0=E6=88=91=E4=BB=AC=
+=E5=8D=B3=E5=B0=86=E5=88=86=E4=B8=A4=E9=83=A8=E5=88=86=E4=B8=BE=E8=A1=8C=E7=
+=9A=84=E2=80=9C=E4=BD=BF=E7=94=A8 Azure AI =E5=BC=80=E5=8F=91=E8=87=AA=E5=
+=B7=B1=E7=9A=84=E5=AE=9A=E5=88=B6 Copilot=E2=80=9D=E6=B4=BB=E5=8A=A8=EF=BC=
+=9A   =20
+=20
+08 =E6=9C=88 13 =E6=97=A5 |  09:30-12:30 =E6=97=B6=E9=95=BF 180 =E5=88=86=
+=E9=92=9F
+  =20
+
+=E6=B4=BB=E5=8A=A8=E4=BD=BF=E7=94=A8=E8=AF=AD=E8=A8=80=EF=BC=9A =E4=B8=AD=
+=E6=96=87=20
+=E9=9A=90=E8=97=8F=E5=AD=97=E5=B9=95=E8=AF=AD=E8=A8=80=EF=BC=9A =E4=B8=AD=
+=E6=96=87
+
+
+=E7=AB=8B=E5=8D=B3=E6=B3=A8=E5=86=8C > <https://emails.microsoft.com/dc/_t9=
+-i3gzVsFmsu9sv-WtquvHITt0VCtx2nXeMINZRIs_Wha-90wJJ1ndot_tEu6g/MTU3LUdRRS0zO=
+DIAAAGbsTz1YFHlytjWPXBjx620w349lRIjNMXh-wVorVWvj5o9atIpFS4Nr0BiHUTzYYQCPQB2=
+67A=3D>
+
+
+<p>=E8=AE=BF=E9=97=AE <a href=3D "https://emails.microsoft.com/MTU3LUdRRS0z=
+ODIAAAGbsTz1YM-jTQZIW652lAaBmZ0VfXocr7pjDOZittpoaQ40bbClMk_XOPFnmTj_VEArKxx=
+2jTs=3D" alt=3D"" >Microsoft =E5=9C=A8=E7=BA=BF=E6=8A=80=E6=9C=AF=E5=85=AC=
+=E5=BC=80=E8=AF=BE=E7=BD=91=E7=AB=99</a>=EF=BC=8C=E4=BA=86=E8=A7=A3=E6=9C=
+=89=E5=85=B3=E5=85=B6=E4=BB=96=E6=B4=BB=E5=8A=A8=E6=9C=BA=E4=BC=9A=E7=9A=84=
+=E6=9B=B4=E5=A4=9A=E4=BF=A1=E6=81=AF=E3=80=82</p> =20
+
+
+
+
+
+=E6=9C=AA=E8=AE=A2=E9=98=85 <https://emails.microsoft.com/dc/YZdgvqwbGRw5vp=
+lqwcDuFAT39-RSqApAoBTg8JD6J69Q9XlJiBGUNKEP8wZ1xpt-oqgHbQNkJ4DZTh9iLCGQ-Yuli=
+-pP-S0Fx37-GaAavRCpKS1keGTnlvP5em-pZZFMI2PzmWTgoObJc6U9dggtAC9ZCZl5IkQZx0X-=
+ZnRKnuuIQc_FtMy6EkehvCNFgTGHkNl2ATu3u2urcR0qfO1MVruFGENl_1PQA0JOc5wHjtLByJT=
+vxLrTC9gKhpFuowmaKyzWYLGF-3FT2BZZW0R49H4pipReOebGrelorAe931V54VQ4KD9QLxLF2W=
+_63cgE/MTU3LUdRRS0zODIAAAGbsTz1YFHlytjWPXBjx620w349lRIjNMXh-wVorVWvj5o9atIp=
+FS4Nr0BiHUTzYYQCPQB267A=3D> | =E9=9A=90=E7=A7=81=E5=A3=B0=E6=98=8E <https:/=
+/emails.microsoft.com/MTU3LUdRRS0zODIAAAGbsTz1YKr9IlI0wspXbcCuzkXplWKMMF1SS=
+DuG6XEC3oms6hlPZL2dBI8rLL8Ifmsjcjc-60k=3D>
+
+Microsoft Corporation<br>One Microsoft Way<br>Redmond, WA 98052
+
+<https://emails.microsoft.com/MTU3LUdRRS0zODIAAAGbsTz1YA_vSm2gW006mwtTNx_Ed=
+cjoziNoR_LLw6iK5g7zCNimuVybYKtwy4SDvdBMDp8ZN2s=3D>
+
+.
+
+------=_Part_29719206_1703413578.1752653120868
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:=
+schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:offi=
+ce"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">=20
+<meta name=3D"format-detection" content=3D"telephone=3Dno">=20
+<meta name=3D"format-detection" content=3D"date=3Dno">=20
+<meta name=3D"format-detection" content=3D"address=3Dno">=20
+<meta name=3D"format-detection" content=3D"email=3Dno">=20
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">=20
+<!--[if mso]>
+<style>
+                .-mso-banner {padding: 0 0 0 1px;border-right:#E3E3E3 1px s=
+olid;}
+        </style>
+<![endif]-->=20
+<style type=3D"text/css">
+                body{font-size:0;line-height:0;mso-line-height-rule:exactly=
+;padding:0;margin:0;}
+                table{border-collapse:collapse;margin:0;-ms-text-size-adjus=
+t:auto;-webkit-text-size-adjust:100%;mso-table-lspace:0pt; mso-table-rspace=
+:0pt; border-spacing: 0;}
+                table td {border-collapse:collapse!important; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;}
+                tr{font-size:0;mso-line-height-alt:0px;mso-margin-top-alt:0=
+px;mso-line-height-rule:exactly;}
+                td{margin:0;padding:0;mso-line-height-rule:exactly;}
+                input::-moz-focus-inner{border:0;outline:0;}
+                .hide {display:none !important;}
+                .appleLinksWhite a {color:#ffffff; text-decoration: none;}
+                .rest_paragraph p {margin:0; padding:0; margin-bottom:0;}
+                @media screen and (max-device-width:480px),(max-width:480px=
+)
+                {
+                 .mob_full_width, .deviceWidth{width:100%!important;min-wid=
+th:100%!important;max-width:100%!important;display:table!important;}
+                 .mob_full_width_image{width:100%!important; height:auto!im=
+portant;}
+                 .mob_center{text-align:center!important;}
+                 .mob_padding{padding-left:24px !important;padding-right:24=
+px !important;}
+                 .mob_padding0{padding-left:0!important;padding-right:0!imp=
+ortant;margin-left: 0!important; margin-top: 0px!important;}
+                 .mob_paddingR0{padding-left:10px!important;padding-right:0=
+!important;}
+                 .mob_height{height:auto!important;padding-top:10px!importa=
+nt;}
+                 .mobhide{display:none!important;}
+                 .box_height{height: auto!important;}
+                 .box_mobile_bottom{margin-bottom: 20px;}
+                }
+               =20
+	div#B-zone-Body a {
+		text-decoration: none;
+		color: #0078D7;
+	}
+</style>=20
+<!--[if gte mso 9]>
+                <xml>
+                        <o:OfficeDocumentSettings>
+                                <o:AllowPNG/>
+                                <o:PixelsPerInch>96</o:PixelsPerInch>
+                        </o:OfficeDocumentSettings>
+                </xml>
+<![endif]-->=20
+<title>Microsoft</title>=20
+</head>=20
+<body bgcolor=3D"#E3E3E3" leftmargin=3D"0" topmargin=3D"0" marginwidth=3D"0=
+" marginheight=3D"0">=20
+<!-- Wrapper -->=20
+<div style=3D"display:none;font-size:1px;color:#ffffff;line-height:1px;max-=
+height:0px;max-width:0px;opacity:0;overflow:hidden;">=20
+<div class=3D"mktEditable" id=3D"Preheader_Text">
+Microsoft Azure =E5=9C=A8=E7=BA=BF=E6=8A=80=E6=9C=AF=E5=85=AC=E5=BC=80=E8=
+=AF=BE=EF=BC=9A<br>=E4=BD=BF=E7=94=A8 Azure AI =E5=BC=80=E5=8F=91=E8=87=AA=
+=E5=B7=B1=E7=9A=84=E5=AE=9A=E5=88=B6 Copilot
+</div>=20
+</div>=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" alig=
+n=3D"center">=20
+<tbody>
+<tr>=20
+<td width=3D"100%" valign=3D"top" bgcolor=3D"#E3E3E3" align=3D"center">=20
+<table class=3D"mob_full_width" width=3D"640" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" align=3D"center" style=3D"width:640px; min-width:640px;=
+ max-width:640px;">=20
+<tbody>=20
+<tr>=20
+<td bgcolor=3D"#E3E3E3">=20
+<div class=3D"mktEditable" id=3D"DNT-Header_Text">
+<table width=3D"100%" style=3D"min-width: 100%; width: 100%;" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td class=3D"mob_padding" style=3D"padding: 24px 24px 12px 0px;" bgcolor=3D=
+"#e3e3e3">
+<table width=3D"100%" align=3D"center" class=3D"mob_full_width" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"right" id=3D"webview" style=3D"color: #5e5e5e; font-family: 'S=
+egoe UI', SUWR, Arial, Sans-Serif; font-weight: 400; font-size: 10px; line-=
+height: 12px;">=E6=9F=A5=E7=9C=8B=E6=AD=A4=E7=94=B5=E5=AD=90=E9=82=AE=E4=BB=
+=B6=E6=97=B6=E9=81=87=E5=88=B0=E9=97=AE=E9=A2=98 &nbsp;|&nbsp;<a style=3D"t=
+ext-decoration: none; border-bottom: 1px solid #5E5E5E;" href=3D"https://em=
+ails.microsoft.com/v/MTU3LUdRRS0zODIAAAGbsTz1YEh6eGhkpcHGcV3mnBCTd4Frm_gTYW=
+waHN_f2vkJ_0w_ubl_QR2rO_G4P9T4bRmXA8A=3D" target=3D"_blank"><strong style=
+=3D"font-weight: 400; color: #5e5e5e;">=E4=BB=A5=E7=BD=91=E9=A1=B5=E5=BD=A2=
+=E5=BC=8F=E6=9F=A5=E7=9C=8B</strong></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<table align=3D"center">=20
+<tbody>
+<tr>=20
+<td bgcolor=3D"#FFFFFF">=20
+<div class=3D"mktEditable" id=3D"DNT-Header_Logos">
+<table width=3D"100%" style=3D"min-width: 100%; width: 100%;" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<table width=3D"100%" align=3D"center" style=3D"min-width: 100%;" bgcolor=
+=3D"#ffffff" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" class=3D"mob_padding" style=3D"padding: 24px 24px 24px 2=
+4px;"><a target=3D"_blank" href=3D"https://azure.microsoft.com"><img width=
+=3D"" height=3D"21" style=3D"display: inline-block;" alt=3D"Microsoft Azure=
+" src=3D"https://info.microsoft.com/rs/157-GQE-382/images/Azure%20New%20Bra=
+nding%20Logo%20h%2021%20px_6.15.18.png" border=3D"0"></a></td>
+<td align=3D"right" class=3D"mob_padding" style=3D"padding: 24px 24px 24px =
+24px; color: #171717; font-size: 25px; line-height: 30px; font-family: 'Seg=
+oe UI',SUWR,Arial,Sans-Serif; font-weight: 400;"><a style=3D"text-decoratio=
+n: none;" href=3D"https://azure.microsoft.com" target=3D"_blank"><strong st=
+yle=3D"font-weight: 400; color: #171717;"></strong></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>=20
+<div class=3D"mktEditable" id=3D"A_zone-Banner">
+<table class=3D"mob_padding mob_full_width" style=3D"background-color: #E8E=
+6DF; min-width: 640px; width: 640px;" width=3D"640" cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" bgcolor=3D"#E8E6DF" align=3D"center" dir=3D"ltr">=
+=20
+<tbody>
+<!-- contained headline row -->=20
+<tr>
+<!--[if (gte mso 9)|(IE)]>=20
+            <td colspan=3D"2" style=3D"padding: 15px 30px 15px 30px; font-f=
+amily: 'Segoe UI',SUWR,Arial,Sans-Serif; font-weight: 400; font-size: 26px;=
+ line-height: normal; text-align: left; color: #091F2C; background-color: #=
+E8E6DF;" bgcolor=3D"#E8E6DF">
+            <p style=3D"font-family: 'Segoe UI',SUWR,Arial,Sans-Serif; font=
+-weight: 400; font-size: 26px; line-height: normal; text-align: left; color=
+: #091F2C;">Microsoft Azure =E5=9C=A8=E7=BA=BF=E6=8A=80=E6=9C=AF=E5=85=AC=
+=E5=BC=80=E8=AF=BE=EF=BC=9A</br>=E4=BD=BF=E7=94=A8 Azure AI =E5=BC=80=E5=8F=
+=91=E8=87=AA=E5=B7=B1=E7=9A=84=E5=AE=9A=E5=88=B6 Copilot</p>
+            </td>
+        <!--[if (!mso)&(!IE)]><!-- -->=20
+<td colspan=3D"2" style=3D"background-color: #E8E6DF;" bgcolor=3D"#E8E6DF">=
+ <p style=3D"padding: 5px 30px 5px 30px; font-family: 'Segoe UI',SUWR,Arial=
+,Sans-Serif; font-weight: 400; font-size: 26px; line-height: normal; text-a=
+lign: left; color: #091F2C;">Microsoft Azure =E5=9C=A8=E7=BA=BF=E6=8A=80=E6=
+=9C=AF=E5=85=AC=E5=BC=80=E8=AF=BE=EF=BC=9A<br>=E4=BD=BF=E7=94=A8 Azure AI =
+=E5=BC=80=E5=8F=91=E8=87=AA=E5=B7=B1=E7=9A=84=E5=AE=9A=E5=88=B6 Copilot</p>=
+ </td>=20
+<!--<![endif]-->
+</tr>=20
+<!-- contained full width image row -->=20
+<tr>
+<!--[if (gte mso 9)|(IE)]>=20
+            <td colspan=3D"2" style=3D"background-color: #E8E6DF;" bgcolor=
+=3D"#E8E6DF" align=3D"left"><img width=3D"640" style=3D"height: auto; displ=
+ay: block; width: 640px;" src=3D"https://info.microsoft.com/rs/157-GQE-382/=
+images/EN-US_FY25 MVTD_Email Banner_Right_660x100ltr.png" alt=3D"Microsoft =
+Azure =E5=9C=A8=E7=BA=BF=E6=8A=80=E6=9C=AF=E5=85=AC=E5=BC=80=E8=AF=BE=EF=BC=
+=9A=E4=BD=BF=E7=94=A8 Azure AI =E5=BC=80=E5=8F=91=E8=87=AA=E5=B7=B1=E7=9A=
+=84=E5=AE=9A=E5=88=B6 Copilot" border=3D"0"/></td>
+  <![endif]-->=20
+<!--[if (!mso)&(!IE)]><!-- -->=20
+<td colspan=3D"2" style=3D"background-color: #E8E6DF;" bgcolor=3D"#E8E6DF" =
+align=3D"left"><img style=3D"height: auto; display: block; width: 100%;" sr=
+c=3D"https://info.microsoft.com/rs/157-GQE-382/images/EN-US_FY25 MVTD_Email=
+ Banner_Right_660x100ltr.png" alt=3D"Microsoft Azure =E5=9C=A8=E7=BA=BF=E6=
+=8A=80=E6=9C=AF=E5=85=AC=E5=BC=80=E8=AF=BE=EF=BC=9A=E4=BD=BF=E7=94=A8 Azure=
+ AI =E5=BC=80=E5=8F=91=E8=87=AA=E5=B7=B1=E7=9A=84=E5=AE=9A=E5=88=B6 Copilot=
+" width=3D"100%" border=3D"0"></td>=20
+<!--<![endif]-->
+</tr>=20
+</tbody>=20
+</table>
+</div>=20
+<div class=3D"mktEditable" id=3D"Emergency_Message_Zone">
+<!--[if (gte mso 9)|(IE)]>=20
+
+<![endif]--> <!--[if (!mso)&(!IE)]><!-- -->
+<div height=3D"0" style=3D"font-size: 0px; line-height: 0px;">&nbsp;</div>
+<!--<![endif]-->
+</div>=20
+<div id=3D"B-zone-Body">=20
+<div class=3D"mktEditable" id=3D"B_zone-Body">
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"mob_padding mob_full_width" style=3D"background-=
+color: #ffffff;" width=3D"640">=20
+<tbody>=20
+<tr>=20
+<td height=3D"24" style=3D"font-size: 1px; line-height: 24px; font-family: =
+'Segoe UI',SUWR,Arial,Sans-Serif; font-weight: 400;" bgcolor=3D"#ffffff">&n=
+bsp;</td>=20
+</tr>=20
+<tr>=20
+<td>=20
+<table width=3D"100%" align=3D"left" style=3D"width: 100%; min-width: 100%;=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" class=3D"mob_padding" style=3D"color: #464646; font-size=
+: 15px; font-family: 'Segoe UI',SUWR,Arial,Sans-Serif; font-weight: 400; li=
+ne-height: 24px; padding-left: 24px; padding-right: 24px; text-align: left;=
+"><p>=E9=80=9A=E8=BF=87 Microsoft Learn =E5=85=8D=E8=B4=B9=E5=8F=82=E5=8A=
+=A0 Microsoft Azure =E5=9C=A8=E7=BA=BF=E6=8A=80=E6=9C=AF=E5=85=AC=E5=BC=80=
+=E8=AF=BE=EF=BC=8C=E8=B0=83=E6=95=B4=E6=8A=80=E8=83=BD=E5=B9=B6=E6=8E=8C=E6=
+=8F=A1=E6=89=80=E9=9C=80=E5=B7=A5=E5=85=B7=EF=BC=8C=E4=BB=A5=E4=BE=BF=E5=9C=
+=A8 AI =E6=94=AF=E6=8C=81=E7=9A=84=E4=B8=96=E7=95=8C=E4=B8=AD=E4=BF=9D=E6=
+=8C=81=E8=89=AF=E5=A5=BD=E5=8F=91=E5=B1=95=E5=8A=BF=E5=A4=B4=E3=80=82=E5=8F=
+=82=E5=8A=A0=E6=88=91=E4=BB=AC=E4=B8=BE=E5=8A=9E=E7=9A=84=E2=80=9C=E4=BD=BF=
+=E7=94=A8 Azure AI Studio =E5=BC=80=E5=8F=91=E4=BD=A0=E8=87=AA=E5=B7=B1=E7=
+=9A=84=E8=87=AA=E5=AE=9A=E4=B9=89=E5=8A=A9=E6=89=8B=E7=A8=8B=E5=BA=8F=E2=80=
+=9D=E6=B4=BB=E5=8A=A8=EF=BC=8C=E4=BA=86=E8=A7=A3=E5=A6=82=E4=BD=95=E5=88=9B=
+=E5=BB=BA=E8=87=AA=E5=AE=9A=E4=B9=89=E5=8A=A9=E6=89=8B=E7=A8=8B=E5=BA=8F=E3=
+=80=82=E4=BD=A0=E5=B0=86=E6=9F=A5=E7=9C=8B=E5=92=8C=E6=AF=94=E8=BE=83=E8=AF=
+=AD=E8=A8=80=E6=A8=A1=E5=9E=8B=EF=BC=8C=E9=80=89=E6=8B=A9=E6=9C=80=E9=80=82=
+=E5=90=88=E4=BD=A0=E7=9A=84=E7=BB=88=E7=BB=93=E7=82=B9=E7=9A=84=E6=A8=A1=E5=
+=9E=8B=EF=BC=8C=E5=B9=B6=E4=BA=86=E8=A7=A3=E5=A6=82=E4=BD=95=E5=B0=86=E8=BF=
+=99=E4=BA=9B=E6=A8=A1=E5=9E=8B=E9=83=A8=E7=BD=B2=E5=88=B0=E8=81=8A=E5=A4=A9=
+=E5=BA=94=E7=94=A8=E7=A8=8B=E5=BA=8F=E4=B8=AD=E3=80=82</p>  <p>=E4=BD=A0=E8=
+=BF=98=E5=B0=86=E6=8E=A2=E7=B4=A2=E5=A6=82=E4=BD=95=E4=BD=BF=E7=94=A8 Azure=
+ AI =E6=8F=90=E7=A4=BA=E6=B5=81=E6=9D=A5=E5=BE=AE=E8=B0=83=E5=92=8C=E5=A2=
+=9E=E5=BC=BA=E6=A8=A1=E5=9E=8B=E6=80=A7=E8=83=BD=EF=BC=8C=E4=BA=86=E8=A7=A3=
+=E4=BC=98=E5=8C=96=E7=AD=96=E7=95=A5=EF=BC=8C=E5=8C=85=E6=8B=AC=E6=8F=90=E7=
+=A4=BA=E5=B7=A5=E7=A8=8B=E5=92=8C=E6=A3=80=E7=B4=A2=E5=A2=9E=E5=BC=BA=E7=94=
+=9F=E6=88=90=EF=BC=8C=E4=BB=A5=E4=BE=BF=E4=BD=BF=E7=94=A8=E6=95=B0=E6=8D=AE=
+=E5=AE=9A=E5=88=B6=E6=A8=A1=E5=9E=8B=E3=80=82</p>  <p>=E5=AE=8C=E6=88=90=E6=
+=AD=A4=E5=9F=B9=E8=AE=AD=E5=90=8E=EF=BC=8C=E4=BD=A0=E5=B0=86=E6=9C=89=E8=B5=
+=84=E6=A0=BC=E4=BB=A5 50% =E7=9A=84=E6=8A=98=E6=89=A3=E5=8F=82=E5=8A=A0<a h=
+ref=3D"https://emails.microsoft.com/MTU3LUdRRS0zODIAAAGbsTz1YCthsbLwQtakKFN=
+E8eF9ne6HlSlcV6y7QS1LNZL_ovqvshBysWEQw0Cr_qSoIIUJaAE=3D" alt=3D"">=E2=80=9C=
+Microsoft Azure AI =E5=9F=BA=E7=A1=80=E7=9F=A5=E8=AF=86=E2=80=9D=E8=AE=A4=
+=E8=AF=81=E8=80=83=E8=AF=95</a>=E3=80=82</p>   <a href=3D"https://emails.mi=
+crosoft.com/dc/_t9-i3gzVsFmsu9sv-WtquvHITt0VCtx2nXeMINZRIs_Wha-90wJJ1ndot_t=
+Eu6g/MTU3LUdRRS0zODIAAAGbsTz1YFHlytjWPXBjx620w349lRIjNMXh-wVorVWvj5o9atIpFS=
+4Nr0BiHUTzYYQCPQB267A=3D"></a> <p>=E4=BD=A0=E5=B0=86=E6=9C=89=E6=9C=BA=E4=
+=BC=9A=EF=BC=9A<ul><li>=E4=BA=86=E8=A7=A3=E5=A6=82=E4=BD=95=E9=85=8D=E7=BD=
+=AE=E8=AF=AD=E8=A8=80=E6=A8=A1=E5=9E=8B=E9=83=A8=E7=BD=B2=E3=80=82</li><li>=
+=E6=8E=A2=E7=B4=A2=E4=BC=98=E5=8C=96=E7=AD=96=E7=95=A5=E4=BB=A5=E6=8F=90=E9=
+=AB=98=E6=A8=A1=E5=9E=8B=E6=80=A7=E8=83=BD=E3=80=82</li><li>=E4=BA=86=E8=A7=
+=A3=E5=A6=82=E4=BD=95=E4=BD=BF=E7=94=A8=E6=8F=90=E7=A4=BA=E6=B5=81=E6=9E=84=
+=E5=BB=BA=E8=87=AA=E5=AE=9A=E4=B9=89=E5=8A=A9=E6=89=8B=E7=A8=8B=E5=BA=8F=EF=
+=BC=8C=E5=B9=B6=E4=BD=BF=E7=94=A8=E6=95=B0=E6=8D=AE=E5=AE=9E=E7=8E=B0=E6=8E=
+=A5=E5=9C=B0=E3=80=82</li><li>=E4=B8=8E Microsoft =E4=B8=93=E5=AE=B6=E8=81=
+=8A=E5=A4=A9 - =E8=AE=A9=E4=B8=93=E5=AE=B6=E4=B8=BA=E4=BD=A0=E8=A7=A3=E7=AD=
+=94=E6=9C=89=E5=85=B3=E6=9E=84=E5=BB=BA=E5=8A=A9=E6=89=8B=E7=A8=8B=E5=BA=8F=
+=E7=9A=84=E7=96=91=E9=97=AE=E3=80=82</li></ul></p>  <p>=E5=8F=82=E5=8A=A0=
+=E6=88=91=E4=BB=AC=E5=8D=B3=E5=B0=86=E5=88=86=E4=B8=A4=E9=83=A8=E5=88=86=E4=
+=B8=BE=E8=A1=8C=E7=9A=84=E2=80=9C=E4=BD=BF=E7=94=A8 Azure AI =E5=BC=80=E5=
+=8F=91=E8=87=AA=E5=B7=B1=E7=9A=84=E5=AE=9A=E5=88=B6 Copilot=E2=80=9D=E6=B4=
+=BB=E5=8A=A8=EF=BC=9A    <br> 08 =E6=9C=88 13 =E6=97=A5 |  09:30-12:30 =E6=
+=97=B6=E9=95=BF 180 =E5=88=86=E9=92=9F<br>   <br><br>=E6=B4=BB=E5=8A=A8=E4=
+=BD=BF=E7=94=A8=E8=AF=AD=E8=A8=80=EF=BC=9A =E4=B8=AD=E6=96=87 <br>=E9=9A=90=
+=E8=97=8F=E5=AD=97=E5=B9=95=E8=AF=AD=E8=A8=80=EF=BC=9A =E4=B8=AD=E6=96=87</=
+td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td height=3D"24" style=3D"font-size: 1px; line-height: 24px;" bgcolor=3D"#=
+ffffff">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td valign=3D"top" style=3D"border-collapse: separate; padding: 0px 0px 0px=
+;">
+<!--
+                CTA
+            -->=20
+<!--[if (gte mso 9)|(IE)]>
+<table width=3D"" align=3D"center" style=3D"margin: 0px auto; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D"background: #E8E6DF; border=
+-collapse: separate; display: block; font-family: 'Segoe UI',SUWR,Arial,San=
+s-Serif; font-size: 20px; line-height: 40px; padding: 0px 24px 8px 24px; te=
+xt-align: center; text-decoration: none;" bgcolor=3D"#E8E6DF"><a style=3D"t=
+ext-decoration: none;" href=3D
+"https://emails.microsoft.com/dc/_t9-i3gzVsFmsu9sv-WtquvHITt0VCtx2nXeMINZRI=
+tS4nrqsYySsala6orwN4sh8oWOHKiqAhlFcRY6tCqb2D38PTZoaqB_AkDTo4AM_bo=3D/MTU3LU=
+dRRS0zODIAAAGbsTz1YFHlytjWPXBjx620w349lRIjNMXh-wVorVWvj5o9atIpFS4Nr0BiHUTzY=
+YQCPQB267A=3D" target=3D"_blank"
+><strong style=3D"font-weight: normal; color: #091F2C;">=E7=AB=8B=E5=8D=B3=
+=E6=B3=A8=E5=86=8C &gt;</strong></a></td>
+</tr>
+</tbody>
+</table>
+
+<![endif]-->=20
+<!--[if (!mso)&(!IE)]><!-- -->=20
+<table width=3D"" align=3D"center" style=3D"margin: 0px auto; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" style=3D"background: #E8E6DF; border=
+-collapse: separate; display: block; font-family: 'Segoe UI',SUWR,Arial,San=
+s-Serif; font-size: 20px; line-height: 40px; padding: 0px 24px 0px 24px; te=
+xt-align: center; text-decoration: none;" bgcolor=3D"#E8E6DF"><a style=3D"t=
+ext-decoration: none;" href=3D"https://emails.microsoft.com/dc/_t9-i3gzVsFm=
+su9sv-WtquvHITt0VCtx2nXeMINZRItS4nrqsYySsala6orwN4sh8oWOHKiqAhlFcRY6tCqb2D3=
+8PTZoaqB_AkDTo4AM_bo=3D/MTU3LUdRRS0zODIAAAGbsTz1YFHlytjWPXBjx620w349lRIjNMX=
+h-wVorVWvj5o9atIpFS4Nr0BiHUTzYYQCPQB267A=3D" target=3D"_blank"><strong styl=
+e=3D"font-weight: normal; color: #091F2C;">=E7=AB=8B=E5=8D=B3=E6=B3=A8=E5=
+=86=8C &gt;</strong></a></td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--<![endif]--></td>=20
+</tr>=20
+<tr>=20
+<td>=20
+<table width=3D"100%" align=3D"left" style=3D"width: 100%; min-width: 100%;=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"mob_full_width"=
+>=20
+<tbody>=20
+<tr>=20
+<td height=3D"24" style=3D"font-size: 1px; line-height: 24px;" bgcolor=3D"#=
+ffffff"></td>=20
+<td align=3D"left" valign=3D"top" width=3D"140" class=3D"mobhide">&nbsp;</t=
+d>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+</div>=20
+</div>=20
+<div class=3D"mktEditable" id=3D"C_zone-CTA">
+<table class=3D"deviceWidth" style=3D"background-color: #ffffff;" width=3D"=
+640" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#ffffff" a=
+lign=3D"left">=20
+<tbody>=20
+<tr>=20
+<td height=3D"0">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td dir=3D"ltr" colspan=3D"2" class=3D"td-pad" style=3D"padding: 15px 30px;=
+ font-family: 'Segoe UI',SUWR,Arial,Sans-Serif; font-weight: 400; font-size=
+: 16px; line-height: 24px; color: #222222; text-align: left;" width=3D"100%=
+" bgcolor=3D"#ffffff"> <p style=3D"font-family: 'Segoe UI',SUWR,Arial,Sans-=
+Serif; font-weight: 400; font-size: 16px; line-height: 20px; margin: 0px; c=
+olor: #222222; text-align: left;"><p>=E8=AE=BF=E9=97=AE <a href=3D"https://=
+emails.microsoft.com/MTU3LUdRRS0zODIAAAGbsTz1YM-jTQZIW652lAaBmZ0VfXocr7pjDO=
+ZittpoaQ40bbClMk_XOPFnmTj_VEArKxx2jTs=3D" alt=3D"">Microsoft =E5=9C=A8=E7=
+=BA=BF=E6=8A=80=E6=9C=AF=E5=85=AC=E5=BC=80=E8=AF=BE=E7=BD=91=E7=AB=99</a>=
+=EF=BC=8C=E4=BA=86=E8=A7=A3=E6=9C=89=E5=85=B3=E5=85=B6=E4=BB=96=E6=B4=BB=E5=
+=8A=A8=E6=9C=BA=E4=BC=9A=E7=9A=84=E6=9B=B4=E5=A4=9A=E4=BF=A1=E6=81=AF=E3=80=
+=82</p>  </p> </td>=20
+</tr>=20
+<tr>=20
+<td height=3D"20">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table>
+</div>=20
+<div class=3D"mktEditable" id=3D"D_zone-Related_Resources">
+<!--[if (gte mso 9)|(IE)]>=20
+
+<![endif]--> <!--[if (!mso)&(!IE)]><!-- -->
+<div height=3D"0" style=3D"font-size: 0px; line-height: 0px;">&nbsp;</div>
+<!--<![endif]-->
+</div>=20
+<div class=3D"mktEditable rest_paragraph" id=3D"E_zone-CTA">
+<!--[if (gte mso 9)|(IE)]>=20
+
+<![endif]--> <!--[if (!mso)&(!IE)]><!-- -->
+<div height=3D"0" style=3D"font-size: 0px; line-height: 0px;">&nbsp;</div>
+<!--<![endif]-->
+</div>=20
+<!-- Footer: Legal message and address-->=20
+<table bgcolor=3D"#5E5E5E" width=3D"640" style=3D"width:640px;" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" class=3D"mob_padding=
+0 mob_full_width">=20
+<tbody>
+<tr>=20
+<td class=3D"mob_padding0" style=3D"padding:24px 24px 24px 24px;" bgcolor=
+=3D"#F2F2F2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" styl=
+e=3D"width:100%; min-width:100%; ">=20
+<tbody>
+<tr>=20
+<td class=3D"mob_padding" align=3D"left" style=3D"font-family: 'Segoe UI', =
+SUWR, Arial, Sans-Serif; font-weight: 400; font-size:10px; line-height:12px=
+; color:#5E5E5E;">=20
+<div class=3D"mktEditable rest_paragraph" id=3D"DNT-Social">
+<!--[if (gte mso 9)|(IE)]>=20
+
+<![endif]--> <!--[if (!mso)&(!IE)]><!-- -->
+<div height=3D"0" style=3D"font-size: 0px; line-height: 0px;">&nbsp;</div>
+<!--<![endif]-->
+</div> </td>=20
+</tr>=20
+<tr>=20
+<td class=3D"mob_padding" align=3D"left" style=3D"font-family: 'Segoe UI', =
+SUWR, Arial, Sans-Serif; font-weight: 400; font-size:10px; line-height:12px=
+; color:#5E5E5E;">=20
+<div class=3D"mktEditable rest_paragraph" id=3D"DNT-Footer">
+<div align=3D"left" class=3D"rest_paragraph"><!--[if (gte mso 9)|(IE)]>=20
+    <p style=3D"color: #5E5E5E;"><a style=3D"text-decoration: underline;" h=
+ref=3D
+"https://emails.microsoft.com/dc/YZdgvqwbGRw5vplqwcDuFAT39-RSqApAoBTg8JD6J6=
+9Q9XlJiBGUNKEP8wZ1xpt-oqgHbQNkJ4DZTh9iLCGQ-Yuli-pP-S0Fx37-GaAavRCpKS1keGTnl=
+vP5em-pZZFMI2PzmWTgoObJc6U9dggtAC9ZCZl5IkQZx0X-ZnRKnuuIQc_FtMy6EkehvCNFgTGH=
+kNl2ATu3u2urcR0qfO1MVruFGENl_1PQA0JOc5wHjtLByJTvxLrTC9gKhpFuowmaKyzWYLGF-3F=
+T2BZZW0R49H4pipReOebGrelorAe931V54VQ4KD9QLxLF2W_63cgE/MTU3LUdRRS0zODIAAAGbs=
+Tz1YFHlytjWPXBjx620w349lRIjNMXh-wVorVWvj5o9atIpFS4Nr0BiHUTzYYQCPQB267A=3D"
+><strong style=3D"font-weight: normal; color:#5E5E5E;">=E5=8F=96=E6=B6=88=
+=E8=AE=A2=E9=98=85</strong></a> | <a style=3D"text-decoration: underline;" =
+href=3D
+"https://emails.microsoft.com/MTU3LUdRRS0zODIAAAGbsTz1YKr9IlI0wspXbcCuzkXpl=
+WKMMF1SSDuG6XEC3oms6hlPZL2dBI8rLL8Ifmsjcjc-60k=3D" target=3D"_blank"
+><strong style=3D"font-weight: normal; color:#5E5E5E;">=E9=9A=90=E7=A7=81=
+=E5=A3=B0=E6=98=8E</strong></a></p>
+    <![endif]--><!--[if (!mso)&(!IE)]><!-- -->
+<p style=3D"color: #5e5e5e;"><a style=3D"text-decoration: none; border-bott=
+om: 1px solid #5E5E5E;" href=3D"https://emails.microsoft.com/dc/YZdgvqwbGRw=
+5vplqwcDuFAT39-RSqApAoBTg8JD6J69Q9XlJiBGUNKEP8wZ1xpt-oqgHbQNkJ4DZTh9iLCGQ-Y=
+uli-pP-S0Fx37-GaAavRCpKS1keGTnlvP5em-pZZFMI2PzmWTgoObJc6U9dggtAC9ZCZl5IkQZx=
+0X-ZnRKnuuIQc_FtMy6EkehvCNFgTGHkNl2ATu3u2urcR0qfO1MVruFGENl_1PQA0JOc5wHjtLB=
+yJTvxLrTC9gKhpFuowmaKyzWYLGF-3FT2BZZW0R49H4pipReOebGrelorAe931V54VQ4KD9QLxL=
+F2W_63cgE/MTU3LUdRRS0zODIAAAGbsTz1YFHlytjWPXBjx620w349lRIjNMXh-wVorVWvj5o9a=
+tIpFS4Nr0BiHUTzYYQCPQB267A=3D" target=3D"_blank"><strong style=3D"font-weig=
+ht: normal; color: #5e5e5e;">=E5=8F=96=E6=B6=88=E8=AE=A2=E9=98=85</strong><=
+/a> | <a style=3D"text-decoration: none; border-bottom: 1px solid #5E5E5E;"=
+ href=3D"https://emails.microsoft.com/MTU3LUdRRS0zODIAAAGbsTz1YKr9IlI0wspXb=
+cCuzkXplWKMMF1SSDuG6XEC3oms6hlPZL2dBI8rLL8Ifmsjcjc-60k=3D" target=3D"_blank=
+"><strong style=3D"font-weight: normal; color: #5e5e5e;">=E9=9A=90=E7=A7=81=
+=E5=A3=B0=E6=98=8E</strong></a></p>
+<!--<![endif]-->
+<p>&nbsp;</p>
+<p style=3D"color: #5e5e5e;">Microsoft Corporation<br>One Microsoft Way<br>=
+Redmond, WA 98052</p>
+</div>
+<div><br>
+<p><a href=3D"https://emails.microsoft.com/MTU3LUdRRS0zODIAAAGbsTz1YA_vSm2g=
+W006mwtTNx_EdcjoziNoR_LLw6iK5g7zCNimuVybYKtwy4SDvdBMDp8ZN2s=3D"><img width=
+=3D"75" height=3D"16" align=3D"left" alt=3D"Microsoft" src=3D"https://info.=
+microsoft.com/rs/157-GQE-382/images/EN-BASICE-Logo-MSFTLogo.png" border=3D"=
+0"></a></p>
+</div>
+</div> </td>=20
+</tr>=20
+</tbody>
+</table> </td>=20
+</tr>=20
+</tbody>
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td height=3D"48" style=3D"font-size: 1px; line-height: 48px; font-family: =
+'Segoe UI', SUWR, Arial, Sans-Serif; font-weight: 300;">&nbsp;</td>=20
+</tr>=20
+</tbody>
+</table> </td>=20
+</tr>=20
+</tbody>
+</table> =20
+<a href=3D"https://emails.microsoft.com/MTU3LUdRRS0zODIAAAGbsTz1YA-ZHJoAsGz=
+sjL847VeFAB0zkPwEsAvbS1tlcQh5EwjI6Uqeb4tsVnAk19hEMlGPb90=3D"></a>
+<img src=3D"https://emails.microsoft.com/trk?t=3D1&amp;mid=3DMTU3LUdRRS0zOD=
+IAAAGbsTz1YNn2TSJ0b-qYIG4xKEaqsLoPS0Cvp8zegyVxSTJJTtz0yPwiBraksw8wOIBBYy9zD=
+Hax6C6CSivpmnL6pJgwHlH-hlPF0c5jQemEttJY2ji8lTswV3NMTDXNk0vNhOMlyTpkdSx2JSpD=
+nT_aGdzsL-YQANe5im2fR7g" width=3D"1" height=3D"1" style=3D"display:none !im=
+portant;" alt=3D"">
+
+<!-- footer -->
+</body>
+</html>=
+
+------=_Part_29719206_1703413578.1752653120868--

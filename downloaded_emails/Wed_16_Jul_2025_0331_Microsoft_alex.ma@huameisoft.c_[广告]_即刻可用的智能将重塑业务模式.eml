@@ -1,0 +1,1705 @@
+Received: from TY2PPF9A29F4079.apcprd02.prod.outlook.com (2603:1096:408::9a4)
+ by TYZPR02MB7411.apcprd02.prod.outlook.com with HTTPS; Wed, 16 Jul 2025
+ 08:31:08 +0000
+Received: from SG2PR04CA0168.apcprd04.prod.outlook.com (2603:1096:4::30) by
+ TY2PPF9A29F4079.apcprd02.prod.outlook.com (2603:1096:408::9a4) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8901.26; Wed, 16 Jul 2025 08:31:03 +0000
+Received: from SG2PEPF000B66CE.apcprd03.prod.outlook.com
+ (2603:1096:4:0:cafe::d7) by SG2PR04CA0168.outlook.office365.com
+ (2603:1096:4::30) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8943.20 via Frontend Transport; Wed,
+ 16 Jul 2025 08:31:02 +0000
+Authentication-Results: spf=pass (sender IP is 199.15.214.200)
+ smtp.mailfrom=bounce5.email.microsoft.com; dkim=pass (signature was verified)
+ header.d=email.microsoft.com;dkim=pass (signature was verified)
+ header.d=mktdns.com;dmarc=pass action=none
+ header.from=email.microsoft.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ bounce5.email.microsoft.com designates 199.15.214.200 as permitted sender)
+ receiver=protection.outlook.com; client-ip=199.15.214.200;
+ helo=bounce5.email.microsoft.com; pr=C
+Received: from bounce5.email.microsoft.com (199.15.214.200) by
+ SG2PEPF000B66CE.mail.protection.outlook.com (10.167.240.21) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8922.22 via Frontend Transport; Wed, 16 Jul 2025 08:31:01 +0000
+X-MSFBL: J4p5yGsgNfr+fOmQ+mvoG7e+kyfIXbpN5hBKRGvCz3Y=|eyJ1IjoiMTU3LUdRRS0
+	zODI6MDoyMzA5NjA5OjkwMTIyNDg6MjAzMTQxOTY6MTk2MDM0MTo5OjcwNjQ4Njk
+	6MTY3NTEyODEyNS0yMDQiLCJyIjoiYWxleC5tYUBodWFtZWlzb2Z0LmNuIiwiYiI
+	6ImR2cC0xOTktMTUtMjE0LTIwMCIsImciOiJiZy1zamQtMTc0In0=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1752654660;
+	s=m1; d=email.microsoft.com; i=@email.microsoft.com;
+	h=List-Unsubscribe:List-Unsubscribe-Post:Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=fWDQBYwusHIX6WDKFzOa2NfseQR91DQWPRAlx70pEG8=;
+	b=pLyW0XT1h2fVxBAXEztCmKL2ovXzYi4t9/oe0v056H+5UWLSooIkWtgt2npX7EXu
+	sycJJ9zJJYitBB8HDfpPR5PNDAcgJU6U52IMFVpb+nFiywJrEHoIqpC9tOHiScnEA5Q
+	iJVU2FqQD2vudb9k60we6UiSBoiJ25c6ceA8rQI0=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1752654660;
+	s=m1; d=mktdns.com; i=@mktdns.com;
+	h=List-Unsubscribe:List-Unsubscribe-Post:Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=fWDQBYwusHIX6WDKFzOa2NfseQR91DQWPRAlx70pEG8=;
+	b=V9o1HzbvlxSIwiAPWj44JXAVvi8z9EQ/DmeCDqRnzFPB0lBqI44DdpMrzoPvZYya
+	MXRZg4QDyAp0/KFyUsXBd87aRw+eoGKICAwff4pkzwqes9OeP5Ljuxg7oQjrpwXuzqb
+	ywkqDdPkP2UStwh+Jy+IKoXgnzNmb+SXUJ4ddSAQ=
+Date: Wed, 16 Jul 2025 03:31:00 -0500 (CDT)
+From: Microsoft <replyto@email.microsoft.com>
+Reply-To: replyto@microsoft.com
+To: alex.ma@huameisoft.cn
+Message-ID: <507309445.29770346.1752654660075@sjmktmail-batch1g.marketo.org>
+Subject: =?UTF-8?B?W+W5v+WRil0g5Y2z5Yi75Y+v55So?=
+ =?UTF-8?B?55qE5pm66IO95bCG6YeN5aGR5Lia5Yqh5qih5byP?=
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_29770345_788732084.1752654660075"
+X-Binding: bg-sjd-174
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <https://emails.microsoft.com/u/MTU3LUdRRS0zODIAAAGbsVRx2_S8aoo3SZtE0Jdxo-BIc_A1wi7ZhoAOktcCr4fW6Px-9GQ1i_pFpphZDtsKU0Kc-j0=?emailAddress=MTU3LUdRRS0zODIAAAGbsVRx2UgHv1-D1iiemiHzl40ZOdagKWalftAWXSyGvQyQnJyn-mI2P88rc_AJX7RC4VBR2z4>, <mailto:OVCFOYS2IJSHIVZXIU2TKM2JLBLG4OKIIFJUGT3RINVFIOKYKA4XEY3YGAYEGOKTPB2E2PI=.7064869.1960341.9@unsub-sj.mktomail.com>
+X-MarketoID: 157-GQE-382:0:2309609:9012248:20314196:1960341:9:7064869:1675128125-204
+X-PVIQ: mkto-157GQE382-000001-000007-064869
+X-Mailfrom: 157-GQE-382.0.7064869.0.0.1960341.9.1675128125-204@bounce5.email.microsoft.com
+X-MktArchive: false
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+Return-Path: 157-GQE-382.0.7064869.0.0.1960341.9.1675128125-204@bounce5.email.microsoft.com
+X-MS-Exchange-Organization-ExpirationStartTime: 16 Jul 2025 08:31:02.3988
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 7616887d-c785-4cab-0310-08ddc443195f
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 201bc36e-e78e-44f5-a3d6-32ca5290534b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: SG2PEPF000B66CE:EE_|TY2PPF9A29F4079:EE_|TYZPR02MB7411:EE_
+X-MS-Exchange-Organization-AuthSource: SG2PEPF000B66CE.apcprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 7616887d-c785-4cab-0310-08ddc443195f
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|5062899012|1032899013|13102899012|12012899012|6062899009|3092899012|69100299015|3072899012|2092899012|13012899012|5082899009|4092899012|5083199021|4022899009|13003099007|2066899003|8096899003;
+X-Forefront-Antispam-Report: CIP:199.15.214.200;CTRY:US;LANG:zh-cn;SCL:-1;SRV:;IPV:NLI;SFV:SFE;H:bounce5.email.microsoft.com;PTR:bounce5.email.microsoft.com;CAT:NONE;SFS:(13230040)(5062899012)(1032899013)(13102899012)(12012899012)(6062899009)(3092899012)(69100299015)(3072899012)(2092899012)(13012899012)(5082899009)(4092899012)(5083199021)(4022899009)(13003099007)(2066899003)(8096899003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Jul 2025 08:31:01.5166
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7616887d-c785-4cab-0310-08ddc443195f
+X-MS-Exchange-CrossTenant-Id: 201bc36e-e78e-44f5-a3d6-32ca5290534b
+X-MS-Exchange-CrossTenant-AuthSource: SG2PEPF000B66CE.apcprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: TY2PPF9A29F4079
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:07.0759144
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8922.017
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(811242)(255002)(410001)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?RFR0SWVHcmtPcHpnSmNGbHY0RHFNT3NTRTlRcFZTZFhUblQxc3F1OVJUYTBo?=
+ =?utf-8?B?Wit6RFFQWGVXMzZFbzJIaDdpZExHNWg0WHRvZGF1RTBlVHVEK2JnUWtIdDly?=
+ =?utf-8?B?Rkh0WWkyZmdHSmdId2NyMHZNeVFkNUQ3TnI2VGtlaHkwam9yY3hKelJGaDVB?=
+ =?utf-8?B?cEFqYXZFSkdpeVArNmVWNURYdU9uNWlxNkNXc1JPY0p0U1FSRmNhcDhNT1Bp?=
+ =?utf-8?B?alRWZWpXeXdGb2VXaVBVYjExc1BQM3pOWWxYckJRRmtEWURQakZXeklYa0Fu?=
+ =?utf-8?B?eGpPRXlsZlgzN2UvQ3cwakYyMTFyZjRzTzVtVlJXNUJhRXpSQ25WKy9BMWFZ?=
+ =?utf-8?B?bEFHSktIb0JtRG01aldWT2NuTkVLNlBJMjFZYUR4Ym8yRGZraDd0WjdGTklW?=
+ =?utf-8?B?dGx3anhmWDhnZ2tDSVBHbHNKNkpQbG9wZ0s0VGEvQUdmdVd0UGg2dDhqRVlu?=
+ =?utf-8?B?TjJiS2Rkc0ZBSEpCR2tHc3hmL3NYZTI1TmozUDdyU0FnTklkNzNQY3ROMHpi?=
+ =?utf-8?B?amx4WGkrWmEvcGYrTzNiQ01XSDJGWVkxYnBIWVYwZmxyajZXaSt2Nmg4UWJ3?=
+ =?utf-8?B?enZzRnhPVU9UTkdEZkthMVF4SzJyeHhwUGdSckJRQ3VaaEYrdHpFRWpWWDVk?=
+ =?utf-8?B?cm00REN0MjNia1RCMi9kcmNBeEQ5SWRjejJWcmtidzVFU3dEQml3eEVZOXNK?=
+ =?utf-8?B?RWZUNGxUMjdEQ0NvN0Jtdmp6YkF1c1NtNFEwbzdPUEZwNWVsYWtmaUIzU21X?=
+ =?utf-8?B?bCtvQmFaQktGL2ZJdDlpdzdBdHAzSXN1TmY4eVVacUdUSHltUUpNUFdkRGYz?=
+ =?utf-8?B?d055SG9DTVZKaml2eG9XT1g0SjZRTTRCTWVLWmswYUJWZVpEMG01MXQyWWFo?=
+ =?utf-8?B?K0lPY1BJc0U4RlkxRDQ2R0grRVlsTzhMRHdKYmMxWndHb2lIOCttNXNIcFp4?=
+ =?utf-8?B?SG1BK0d0Ri9IUlJkVjF2eUZPZHlxRlc1MCtkNmFvY0NuaU1waFdWTnh0ZjRx?=
+ =?utf-8?B?SnhZT3FaNm9BdzFyUjFzZFRuN0F5Q3hFTG9mNWV3Vm1EM0l1UkFlR09IR0NY?=
+ =?utf-8?B?eG1xVTJNTkdKL2FUNXhBTUVIU1FuYkhyOXpmeVczZnlFaG1pbE12dnlpMkNQ?=
+ =?utf-8?B?OEQzM1k1MlkxWEM4SlpPUXhKZ2RaN1FlSGM1RDZmZ3gvdkgxT1o0VndGdlZy?=
+ =?utf-8?B?dkZ2dlRBOUtsS1h1V0FYMkhwa0lLd3hYUE92S2Z1OTN0TWI4cUtGempWclZX?=
+ =?utf-8?B?K3JMOEdENFo0clBDZGNWRUZ2cklIZFgvY3pRMFFYeUNyTUdUNzJQQWRLZDgy?=
+ =?utf-8?B?Z2taREppRFRwbk9QMHBVRmFxVzVKcDR3TXV1RUVNRGlXWDRGM3lzYm5qM1pK?=
+ =?utf-8?B?MHJWQVlicVhmUGhYdnF4S0xuUUR0dnhGdWlQcEloTmgyL1ZBVHB3UmhsZDJV?=
+ =?utf-8?B?dGY0TGp1ZEUyYy9HWU5pM21BL3Z4ZmNMeUg2dW5zWTNGYU5hcW5EWVdjUWR5?=
+ =?utf-8?B?WDY4anpGSGQ3M01zL3Y4MWszRjNKUVpsNHVINmtwa0dhYVlxYTdCd1BFTHV1?=
+ =?utf-8?B?OGgwd2tEWktHQmMzdVlCQjBxN3ZsZFNWSUlML004eFljOS84MkJ5RWd0c3U2?=
+ =?utf-8?B?dUhSalRkR1NmSHY3cnhFcklJQUFIMTNvMVZZREFnWi9mUm1GcmpGWjJMMSsr?=
+ =?utf-8?B?SVBIMVhwemZ4bE50Y0o2WnFsSVlRdU56cmZ2YklDbE9HWGZmRkNyem56eWxN?=
+ =?utf-8?B?cnhETWhQZFY1Y0FKeDlQVlowM0xDZERQbWNHeEdXWTFvcm1vUUdKd2hwU2Vp?=
+ =?utf-8?B?dkFZcENYV3pzTHNsVXpObmljUjh1a2duZ0hueTJ6WkovYm14TjVaQmgxM2h2?=
+ =?utf-8?B?RVVPN2FHcklKaVlCRXY2QVNBTXpLQzQ1Y29hUjlSQVpCREVISk5wTjh5RHRK?=
+ =?utf-8?B?bXhicnRYREtVNElOajNYZ0Voc29HYTBlNURQT0g2ZUE1ZHRzQUZqU3hvcUs4?=
+ =?utf-8?B?Mkl6YXRPN1hVV1ZpNjRScFRWblpnVk1QWnBKRWlEOVpTVkI1OFhRTEF1MUdV?=
+ =?utf-8?B?aWVGYTJwWnFyeDBSdkNTUWJHU2duN1dEWStBSjZOSldXUmloTEtMRjBkekF5?=
+ =?utf-8?B?cTE2TW1JN2x5b3ljZzVsR0JtcjVqYWFqQlBNY0NJRHppLy8rbjh5UTNtNThn?=
+ =?utf-8?B?d2FXa1ZwUjBkNnNyS05HRlRPa0p3OEMyQWJqdGI5Rk1LVVFBRFN4a1R2MmZR?=
+ =?utf-8?B?QVd0QkIvKzNaRzdEeWFyZEFxRzlZQUg1OXBrK3J2djRrd3ora0lTUDBYSm9B?=
+ =?utf-8?B?dFVUNVAzSGNlN3B2RDg2RDVWWXcwNXkzK3B4UjUzdUhMcUsycWdSRm5sT3NZ?=
+ =?utf-8?B?RmxUQy9JRm9KY1Ivb2lzamFmVUFES3ZCQkhWRXY5dlVrSVYzTTZTRGh0Q2J6?=
+ =?utf-8?B?RmR1d1BoWmJFOXV2eDRTOGRZa1RCNDNCYWFIMmNMMCtKODQxVnJoNFMwTHZ0?=
+ =?utf-8?B?V1JoT2JjcDdJZWJyUUpwcVJHVWxET3FhYzZIRzFEajROS29NVitNZnFqK0Rp?=
+ =?utf-8?B?NHAzMzBzc3M5QTJKVnA0cnZVRHZxUFp3MFJRWWExZmdZR1U1Qm43TE1mSHlK?=
+ =?utf-8?B?d3NNcGZGRm5FUmpTcS81SVlmcmlPZjhXRUJJRFJWYkoxMFFCRkRMb0Nsa1VT?=
+ =?utf-8?B?ZGhxZnRkLzNEanVWL2JIZEFwMk1XY2NsSnVQaWJDNXZJdjZzaEV0OUx2VzRY?=
+ =?utf-8?B?dUQ5cktjcWtuV2dkWVIyL1JJcTZ5eHU5d1V3Sm1aYnZkM2I4d2xzOTExemwz?=
+ =?utf-8?B?OVc1SmVnMWVrSzJMTHNqK1ZObnZ0dVFGN25mZUlWQlNQa2NTUzB5c2JhbFov?=
+ =?utf-8?B?UnZPODN0M21nRjJaeUd2eHZmOG5NMlh1Z1I5MUNoT2h5eE5XYXdMdTdsWFMw?=
+ =?utf-8?B?YjJaVVZtdEVrTldleU1MTEloN1JWWitjTkNpWGFmK3Fob2FGQWJIWVhmdENE?=
+ =?utf-8?B?RXdYaGlSTHVJNTlnQ0Yxd0FCcUVua0ViRThJakxUcnI5Q21JSjNOOVZva3N6?=
+ =?utf-8?B?cm5zQ2k1ZGVFUFFBPT0=?=
+MIME-Version: 1.0
+
+------=_Part_29770345_788732084.1752654660075
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+=E4=BA=86=E8=A7=A3=E6=9C=80=E6=96=B0=E7=9A=84=E7=A0=94=E7=A9=B6=E7=BB=93=E6=
+=9E=9C=E5=92=8C=E6=99=BA=E8=83=BD Microsoft 365 Copilot =E5=89=AF=E9=A9=BE=
+=E9=A9=B6=C2=AE =E5=88=9B=E6=96=B0=E6=88=90=E6=9E=9C=E3=80=82
+
+=E9=98=85=E8=AF=BB=E6=AD=A4=E7=94=B5=E5=AD=90=E9=82=AE=E4=BB=B6=E6=97=B6=E9=
+=81=87=E5=88=B0=E9=97=AE=E9=A2=98=E5=90=97=EF=BC=9F | =E8=AF=B7=E4=BB=A5=E7=
+=BD=91=E9=A1=B5=E5=BD=A2=E5=BC=8F=E9=98=85=E8=AF=BB <[[https://emails.micro=
+soft.com/v/MTU3LUdRRS0zODIAAAGbsVRx29-33YRKH6MPADot44XzUkmdE37a38eddcQG7e0l=
+ABlvL2TpeRR42D2Mjr1C7Sy0R2w=3D]]>
+
+<[[https://www.microsoft.com/]]>
+2025=EF=BC=9A=E5=89=8D=E6=B2=BF=E4=BC=81=E4=B8=9A=E8=AF=9E=E7=94=9F=E4=B9=
+=8B=E5=B9=B4  =20
+
+
+=E9=98=85=E8=AF=BB=E6=8A=A5=E5=91=8A <https://emails.microsoft.com/dc/Biizu=
+Qa-7R2YP08ZA_fWI6iAgvhxJ69KzGPtU0nJN1I3EvwzWWT0LwbU1Ar2YjEEGb_wzJ0WBw7dmvDV=
+JyJqBg=3D=3D/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kKgieMor8MJjzIfoy5E7_tET9=
+9PhMMw5R2uSIoRW4ulhALogQqw5GE=3D>
+
+
+ =E4=B8=80=E7=A7=8D=E6=96=B0=E7=9A=84=E5=85=AC=E5=8F=B8=E6=AD=A3=E5=9C=A8=
+=E5=87=BA=E7=8E=B0=EF=BC=9A=E5=89=8D=E6=B2=BF=E4=BC=81=E4=B8=9A=E3=80=82=E8=
+=BF=99=E4=BA=9B=E4=BC=81=E4=B8=9A=E5=9B=B4=E7=BB=95=E5=8D=B3=E6=97=B6=E6=99=
+=BA=E8=83=BD=E8=80=8C=E6=9E=84=E5=BB=BA=EF=BC=8C=E7=94=B1=E4=BA=BA=E7=B1=BB=
+=E5=92=8C AI =E6=99=BA=E8=83=BD=E4=BD=93=E7=BB=84=E6=88=90=E7=9A=84=E6=B7=
+=B7=E5=90=88=E5=9B=A2=E9=98=9F=E6=8F=90=E4=BE=9B=E6=94=AF=E6=8C=81=EF=BC=8C=
+=E8=83=BD=E5=A4=9F=E5=BF=AB=E9=80=9F=E6=89=A9=E5=B1=95=E3=80=81=E6=95=8F=E6=
+=8D=B7=E8=BF=90=E8=90=A5=E5=B9=B6=E6=9B=B4=E5=BF=AB=E5=9C=B0=E5=88=9B=E9=80=
+=A0=E4=BB=B7=E5=80=BC=E3=80=82 =E6=9F=A5=E7=9C=8B=E3=80=8A2025 =E5=B9=B4=E5=
+=B7=A5=E4=BD=9C=E8=B6=8B=E5=8A=BF=E6=8C=87=E6=95=B0=E5=B9=B4=E5=BA=A6=E6=8A=
+=A5=E5=91=8A=E3=80=8B=EF=BC=8C=E8=8E=B7=E5=8F=96=E7=9B=B8=E5=85=B3=E6=95=B0=
+=E6=8D=AE=E5=92=8C=E8=A7=81=E8=A7=A3=EF=BC=8C=E4=BA=86=E8=A7=A3=E6=8E=A8=E5=
+=8A=A8=E6=9C=AA=E6=9D=A5=E5=B7=A5=E4=BD=9C=E5=8F=91=E5=B1=95=E7=9A=84=E8=B6=
+=8B=E5=8A=BF=EF=BC=9A =E4=BD=A0=E5=8F=AF=E4=BB=A5=E8=B4=AD=E4=B9=B0=E5=8D=
+=B3=E5=88=BB=E5=8F=AF=E7=94=A8=E7=9A=84=E6=99=BA=E8=83=BD =E5=BD=93=E4=B8=
+=80=E7=A7=8D=E7=A8=80=E7=BC=BA=E4=B8=94=E6=98=82=E8=B4=B5=E7=9A=84=E8=B5=84=
+=E6=BA=90=E5=8F=98=E5=BE=97=E5=85=85=E8=B6=B3=E4=B8=94=E7=BB=8F=E6=B5=8E=E5=
+=AE=9E=E6=83=A0=E6=97=B6=EF=BC=8C=E4=B8=9A=E5=8A=A1=E6=A8=A1=E5=BC=8F=E5=B0=
+=86=E5=8F=91=E7=94=9F=E6=A0=B9=E6=9C=AC=E6=80=A7=E7=9A=84=E5=8F=98=E9=9D=A9=
+=E3=80=82 =E4=BA=BA=E7=B1=BB=E4=B8=8E=E4=BB=A3=E7=90=86=E5=9B=A2=E9=98=9F=
+=E5=B0=86=E9=A2=A0=E8=A6=86=E7=BB=84=E7=BB=87=E6=9E=B6=E6=9E=84 =E4=BC=A0=
+=E7=BB=9F=E7=BB=93=E6=9E=84=E5=8F=AF=E8=83=BD=E4=BC=9A=E8=A2=AB=E2=80=9C=E5=
+=B7=A5=E4=BD=9C=E6=9E=B6=E6=9E=84=E2=80=9D=E6=89=80=E5=8F=96=E4=BB=A3 - =E4=
+=B8=80=E4=B8=AA=E5=8A=A8=E6=80=81=E3=80=81=E8=B7=A8=E8=81=8C=E8=83=BD=E3=80=
+=81=E4=B8=93=E4=B8=BA=E9=80=9F=E5=BA=A6=E8=80=8C=E6=89=93=E9=80=A0=E7=9A=84=
+=E6=96=B0=E6=A8=A1=E5=BC=8F=E3=80=82 =E6=AF=8F=E4=BD=8D=E5=91=98=E5=B7=A5=
+=E9=83=BD=E5=B0=86=E6=88=90=E4=B8=BA=E4=BB=A3=E7=90=86=E7=9A=84=E7=AE=A1=E7=
+=90=86=E8=80=85 =E9=9A=8F=E7=9D=80=E6=99=BA=E8=83=BD=E4=BD=93=E8=BF=9B=E5=
+=85=A5=E8=81=8C=E5=9C=BA=EF=BC=8C=E5=91=98=E5=B7=A5=E5=B0=86=E8=B4=9F=E8=B4=
+=A3=E6=8C=87=E5=AF=BC=E5=92=8C=E7=9B=91=E7=9D=A3=E5=AE=83=E4=BB=AC=E7=9A=84=
+=E5=B7=A5=E4=BD=9C=E3=80=82=20
+
+
+
+=E4=BA=86=E8=A7=A3=E6=88=91=E4=BB=AC=E5=A6=82=E4=BD=95=E4=B8=BA=E6=9C=AA=E6=
+=9D=A5=E7=9A=84=E5=B7=A5=E4=BD=9C=E6=89=93=E9=80=A0=E6=99=BA=E8=83=BD Micro=
+soft 365 Copilot =E5=89=AF=E9=A9=BE=E9=A9=B6=C2=AE
+
+=E6=8E=A2=E7=B4=A2=E3=80=8A=E5=B7=A5=E4=BD=9C=E8=B6=8B=E5=8A=BF=E6=8C=87=E6=
+=95=B0=E3=80=8B=E4=B8=AD=E7=9A=84=E8=A7=81=E8=A7=A3=EF=BC=8C=E5=B9=B6=E4=BA=
+=86=E8=A7=A3=E6=9C=80=E6=96=B0=E7=9A=84 Copilot =E5=92=8C=E4=BB=A3=E7=90=86=
+=E5=88=9B=E6=96=B0=E6=88=90=E6=9E=9C=E3=80=82
+
+=E9=98=85=E8=AF=BB=E5=8D=9A=E5=AE=A2 > <https://emails.microsoft.com/dc/1xp=
+p769jskdhR-0NISuUrgCYW1DR-ohjFeO6h--l4jA=3D/MTU3LUdRRS0zODIAAAGbsVRx2y36O_E=
+WkOje5kKgieMor8MJjzIfoy5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D>
+
+
+=E6=8E=A2=E7=B4=A2=E6=96=B0=E7=9A=84 Microsoft 365 =E5=8A=9F=E8=83=BD
+
+=E4=BA=86=E8=A7=A3 Copilot=E3=80=81Copilot =E6=8E=A7=E5=88=B6=E7=B3=BB=E7=
+=BB=9F=E5=92=8C=E4=BB=A3=E7=90=86=E5=88=9B=E6=96=B0=E7=9A=84=E6=9C=80=E6=96=
+=B0=E5=8A=A8=E6=80=81=E3=80=82
+
+=E9=98=85=E8=AF=BB=E5=8D=9A=E5=AE=A2 > <https://emails.microsoft.com/dc/K2n=
+LtwtctcW29fgYHxJx83O8k0_2AYDt4M52qHU9muDN51nC0vZ-S4ahAwUEm0Fkmvtcxmix5hsOTo=
+SkQBPs0g=3D=3D/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kKgieMor8MJjzIfoy5E7_tE=
+T99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D>
+
+
+Facebook <https://emails.microsoft.com/dc/uq3EykqQY7h0Yyhe2BWhMA54Y81E5aWaE=
+XPp8hxWpKjq9dMvK3o5pSaej725LW-D/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kKgieM=
+or8MJjzIfoy5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D>
+
+X<https://emails.microsoft.com/dc/u8oZOJAd-CVEcjoxZLybYz3sYyfSWi5Zi3JkhOwS8=
+NuMMUVj-WozuLBFZvK9RF-B/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kKgieMor8MJjzI=
+foy5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D>
+
+YouTube <https://emails.microsoft.com/dc/M9Y3nowLDCcEv8uSbJAkaS8jXnpz8EOJlY=
+Kmt8qLKRSwTSHjRrrwa6GDShJfu5zs/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kKgieMo=
+r8MJjzIfoy5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D>
+
+LinkedIn <https://emails.microsoft.com/dc/fG5-PlwEnZR-IoSdwCtjIpTVr9AsJHNwc=
+_srhy7U9rXQHbFSwJIYiPgCEE2-LTR4/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kKgieM=
+or8MJjzIfoy5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D>
+
+Instagram <https://emails.microsoft.com/dc/WhZcq50CsoLLiaLsfDq43sVHzOlvTnpz=
+PaSuzdE5W2pYlNXVnFtFcepu8J29jJdu/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kKgie=
+Mor8MJjzIfoy5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D>
+
+Pinterest <https://emails.microsoft.com/dc/0pJJ_y_ObF2UmNML1anXIuFIYrydk_UT=
+6rms6XDaCoWqCmZpyxriGWtWZVVDXOmP/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kKgie=
+Mor8MJjzIfoy5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D>
+Copyright 2025 Microsoft Corporation.
+
+ =E5=8F=96=E6=B6=88=E8=AE=A2=E9=98=85 <[[https://account.microsoft.com/prof=
+ile/unsubscribe?CTID=3D0&ECID=3DvukLZcOByWYrh9Os2kM8LkClqO4mT6%2F0uehmh8YEi=
+t4%3D&K=3Dc0904bf6-803e-4d14-8b3a-d01820aad762&PID=3D19122&TID=3De8bbc280-7=
+6ee-423a-9cc0-e8523bd2542b&CMID=3DONEGDC-2309609]]> | =E9=9A=90=E7=A7=81=E5=
+=A3=B0=E6=98=8E <https://emails.microsoft.com/MTU3LUdRRS0zODIAAAGbsVRx2xqeA=
+JkN8E3KukTsX8o6YeDBknfqtKgMsbQFx9P8mtjItyPMc5QpVdPHBfJrzv2480s=3D>
+
+Microsoft Corporation<br>One Microsoft Way<br>Redmond, WA 98052
+
+<https://emails.microsoft.com/MTU3LUdRRS0zODIAAAGbsVRx21-YPe58uwieOzEmyyEQ4=
+3a3yc9eOf_jGTd4XCnQhPWHvEU78AWQwvRGhZup79d6rq0=3D>
+
+.
+
+------=_Part_29770345_788732084.1752654660075
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml" xmlns:o=3D"urn:schemas-microsoft-com:office:office" xmlns:v=
+=3D"urn:schemas-microsoft-com:vml" dir=3D"ltr" lang=3D"en"><head><!--[if gt=
+e mso 9]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">=20
+<meta name=3D"x-apple-disable-message-reformatting">=20
+<meta name=3D"format-detection" content=3D"telephone=3Dno">=20
+<meta name=3D"format-detection" content=3D"date=3Dno">=20
+<meta name=3D"format-detection" content=3D"address=3Dno">=20
+<meta name=3D"format-detection" content=3D"email=3Dno">=20
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">=20
+<!--marketo meta-->                                     =20
+<!--marketo meta ends-->=20
+<title>Microsoft</title>=20
+<style media=3D"all" type=3D"text/css">
+@-ms-viewport {
+width: device-width;
+}
+</style>=20
+<!--[if (lte mso 15)|(IE)]>
+<style>
+li {margin-left:40px;}
+</style>
+<![endif]-->=20
+<style type=3D"text/css">
+      .desktopHidden,
+      .desktop-hidden,
+      .autopreview,
+      .desktophide,
+      .spacer-desktop-hide,
+      .inner-mobile-table th.mobile-show-table-cell,
+      .responsive-table td.mobile-show-block {
+      display: none !important;
+      }
+      body {
+      margin: 0;
+      padding: 0;
+      }
+      table td {
+      border-collapse: collapse;
+      margin: 0;
+      padding: 0;
+      }
+      table td {
+      margin: 0;
+      padding: 0;
+      }
+ p {
+margin: 10px 0px !important;
+font-family: 'Segoe UI', SUWR, Arial, Sans-Serif;
+
+}
+  a {
+    color: #0078d4;
+  }
+      table td p a {
+      color: #0078d4;
+      font-weight: normal;
+      }
+		a:visited, a:active {
+  			color: inherit;
+		}
+      table th {
+      font-weight: normal !important;
+      }
+.hide_icon{
+      display: none!important;
+      max-width: 0px!important;
+      max-height: 0px!important;
+padding-right: 0px!important;
+overflow: hidden!important;
+line-height: 0!important;
+width: 0!important;
+      }
+      .table-width {
+      width: 200px!important;
+      height: 27px!important;
+      }
+      .widthImageCard{
+      width: 30px !important;
+      }
+      .mobile-social-padd-right {
+      padding-right: 40px;
+      }
+      .tile-pad-large-4 {
+      padding-left: 50px !important;
+      padding-right: 50px !important;
+      }
+      .tile-pad-large {
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+      }
+      .tile-pad-small-v1 {
+      padding-left: 50px !important;
+      padding-right: 50px !important;
+      }
+      .tile-pad-small-v2 {
+      padding-left: 84px !important;
+      padding-right: 84px !important;
+      }
+      .tile-pad-small-v3 {
+      padding-left: 119px !important;
+      padding-right: 119px !important;
+      }
+      .tile-pad-small-v5 {
+      padding-left: 154px !important;
+      padding-right: 154px !important;
+      }
+      .tile-txt-small {
+      font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      color: #505050;
+      line-height: 16px;
+      letter-spacing: -0.01em;
+      text-align: center;
+      padding-left: 5px;
+      padding-right: 5px;
+      word-wrap: break-word;
+      word-break: break-all;
+      }
+      .tile-txt-large {
+      font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      color: #505050;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      word-wrap: break-word;
+      word-break: break-all;
+      }
+      .gutter {
+      padding: 0 30px;
+      }
+      .grey-bar-hide-show{
+      display:block;
+      }
+      .blockpad{
+      padding-left: 50px !important;
+      padding-top: 30px !important;
+      padding-right: 30px !important;
+      }
+      .boxed-list-wrapper {
+      padding: 20px 30px 0;
+      }
+      .text-card-padding {
+      padding: 0 80px 0px 80px;
+      }
+      .anchor-style {
+      color: red;
+      }
+      /* Tabular Data */
+      .responsive-table th {
+      font-weight: 600 !important;
+      }
+      .responsive-table thead th,
+      .inner-mobile-table th,
+      .inner-mobile-table td {
+      padding: 20px 20px 20px 20px;
+      }
+      .tile-link-large-tile-padding {
+      padding: 0 40px 0 40px;
+      }
+      /* for iOS phone number auto detection */
+      a[x-apple-data-detectors] {
+      color: inherit !important;
+      /*text-decoration: none !important;*/
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+      }
+      .spacer-ln-ht-0 {
+      line-height: 0px;
+      font-size: 0px;
+      }
+      .btn-link-pad-10 {
+      padding:10px 0 0 0 !important;
+      }
+      @media only screen and (max-width: 640px) {
+        .mobileHide {
+        display: none;
+        line-height: 0;
+        mso-hide: all;
+        max-height: 0;
+        max-width: 0;
+        width: 0;
+        }
+        td#webview{
+         font-family: 'Segoe UI',SUWR,Arial,Sans-Serif !important;=20
+        }
+      }
+      /*Mobile View Starts*/
+      @media only screen and (max-width: 480px) {
+      .mob_full_width{
+      width:100%!important;
+      min-width:100%!important;
+      max-width:100%!important;
+      display:table!important;
+      }
+      .mob_padding{
+      padding-left:20px !important;
+      padding-right:20px !important;
+      }
+      .hide1{
+      display: none!important;
+      width: 0px!important;
+      height: 0px!important;
+      }
+      .show1{
+      display: block!important;
+      width: 100%!important;
+      max-height: inherit!important;
+      overflow: visible!important;
+      }
+      .eBook-mob{
+      width: 20px !important;
+      }
+      .wrapper {
+      width: 100%!important;
+      }
+      /* Stack */
+      img.photo {
+      display: block !important;
+      width: 100% !important;
+      height: auto !important;
+      }
+      .block {
+      width: 100% !important;
+      display: block !important;
+      }
+      .blockLast {
+      width: 100% !important;
+      display: block !important;
+      padding-bottom: 20px !important;
+      }
+      .blockpad{
+      padding-left: 20px !important;
+      padding-top: 30px !important;
+      padding-right: 20px !important;
+      }
+      .addBreak{
+      width: 110px !important;
+      display: block !important;
+      }
+      .btn-block {
+      display: block !important;
+      }
+      .addressText {
+      font-size: 10px !important;
+      }
+      .mobileHidden,
+      .responsive-table thead,
+      .responsive-table thead th {
+      display: none !important;
+      }
+      .mobileBody {
+      width: 288px !important;
+      }
+      .mobileBodyPadding {
+      padding: 10px 20px 35px 20px !important;
+      width: 288px !important;
+      }
+      .mobileNoPadding {
+      padding: 0 !important;
+      }
+      .widthImageCard{
+      width: 20px !important;
+      }
+      .mobileGutter {
+      width: 15px !important;
+      }
+      .mobileCTA {
+      width: 258px !important;
+      }
+      .mobileCTABody {
+      margin: 0 auto !important;
+      }
+      .mobileHeight {
+      height: auto !important;
+      }
+      .mobileOnly,
+      .mobileOnly img,
+      .mobileOnly,
+      .mobileOnly {
+      display: block !important;
+      margin: 0 !important;
+      padding: 20px 0 0 0 !important;
+      overflow: visible !important;
+      width: auto !important;
+      max-height: inherit !important;
+      height: 1px !important;
+      position: relative !important;
+      top: 0px !important;
+      border-bottom: 1px solid #1e90ff;
+      }
+      .mobLeft-RightPad20{
+      padding: 0px 20px !important;
+      }
+      .mobileTopPad5 {
+      padding-top: 5px !important;
+      }
+      .mobileTopPad10 {
+      padding-top: 10px !important;
+      }
+      .mobileWidthAdj {
+      width: 70px !important;
+      }
+      .mobileBody {
+      width: 288px !important;
+      }
+      .hide {
+      display: none;
+      }
+      .show {
+      display: none;
+      }
+      .desktophide,
+      .responsive-table th,
+      .responsive-table td.mobile-show-block {
+      display: block !important;
+      }
+      .spacer-desktop-hide {
+      display: table-cell !important;
+      }
+      .mobileFont {
+      font-size: 30px!important;
+      line-height: 30px!important;
+      }
+      .mobilepadding-right {
+      padding-right: 40px;
+      }
+      .icon-top-padding {
+      padding-top: 40px!important;
+      }
+      .w-100p {
+      width: 100%!important;
+      }
+      .p-0 {
+      padding: 0!important;
+      }
+      .mobile-bottom-padding-50 {
+      padding: 0 0 50px 0 !important;
+      }
+      .mobile-bottom-padding-20 {
+      padding: 0 0 20px 0 !important;
+      }
+      .mobile-top-padding-20 {
+      padding: 20px 0 0 0 !important;
+      }
+      .flex {
+      display: block!important;
+      width: 100%!important;
+      box-sizing: border-box!important;
+      }
+      .thold {
+      display: table!important;
+      width: 100%!important;
+      }
+      .thead {
+      display: table-header-group!important;
+      width: 100%!important;
+      }
+      .trow {
+      display: table-row!important;
+      width: 100%!important;
+      }
+      .tfoot {
+      display: table-footer-group!important;
+      width: 100%!important;
+      }
+      .pr-24 {
+      padding-right: 24px!important;
+      }
+      .mobile-padding-20 {
+      padding-left: 20px!important;
+      padding-right: 20px!important;
+      }
+      .mobile-padding-rght-20 {
+      padding-left: 0px!important;
+      padding-right: 20px!important;
+      }
+      .mobile-social-table {
+      text-align: center!important;
+      }
+      .mobile-social-padd-btm {
+      padding-bottom: 35px!important;
+      }
+      .mobile-social-padd-btm-top {
+      padding-bottom: 35px!important;
+      }
+      .mobile-social-marg-btm {
+      margin-top: 20px!important;
+      }
+      .mobile-social-inline {
+      display: inline-block!important;
+      padding-right: 2px!important;
+      }
+      .mobile-social-margin-lft {
+      margin-left: 10px!important;
+      }
+      .logo-mobile-img {
+      width: 85px!important;
+      height: 18px!important;
+      }
+      .mobile-monthly-padd-left {
+      padding-left: 20px!important;
+      }
+      .secondary-logo-padd-left {
+      padding-left: 0px!important;
+      }
+      .secondary-logo-padd-left-20 {
+      padding-left: 20px!important;
+      }
+      .mobile-txt-center {
+      text-align: center!important;
+      }
+      .social-text-pad-rght {
+      padding-right: 20px!important;
+      padding-bottom: 0px!important;
+      }
+      .followus-pad-top {
+      padding-top: 20px!important;
+      }
+      .banner-image-txt-only {
+      max-height: 48.4%!important;
+      }
+      .banner-hero-imghgt-mobile {
+      height: 160px!important;
+      }
+      .card-padding {
+      padding-left: 20px!important;
+      padding-right: 20px!important;
+      padding-top: 40px!important;
+      padding-bottom: 40px!important;
+      }
+      .mobile-card-table {
+      width: 100%!important;
+      }
+      .mobile-txt-center {
+      text-align: center!important;
+      }
+      .mobile-card-img-size {
+      width: 100%!important;
+      }
+      .mobile-card-padding-top-padd {
+      padding-top: 40px!important;
+      }
+      .mobile-card-margin-btm40 {
+      margin-bottom: 40px!important;
+      }
+      .mobile-card-margin-btm30 {
+      margin-bottom: 40px!important;
+      }
+      .mobile-cta-padd-bottom {
+      padding-bottom: 40px!important;
+      }
+      .tile-pad-large-4 {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      }
+      .tile-pad-large {
+      padding-left: 60px !important;
+      padding-right: 60px !important;
+      }
+      .tile-pad-small-v1 {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      }
+      .tile-pad-small-v2 {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      }
+      .tile-pad-small-v3 {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      }
+      .tile-pad-small-v5 {
+      padding-left: 55px !important;
+      padding-right: 55px !important;
+      }
+      .mob-padd-top-zero {
+      padding-top: 0px !important;
+      }
+      .mobile-right-pad-20 {
+      padding-right: 20px !important;
+      }
+      .mobile-top-pad-40 {
+      padding-top: 40px !important;
+      }
+      .gutter {
+      padding: 0 20px !important;
+      }
+      .boxed-list-wrapper {
+      padding: 20px 20px 0 !important;
+      }
+      /*  Learn More Component starts here*/
+      .mobile-padding-left-20 {
+      padding-left: 24px;
+      }
+      .mobile-text-only-pad {
+      padding-left: 0px !important;
+      }
+      .learn-more-img {
+      padding-top: 40px;
+      padding-bottom: 20px;
+      width: 100%;
+      }
+      /* Hero Banner New Layouts */
+      /*.hero-xl-mobile {
+      height: 660px !important;
+      }*/
+      .hero-xl-mobile,
+      .hero-custom,
+      .hero-lg-mobile,
+      .hero-md-mobile,
+      .hero-sm-mobile,
+      .hero-mobile {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
+      }
+      /*Tabular Data Tables Classes */
+      .spacer-mob-30 {
+      height: 30px !important;
+      }
+      .mob-padd-left-40 {
+      padding-left: 40px !important;
+      }
+      .mob-icon-col {
+      min-width: 120px !important;
+      }
+      .gutter-20-top-30 {
+      padding: 30px 20px 20px 20px !important;
+      }
+      .mob-padd-right-20 {
+      padding-right: 20px !important;
+      }
+      .mobile-padding-custom {
+      padding: 20px 0 20px 20px !important;
+      }
+      .inner-mobile-table th.mobile-show-table-cell {
+      display: table-cell !important;
+      padding: 20px 20px 20px 20px !important;
+      }
+      .inner-mobile-table th,
+      .inner-mobile-table td {
+      display: table-cell !important;
+      width: 50%;
+      }
+      .mob-white-background {
+      background-color: #ffffff !important;
+      }
+      .mob-sand-background {
+      background-color: #f6f6f6 !important;
+      }
+      .mob-padd-right-column {
+      padding: 20px 40px 20px 20px !important;
+      }
+      /* Rewards Point */
+      .mob-gutter-only {
+      padding: 0 20px !important;
+      }
+      .mob-spacer-0 {
+      height: 0px !important;
+      line-height: 0 !important;
+      }
+      .text-card-padding {
+      padding: 0px 40px 0px 40px !important;
+      }
+      .tile-link-large-tile-padding {
+      padding: 0 20px 0 20px;
+      }
+      }
+      /*Mobile View End */
+      ol,
+      ul {
+      margin: 5px 0px !important;
+     font-family: 'Segoe UI', SUWR, Arial, Sans-Serif;
+      }
+      li {
+      color: #000000;
+      padding: 0 0 8px 12px;
+      font-size: 16px !important;=20
+        font-weight: 400;=20
+        line-height: 24px;
+       =20
+      }
+           p li a {
+            text-decoration: underline;
+        color: #0078d4;
+      }
+     =20
+      /* right to left updates */
+      .rtl-template,
+      .rtl-template td {
+      direction: rtl !important;
+      text-align: right !important;
+      }
+      .rtl-template ol,
+      .rtl-template ul {
+      margin: 0 !important;
+      padding-right: 17px !important;
+      }
+      .rtl-template li {
+      padding: 0 12px 8px 0 !important;
+      }
+      .rtl-template .social-icons {
+      padding-left: 12px !important;
+      padding-right: 0 !important;
+      }
+      .rtl-template .text-align-right th {
+      text-align: right !important;
+      padding-right: 0px !important;
+      padding-left: 3px !important;
+      }
+      u+.rtl-template a {
+      color: #0078d4 !important;
+      }
+      /*Gmail Fix */
+      *[class].gmailfix {
+      display: none;
+      display: none!important;
+      }
+</style>=20
+<!--[if gte mso 16]>
+      <style type=3D"text/css">
+         ol,
+         ul {
+         margin: 0 0 0 25px !important;
+         }
+         .rtl-template ol,
+         .rtl-template ul {
+         margin: 0 25px 0 0 !important;
+         }
+      </style>
+      <![endif]-->=20
+<!--[if gt mso 15]>
+<style type=3D"text/css" media=3D"all">
+/*Outlook 2016 Height Fix*/
+table, tr, td {border-collapse: collapse;}
+tr { font-size:0px; line-height:0px; border-collapse: collapse;}
+</style>
+<![endif]-->=20
+</head>=20
+<body style=3D"font-family: 'Segoe UI', Verdana, Geneva, Sans-serif; backgr=
+ound-color: #e3e3e3; -webkit-text-size-adjust: 100%; padding-bottom: 0; min=
+-width: 100%; margin-top: 0;  margin-right: 0; -ms-text-size-adjust: 100%; =
+margin-left: 0; padding-top: 0; padding-right: 0; padding-left: 0; width: 1=
+00%;">=20
+<!--Gmail App Scaling Fix Don't Remove these &nbsp; s its required for gmai=
+l apps -->=20
+<div class=3D"gmailfix" style=3D"white-space: nowrap; font: 15px courier; l=
+ine-height: 0;">
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=20
+</div>=20
+<div style=3D"display: none; font-size: 1px; color: #ffffff; line-height: 1=
+px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">=20
+<div class=3D"mktoSnippet" id=3D"snippet36791">
+<p><span class=3D"preheader">=E4=BA=86=E8=A7=A3=E6=9C=80=E6=96=B0=E7=9A=84=
+=E7=A0=94=E7=A9=B6=E7=BB=93=E6=9E=9C=E5=92=8C=E6=99=BA=E8=83=BD Microsoft 3=
+65 Copilot =E5=89=AF=E9=A9=BE=E9=A9=B6=C2=AE =E5=88=9B=E6=96=B0=E6=88=90=E6=
+=9E=9C=E3=80=82</span></p>
+</div>=20
+</div>=20
+<!--PARENT TABLE Starts Here -->=20
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"main" width=
+=3D"660" align=3D"center" class=3D"wrapper" style=3D"width: 660px; margin: =
+0 auto;">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<!--SECONDARY TABLE FOR OTHER COMPONENT Starts here -->=20
+<table aria-label=3D"email table" aria-describedby=3D"main table" cellspaci=
+ng=3D"0" cellpadding=3D"0" class=3D"mktoContainer mob_full_width" id=3D"tem=
+plate-wrapper" bgcolor=3D"#ffffff" style=3D"width: 660px; margin: 0 auto; m=
+argin-top: 2px;border-collapse: collapse;">
+<tr class=3D"mktoModule" id=3D"Eyebrow">=20
+<td>=20
+<!--module View as webpage start-->=20
+<table role=3D"presentation" style=3D"min-width: 100%; width: 100%;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<div class=3D"mktoSnippet" id=3D"snippet36804">
+<table role=3D"presentation" width=3D"100%" style=3D"min-width: 100%; width=
+: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td class=3D"mob_padding" style=3D"padding: 24px 30px 12px 0px;" bgcolor=3D=
+"#e3e3e3">
+<table role=3D"presentation" width=3D"100%" align=3D"center" class=3D"mob_f=
+ull_width" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"right" id=3D"webview" style=3D"color: #5e5e5e; font-family: 'S=
+egoe UI',Verdana,Geneva,Sans-serif; font-weight: 400; font-size: 10px; line=
+-height: 12px;">=E9=98=85=E8=AF=BB=E6=AD=A4=E7=94=B5=E5=AD=90=E9=82=AE=E4=
+=BB=B6=E6=97=B6=E9=81=87=E5=88=B0=E9=97=AE=E9=A2=98=E5=90=97=EF=BC=9F | <a =
+style=3D"text-decoration: none; border-bottom: 1px solid #5E5E5E;" href=3D"=
+https://emails.microsoft.com/v/MTU3LUdRRS0zODIAAAGbsVRx29-33YRKH6MPADot44Xz=
+UkmdE37a38eddcQG7e0lABlvL2TpeRR42D2Mjr1C7Sy0R2w=3D" target=3D"_blank"><stro=
+ng style=3D"font-weight: 400; color: #5e5e5e;">=E8=AF=B7=E4=BB=A5=E7=BD=91=
+=E9=A1=B5=E5=BD=A2=E5=BC=8F=E9=98=85=E8=AF=BB</strong></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--module View as webpage end--> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Header">=20
+<td>=20
+<!--module Branding bar start-->=20
+<table role=3D"presentation" style=3D"min-width: 100%; width: 100%;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<div class=3D"mktoSnippet" id=3D"snippet36789">
+<!--header start-->=20
+<table role=3D"presentation" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" bgcolor=3D"#ffffff">=20
+<tbody>
+<!-- 20px spacer start -->=20
+<tr>=20
+<td height=3D"20">&nbsp;</td>=20
+</tr>=20
+<!-- 20px spacer end -->=20
+<tr>=20
+<td class=3D"gutter"><a href=3D"https://www.microsoft.com/" target=3D"_blan=
+k"><img style=3D"display: block;" src=3D"https://info.microsoft.com/rs/157-=
+GQE-382/images/EN-BASICE-Logo-MSFTLogo.png" height=3D"20" border=3D"0" alt=
+=3D"Microsoft"></a></td>=20
+</tr>=20
+<!-- 20px spacer start -->=20
+<tr>=20
+<td height=3D"20">&nbsp;</td>=20
+</tr>=20
+<!-- 20px spacer end -->
+</tbody>=20
+</table>=20
+<!--header ends-->
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--module Branding bar end--> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Hero-Headline-BodyText9356fdab-8193-46a7-98b=
+d-16e084337bb4">=20
+<td>=20
+<!--module Hero Headline BodyText Image start-->=20
+<table style=3D"min-width: 100%; width: 100%;" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<div class=3D"mktoSnippet" id=3D"snippet370369356fdab-8193-46a7-98bd-16e084=
+337bb4">
+ <!--Image X-Large Hero start-->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" style=3D"background-color: #ffffff; max-width: 660px;">
+<tbody><!--Small Image Starts-->
+<tr>
+<td><!--[if gte mso 9]>
+    <a href=3D
+"https://emails.microsoft.com/dc/BiizuQa-7R2YP08ZA_fWI6iAgvhxJ69KzGPtU0nJN1=
+I3EvwzWWT0LwbU1Ar2YjEEvnjNjfJFEXLR5DdDNOtYLkX4liXoUcreGXgZJyc2oWiWNcvpGlhep=
+ymv8s7MTLvs/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kKgieMor8MJjzIfoy5E7_tET99=
+PhMMw5R2uSIoRW4ulhALogQqw5GE=3D" target=3D"_blank" style=3D"text-decoration=
+: none;"
+><img style=3D"display: block" height=3D"284" width=3D"660" alt=3D"" src=3D=
+"https://CloudDamCdnProdEP.azureedge.net/gdc/gdcgcMwd2/original" border=3D"=
+0"/></a>
+<![endif]--> <!--[if !gte mso 9]><!-- --> <a href=3D"https://emails.microso=
+ft.com/dc/BiizuQa-7R2YP08ZA_fWI6iAgvhxJ69KzGPtU0nJN1I3EvwzWWT0LwbU1Ar2YjEEv=
+njNjfJFEXLR5DdDNOtYLkX4liXoUcreGXgZJyc2oWiWNcvpGlhepymv8s7MTLvs/MTU3LUdRRS0=
+zODIAAAGbsVRx2y36O_EWkOje5kKgieMor8MJjzIfoy5E7_tET99PhMMw5R2uSIoRW4ulhALogQ=
+qw5GE=3D" target=3D"_blank" style=3D"text-decoration: none;"><img class=3D"=
+hero-sm-mobile" width=3D"660" height=3D"284" alt=3D"" src=3D"https://CloudD=
+amCdnProdEP.azureedge.net/gdc/gdcgcMwd2/original" border=3D"0" style=3D"ver=
+tical-align: bottom; display: block; max-width: 660px;"></a> <!--<![endif]-=
+-></td>
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>
+<tr>
+<td><!--Body Section new start-->
+<table bgcolor=3D"#ffffff" width=3D"100%" cellspacing=3D"0" cellpadding=3D"=
+0" border=3D"0">
+<tbody><!-- 20px spacer start --> <!-- 20px spacer end --> <!-- 20px spacer=
+ start -->
+<tr>
+<td height=3D"20">&nbsp;</td>
+</tr>
+<!-- 20px spacer end --> <!--headline starts-->
+<tr>
+<td bgcolor=3D"#ffffff" class=3D"gutter" style=3D"font-family: 'Segoe UI', =
+SUWR, Arial, Sans-Serif; font-size: 28px; font-weight: 600; line-height: 32=
+px; letter-spacing: -0.01em; color: #000000;"><!-- h1 heading start -->
+<p style=3D"font-family: 'Segoe UI', SUWR, Arial, Sans-Serif; font-size: 28=
+px; font-weight: 600; line-height: 32px; letter-spacing: -0.01em; margin: 0=
+; padding: 0; color: #000000;" role=3D"heading" aria-level=3D"1">2025=EF=BC=
+=9A=E5=89=8D=E6=B2=BF=E4=BC=81=E4=B8=9A=E8=AF=9E=E7=94=9F=E4=B9=8B=E5=B9=B4=
+</p>
+<!-- h1 heading end --></td>
+</tr>
+<!--headline ends--> <!-- 20px spacer start -->
+<tr>
+<td height=3D"20">&nbsp;</td>
+</tr>
+<!-- 20px spacer end --> <!-- 20px spacer start --> <!-- 20px spacer end --=
+> <!--paragraph starts-->
+<tr>
+<td bgcolor=3D"#ffffff" class=3D"gutter" style=3D"color: #000000; font-fami=
+ly: 'Segoe UI', SUWR, Arial, Sans-Serif; font-size: 24px; font-weight: 400;=
+ line-height: 30px;"></td>
+</tr>
+<!--paragragh ends--> <!-- 20px spacer start -->
+<tr>
+<td height=3D"20">&nbsp;</td>
+</tr>
+<!-- 20px spacer end --></tbody>
+</table>
+<!--Body Section new ends--></td>
+</tr>
+<!--Small Image Ends--></tbody>
+</table>
+<!--Image X-Large Hero end-->=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--module Hero Headline BodyText Image ends--> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"SingleCTA-18bf0277c-19f3-4e3a-b464-7a1ce2737=
+a18">=20
+<td>=20
+<!--module Single-CTA-1 start-->=20
+<table style=3D"min-width: 100%; width: 100%;" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<div class=3D"mktoSnippet" id=3D"snippet367988bf0277c-19f3-4e3a-b464-7a1ce2=
+737a18">
+ <!-- CTA start-->
+<table bgcolor=3D"" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0">
+<tbody>
+<tr>
+<td height=3D"10" style=3D"line-height: 1px; height: 10px; font-size: 1px;"=
+>&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"gutter">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" height=3D"38" style=3D"border-radius: 2px; font-family=
+: 'Segoe UI', SUWR, Arial, Sans-Serif; font-size: 16px; font-weight: 600; l=
+ine-height: 18px; height: 38px; padding-left: 20px; padding-right: 20px;" b=
+gcolor=3D"#0078D4"><a href=3D"https://emails.microsoft.com/dc/BiizuQa-7R2YP=
+08ZA_fWI6iAgvhxJ69KzGPtU0nJN1I3EvwzWWT0LwbU1Ar2YjEEvnjNjfJFEXLR5DdDNOtYLkX4=
+liXoUcreGXgZJyc2oWiWNcvpGlhepymv8s7MTLvs/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkO=
+je5kKgieMor8MJjzIfoy5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D" target=3D"_bl=
+ank" style=3D"color: #ffffff; text-decoration: none;"><strong style=3D"colo=
+r: #ffffff; font-weight: 600; text-decoration: none;" dir=3D"ltr">=E9=98=85=
+=E8=AF=BB=E6=8A=A5=E5=91=8A&nbsp;</strong></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D"10" style=3D"line-height: 1px; height: 10px; font-size: 1px;"=
+>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- CTA ends-->=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--module Single-CTA-1 ends--> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"BodyText-RichTextce343438-b60f-4184-8332-94b=
+09cf482a5">=20
+<td>=20
+<!--module BodyText-RichText start-->=20
+<table style=3D"min-width: 100%; width: 100%;" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<div class=3D"mktoSnippet" id=3D"snippet36787ce343438-b60f-4184-8332-94b09c=
+f482a5">
+ <!-- Body Text Before CTA start -->
+<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"gutter">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tbody><!-- 20px spacer start -->
+<tr>
+<td height=3D"10">&nbsp;</td>
+</tr>
+<!-- 20px spacer end --> <!-- headline start --> <!-- Body Paragraph -->
+<tr>
+<td style=3D"color: #222222; font-family: 'Segoe UI', SUWR, Arial, Sans-Ser=
+if; font-size: 16px; font-weight: 400; line-height: 24px;"><!-- paragraph s=
+tart --> <p>=E4=B8=80=E7=A7=8D=E6=96=B0=E7=9A=84=E5=85=AC=E5=8F=B8=E6=AD=A3=
+=E5=9C=A8=E5=87=BA=E7=8E=B0=EF=BC=9A<strong>=E5=89=8D=E6=B2=BF=E4=BC=81=E4=
+=B8=9A</strong>=E3=80=82=E8=BF=99=E4=BA=9B=E4=BC=81=E4=B8=9A=E5=9B=B4=E7=BB=
+=95=E5=8D=B3=E6=97=B6=E6=99=BA=E8=83=BD=E8=80=8C=E6=9E=84=E5=BB=BA=EF=BC=8C=
+=E7=94=B1=E4=BA=BA=E7=B1=BB=E5=92=8C AI =E6=99=BA=E8=83=BD=E4=BD=93=E7=BB=
+=84=E6=88=90=E7=9A=84=E6=B7=B7=E5=90=88=E5=9B=A2=E9=98=9F=E6=8F=90=E4=BE=9B=
+=E6=94=AF=E6=8C=81=EF=BC=8C=E8=83=BD=E5=A4=9F=E5=BF=AB=E9=80=9F=E6=89=A9=E5=
+=B1=95=E3=80=81=E6=95=8F=E6=8D=B7=E8=BF=90=E8=90=A5=E5=B9=B6=E6=9B=B4=E5=BF=
+=AB=E5=9C=B0=E5=88=9B=E9=80=A0=E4=BB=B7=E5=80=BC=E3=80=82</p> <p>=E6=9F=A5=
+=E7=9C=8B=E3=80=8A<strong>2025 =E5=B9=B4=E5=B7=A5=E4=BD=9C=E8=B6=8B=E5=8A=
+=BF=E6=8C=87=E6=95=B0=E5=B9=B4=E5=BA=A6=E6=8A=A5=E5=91=8A</strong>=E3=80=8B=
+=EF=BC=8C=E8=8E=B7=E5=8F=96=E7=9B=B8=E5=85=B3=E6=95=B0=E6=8D=AE=E5=92=8C=E8=
+=A7=81=E8=A7=A3=EF=BC=8C=E4=BA=86=E8=A7=A3=E6=8E=A8=E5=8A=A8=E6=9C=AA=E6=9D=
+=A5=E5=B7=A5=E4=BD=9C=E5=8F=91=E5=B1=95=E7=9A=84=E8=B6=8B=E5=8A=BF=EF=BC=9A=
+</p> <p><strong>=E4=BD=A0=E5=8F=AF=E4=BB=A5=E8=B4=AD=E4=B9=B0=E5=8D=B3=E5=
+=88=BB=E5=8F=AF=E7=94=A8=E7=9A=84=E6=99=BA=E8=83=BD</strong><br>=E5=BD=93=
+=E4=B8=80=E7=A7=8D=E7=A8=80=E7=BC=BA=E4=B8=94=E6=98=82=E8=B4=B5=E7=9A=84=E8=
+=B5=84=E6=BA=90=E5=8F=98=E5=BE=97=E5=85=85=E8=B6=B3=E4=B8=94=E7=BB=8F=E6=B5=
+=8E=E5=AE=9E=E6=83=A0=E6=97=B6=EF=BC=8C=E4=B8=9A=E5=8A=A1=E6=A8=A1=E5=BC=8F=
+=E5=B0=86=E5=8F=91=E7=94=9F=E6=A0=B9=E6=9C=AC=E6=80=A7=E7=9A=84=E5=8F=98=E9=
+=9D=A9=E3=80=82</p> <p><strong>=E4=BA=BA=E7=B1=BB=E4=B8=8E=E4=BB=A3=E7=90=
+=86=E5=9B=A2=E9=98=9F=E5=B0=86=E9=A2=A0=E8=A6=86=E7=BB=84=E7=BB=87=E6=9E=B6=
+=E6=9E=84</strong><br>=E4=BC=A0=E7=BB=9F=E7=BB=93=E6=9E=84=E5=8F=AF=E8=83=
+=BD=E4=BC=9A=E8=A2=AB=E2=80=9C=E5=B7=A5=E4=BD=9C=E6=9E=B6=E6=9E=84=E2=80=9D=
+=E6=89=80=E5=8F=96=E4=BB=A3 - =E4=B8=80=E4=B8=AA=E5=8A=A8=E6=80=81=E3=80=81=
+=E8=B7=A8=E8=81=8C=E8=83=BD=E3=80=81=E4=B8=93=E4=B8=BA=E9=80=9F=E5=BA=A6=E8=
+=80=8C=E6=89=93=E9=80=A0=E7=9A=84=E6=96=B0=E6=A8=A1=E5=BC=8F=E3=80=82</p> <=
+p><strong>=E6=AF=8F=E4=BD=8D=E5=91=98=E5=B7=A5=E9=83=BD=E5=B0=86=E6=88=90=
+=E4=B8=BA=E4=BB=A3=E7=90=86=E7=9A=84=E7=AE=A1=E7=90=86=E8=80=85</strong><br=
+>=E9=9A=8F=E7=9D=80=E6=99=BA=E8=83=BD=E4=BD=93=E8=BF=9B=E5=85=A5=E8=81=8C=
+=E5=9C=BA=EF=BC=8C=E5=91=98=E5=B7=A5=E5=B0=86=E8=B4=9F=E8=B4=A3=E6=8C=87=E5=
+=AF=BC=E5=92=8C=E7=9B=91=E7=9D=A3=E5=AE=83=E4=BB=AC=E7=9A=84=E5=B7=A5=E4=BD=
+=9C=E3=80=82</p> <!-- paragraph end --></td>
+</tr>
+<!-- paragraph end --> <!-- 20px spacer start -->
+<tr>
+<td height=3D"10">&nbsp;</td>
+</tr>
+<!-- 40px spacer end --></tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Body Text Before CTA start -->=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--module BodyText-RichText ends--> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"ImageTile-2Col000a6419-cef0-4396-a9cd-accdbc=
+82e896">=20
+<td>=20
+<!--module BodyList-2 col with Images start-->=20
+<table style=3D"min-width: 100%; width: 100%;" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<div class=3D"mktoSnippet" id=3D"snippet368383b073788-d322-49ce-8d5b-4076cd=
+e92d14">
+ <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" sty=
+le=3D"background-color: #ffffff;">
+<tbody>
+<tr>
+<td class=3D"gutter">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%">
+<tbody>
+<tr>
+<th class=3D"block mobile-bottom-padding-20" width=3D"290" align=3D"left" v=
+align=3D"top" style=3D"padding-right: 20px;">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"290" class=
+=3D"wrapper"><!-- 20px spacer start -->
+<tbody>
+<tr>
+<td height=3D"20">&nbsp;</td>
+</tr>
+<!-- 20px spacer end -->
+<tr>
+<td><img class=3D"hero-mobile" border=3D"0" width=3D"290" height=3D"163" sr=
+c=3D"https://CloudDamCdnProdEP.azureedge.net/gdc/gdcIEbSM8/original" alt=3D=
+"" style=3D"vertical-align: bottom;"></td>
+</tr>
+<!-- 20px spacer start -->
+<tr>
+<td height=3D"20">&nbsp;</td>
+</tr>
+<!-- 20px spacer end -->
+<tr>
+<td style=3D"color: #222222; font-family: 'Segoe UI', SUWR, Arial, Sans-Ser=
+if; font-size: 16px; font-weight: 600; line-height: 24px;">
+<p>=E4=BA=86=E8=A7=A3=E6=88=91=E4=BB=AC=E5=A6=82=E4=BD=95=E4=B8=BA=E6=9C=AA=
+=E6=9D=A5=E7=9A=84=E5=B7=A5=E4=BD=9C=E6=89=93=E9=80=A0=E6=99=BA=E8=83=BD Mi=
+crosoft 365 Copilot =E5=89=AF=E9=A9=BE=E9=A9=B6=C2=AE</p>
+</td>
+</tr>
+<!-- 20px spacer start -->
+<tr>
+<td height=3D"20">&nbsp;</td>
+</tr>
+<!-- 20px spacer end --> <!-- paragraph start -->
+<tr>
+<td style=3D"color: #222222; font-family: 'Segoe UI', SUWR, Arial, Sans-Ser=
+if; font-size: 16px; font-weight: 400; line-height: 24px;"><!-- paragraph s=
+tart --> =E6=8E=A2=E7=B4=A2=E3=80=8A=E5=B7=A5=E4=BD=9C=E8=B6=8B=E5=8A=BF=E6=
+=8C=87=E6=95=B0=E3=80=8B=E4=B8=AD=E7=9A=84=E8=A7=81=E8=A7=A3=EF=BC=8C=E5=B9=
+=B6=E4=BA=86=E8=A7=A3=E6=9C=80=E6=96=B0=E7=9A=84 Copilot =E5=92=8C=E4=BB=A3=
+=E7=90=86=E5=88=9B=E6=96=B0=E6=88=90=E6=9E=9C=E3=80=82 <!-- paragraph end -=
+-></td>
+</tr>
+<!-- paragraph end --> <!-- 20px spacer start -->
+<tr>
+<td height=3D"20">&nbsp;</td>
+</tr>
+<!-- 20px spacer end -->
+<tr>
+<td>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<th class=3D"btn-block" align=3D"left" style=3D"vertical-align: top; font-f=
+amily: 'Segoe UI', SUWR, Arial, Sans-Serif; font-weight: 600 !important; fo=
+nt-size: 16px; line-height: 24px;"><a href=3D"https://emails.microsoft.com/=
+dc/1xpp769jskdhR-0NISuUruhl9YYLF6-kvJB6TDa4IU9TRVRTiH6siV_LxB7aXT0bEAqdM-iz=
+PlMVS_P-VVWWCQ=3D=3D/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kKgieMor8MJjzIfoy=
+5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D" title=3D"=E9=98=85=E8=AF=BB=E5=8D=
+=9A=E5=AE=A2" target=3D"_blank" style=3D"color: #0078D4; text-decoration: n=
+one;"> <strong style=3D"color: #0078D4; text-decoration: underline; font-we=
+ight: 600;" dir=3D"ltr">=E9=98=85=E8=AF=BB=E5=8D=9A=E5=AE=A2 &gt;</strong><=
+/a></th>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class=3D"block mobile-bottom-padding-20" width=3D"290" align=3D"left" v=
+align=3D"top">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"290" class=
+=3D"wrapper"><!-- 20px spacer start -->
+<tbody>
+<tr>
+<td height=3D"20">&nbsp;</td>
+</tr>
+<!-- 20px spacer end -->
+<tr>
+<td><img class=3D"hero-mobile" border=3D"0" width=3D"290" height=3D"163" sr=
+c=3D"https://CloudDamCdnProdEP.azureedge.net/gdc/gdcbBefY1/original" alt=3D=
+"" style=3D"vertical-align: bottom;"></td>
+</tr>
+<!-- 20px spacer start -->
+<tr>
+<td height=3D"20">&nbsp;</td>
+</tr>
+<!-- 20px spacer end -->
+<tr>
+<td style=3D"color: #222222; font-family: 'Segoe UI', SUWR, Arial, Sans-Ser=
+if; font-size: 16px; font-weight: 600; line-height: 24px;">
+<p>=E6=8E=A2=E7=B4=A2=E6=96=B0=E7=9A=84 Microsoft 365 =E5=8A=9F=E8=83=BD</p=
+>
+</td>
+</tr>
+<!-- 20px spacer start -->
+<tr>
+<td height=3D"20">&nbsp;</td>
+</tr>
+<!-- 20px spacer end --> <!-- paragraph start -->
+<tr>
+<td style=3D"color: #222222; font-family: 'Segoe UI', SUWR, Arial, Sans-Ser=
+if; font-size: 16px; font-weight: 400; line-height: 24px;"><!-- paragraph s=
+tart --> =E4=BA=86=E8=A7=A3 Copilot=E3=80=81Copilot =E6=8E=A7=E5=88=B6=E7=
+=B3=BB=E7=BB=9F=E5=92=8C=E4=BB=A3=E7=90=86=E5=88=9B=E6=96=B0=E7=9A=84=E6=9C=
+=80=E6=96=B0=E5=8A=A8=E6=80=81=E3=80=82 <!-- paragraph end --></td>
+</tr>
+<!-- paragraph end --> <!-- 20px spacer start -->
+<tr>
+<td height=3D"20">&nbsp;</td>
+</tr>
+<!-- 20px spacer end -->
+<tr>
+<td>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<th class=3D"btn-block" align=3D"left" style=3D"vertical-align: top; font-f=
+amily: 'Segoe UI', SUWR, Arial, Sans-Serif; font-weight: 600 !important; fo=
+nt-size: 16px; line-height: 24px;"><a href=3D"https://emails.microsoft.com/=
+dc/K2nLtwtctcW29fgYHxJx83O8k0_2AYDt4M52qHU9muDN51nC0vZ-S4ahAwUEm0FkyL4X9pCj=
+2uXjihFITNhW-fAFoAfQeMHX7UpcQDptVPvNs2NoYJBVcUN-gie0RRVc/MTU3LUdRRS0zODIAAA=
+GbsVRx2y36O_EWkOje5kKgieMor8MJjzIfoy5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=
+=3D" title=3D"=E9=98=85=E8=AF=BB=E5=8D=9A=E5=AE=A2" target=3D"_blank" style=
+=3D"color: #0078D4; text-decoration: none;"> <strong style=3D"color: #0078D=
+4; text-decoration: underline; font-weight: 600;" dir=3D"ltr">=E9=98=85=E8=
+=AF=BB=E5=8D=9A=E5=AE=A2 &gt;</strong></a></th>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+<tr class=3D"mobileHidden">
+<td height=3D"20">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--module BodyList-2 col with Images ends--> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"SocialIcons">=20
+<td>=20
+<!--module Social Icon start-->=20
+<table style=3D"min-width: 100%; width: 100%;" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<!--Social Icons starts-->=20
+<div class=3D"mktoSnippet" id=3D"snippet36906">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" styl=
+e=3D"background-color: #ffffff;">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<table style=3D"background-color: #ffffff;" border=3D"0" width=3D"100%" cel=
+lspacing=3D"0" cellpadding=3D"0">=20
+<tbody>
+<!-- 10px spacer start -->=20
+<tr>=20
+<td height=3D"10">&nbsp;</td>=20
+</tr>=20
+<!-- 10px spacer end -->=20
+<tr>=20
+<td class=3D"gutter">=20
+<table style=3D"height: 10px; width: 100%;" border=3D"0" width=3D"100%" cel=
+lspacing=3D"0" cellpadding=3D"0">=20
+<tbody>=20
+<tr style=3D"height: 10px;">=20
+<td style=3D"font-size: 1px; height: 10px;">=20
+<table border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"background: #d2d2d2; height: 1px;">=20
+<tbody>=20
+<tr>=20
+<td style=3D"background: #d2d2d2; border: none; height: 1px; width: 100%; m=
+argin: 0px; padding: 0; font-size: 1px; line-height: 1px;">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<!-- 10px spacer start -->
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td height=3D"5"></td>=20
+</tr>=20
+<!-- 10px spacer end -->
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td>=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"padding-le=
+ft: 20px;">=20
+<tbody>
+<!-- 20px spacer start -->=20
+<tr>=20
+<td colspan=3D"6" height=3D"10">&nbsp;</td>=20
+</tr>=20
+<!-- 20px spacer end -->=20
+<tr>=20
+<th class=3D"social-icons" style=3D"padding-right: 12px;"><a title=3D"Faceb=
+ook" href=3D"https://emails.microsoft.com/dc/uq3EykqQY7h0Yyhe2BWhMA54Y81E5a=
+WaEXPp8hxWpKjq9dMvK3o5pSaej725LW-D/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kKg=
+ieMor8MJjzIfoy5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D" target=3D"_blank"><=
+img width=3D"32" height=3D"32" alt=3D"Facebook" border=3D"0" src=3D"https:/=
+/s7d1.scene7.com/is/image/microsoftcorpdev/Facebook?scl=3D1&amp;fmt=3Dpng-a=
+lpha"> </a></th>=20
+<th class=3D"social-icons" style=3D"padding-right: 12px;"><a title=3D"X" hr=
+ef=3D"https://emails.microsoft.com/dc/u8oZOJAd-CVEcjoxZLybYz3sYyfSWi5Zi3Jkh=
+OwS8NuMMUVj-WozuLBFZvK9RF-B/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kKgieMor8M=
+JjzIfoy5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D" target=3D"_blank"> <img wi=
+dth=3D"32" height=3D"32" alt=3D"X" border=3D"0" src=3D"https://info.microso=
+ft.com/rs/157-GQE-382/images/icon-MSCOM-X-32x32.png?scl=3D1&amp;fmt=3Dpng-a=
+lpha"> </a></th>=20
+<th class=3D"social-icons" style=3D"padding-right: 12px;"><a title=3D"YouTu=
+be" href=3D"https://emails.microsoft.com/dc/M9Y3nowLDCcEv8uSbJAkaS8jXnpz8EO=
+JlYKmt8qLKRSwTSHjRrrwa6GDShJfu5zs/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kKgi=
+eMor8MJjzIfoy5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D" target=3D"_blank"> <=
+img width=3D"32" height=3D"32" alt=3D"YouTube" border=3D"0" src=3D"https://=
+s7d1.scene7.com/is/image/microsoftcorpdev/YouTube?scl=3D1&amp;fmt=3Dpng-alp=
+ha"> </a></th>=20
+<th class=3D"social-icons" style=3D"padding-right: 12px;"><a title=3D"Linke=
+dIn" href=3D"https://emails.microsoft.com/dc/fG5-PlwEnZR-IoSdwCtjIpTVr9AsJH=
+Nwc_srhy7U9rXQHbFSwJIYiPgCEE2-LTR4/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kKg=
+ieMor8MJjzIfoy5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D" target=3D"_blank"> =
+<img width=3D"32" height=3D"32" alt=3D"LinkedIn" border=3D"0" src=3D"https:=
+//s7d1.scene7.com/is/image/microsoftcorpdev/Linkedin?scl=3D1&amp;fmt=3Dpng-=
+alpha"> </a></th>=20
+<th class=3D"social-icons" style=3D"padding-right: 12px;"><a title=3D"Insta=
+gram" href=3D"https://emails.microsoft.com/dc/WhZcq50CsoLLiaLsfDq43sVHzOlvT=
+npzPaSuzdE5W2pYlNXVnFtFcepu8J29jJdu/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kK=
+gieMor8MJjzIfoy5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D" target=3D"_blank">=
+ <img width=3D"32" height=3D"32" alt=3D"Instagram" border=3D"0" src=3D"http=
+s://s7d1.scene7.com/is/image/microsoftcorpdev/Instagram?scl=3D1&amp;fmt=3Dp=
+ng-alpha"> </a></th>=20
+<th class=3D"social-icons" style=3D"padding-right: 12px;"><a title=3D"Pinte=
+rest" href=3D"https://emails.microsoft.com/dc/0pJJ_y_ObF2UmNML1anXIuFIYrydk=
+_UT6rms6XDaCoWqCmZpyxriGWtWZVVDXOmP/MTU3LUdRRS0zODIAAAGbsVRx2y36O_EWkOje5kK=
+gieMor8MJjzIfoy5E7_tET99PhMMw5R2uSIoRW4ulhALogQqw5GE=3D" target=3D"_blank">=
+ <img width=3D"32" height=3D"32" alt=3D"Pinterest" border=3D"0" src=3D"http=
+s://s7d1.scene7.com/is/image/microsoftcorpdev/Pinterest?scl=3D1&amp;fmt=3Dp=
+ng-alpha"></a></th>=20
+</tr>=20
+<!-- 20px spacer start -->=20
+<tr>=20
+<td colspan=3D"6" height=3D"10">&nbsp;</td>=20
+</tr>=20
+<!-- 20px spacer end -->
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td>=20
+<table style=3D"background-color: #ffffff;" border=3D"0" width=3D"100%" cel=
+lspacing=3D"0" cellpadding=3D"0">=20
+<tbody>
+<!-- 10px spacer start -->=20
+<tr>=20
+<td height=3D"5"></td>=20
+</tr>=20
+<!-- 10px spacer end -->=20
+<tr>=20
+<td class=3D"gutter">=20
+<table style=3D"height: 10px; width: 100%;" border=3D"0" width=3D"100%" cel=
+lspacing=3D"0" cellpadding=3D"0">=20
+<tbody>=20
+<tr style=3D"height: 10px;">=20
+<td style=3D"font-size: 1px; height: 10px;">=20
+<table border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"background: #d2d2d2; height: 1px;">=20
+<tbody>=20
+<tr>=20
+<td style=3D"background: #d2d2d2; border: none; height: 1px; width: 100%; m=
+argin: 0px; padding: 0; font-size: 1px; line-height: 1px;">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<!-- 10px spacer start -->
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td height=3D"10">&nbsp;</td>=20
+</tr>=20
+<!-- 10px spacer end -->
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+</div>=20
+<!--Social icons ends--> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--module Social Icons ends--> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"PromotionalFooter">=20
+<td>=20
+<!--Module Promotional Footer starts-->=20
+<table aria-label=3D"footer-promotional" role=3D"contentinfo" style=3D"min-=
+width: 100%; width: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<div class=3D"mktoSnippet" id=3D"snippet36878">
+<!--footer starts-->
+<table role=3D"presentation" aria-label=3D"footer" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"background-color: #ffffff;=
+">
+<tbody>
+<tr>
+<td class=3D"gutter">
+<table role=3D"presentation" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" width=3D"100%">
+<tbody><!-- 20px spacer start -->
+<tr>
+<td height=3D"20">&nbsp;</td>
+</tr>
+<!-- 20px spacer end -->
+<tr>
+<td style=3D"color: #6b6b6b; font-family: 'Segoe UI',Verdana,Geneva,Sans-se=
+rif; font-size: 10px; line-height: 14px; font-style: normal;">
+<p>Copyright 2025 Microsoft Corporation.</p>
+</td>
+</tr>
+<!-- 20px spacer start -->
+<tr>
+<td height=3D"20">&nbsp;</td>
+</tr>
+<!-- 20px spacer end -->
+<tr>
+<td style=3D"font-family: 'Segoe UI',Verdana,Geneva,Sans-serif; font-size: =
+10px; line-height: 14px;"><a href=3D"https://account.microsoft.com/profile/=
+unsubscribe?CTID=3D0&amp;ECID=3DvukLZcOByWYrh9Os2kM8LkClqO4mT6%2F0uehmh8YEi=
+t4%3D&amp;K=3Dc0904bf6-803e-4d14-8b3a-d01820aad762&amp;PID=3D19122&amp;TID=
+=3De8bbc280-76ee-423a-9cc0-e8523bd2542b&amp;CMID=3DONEGDC-2309609" target=
+=3D"_blank"><strong style=3D"color: #0078d4; text-decoration: underline; fo=
+nt-weight: normal;">=E5=8F=96=E6=B6=88=E8=AE=A2=E9=98=85</strong></a> | <a =
+href=3D"https://emails.microsoft.com/MTU3LUdRRS0zODIAAAGbsVRx2xqeAJkN8E3Kuk=
+TsX8o6YeDBknfqtKgMsbQFx9P8mtjItyPMc5QpVdPHBfJrzv2480s=3D" target=3D"_blank"=
+><strong style=3D"color: #0078d4; text-decoration: underline; font-weight: =
+normal;"> =E9=9A=90=E7=A7=81=E5=A3=B0=E6=98=8E</strong></a></td>
+</tr>
+<!-- 20px spacer start -->
+<tr>
+<td height=3D"20">&nbsp;</td>
+</tr>
+<!-- 20px spacer end -->
+<tr>
+<td>
+<table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" class=3D"text-align-right addBreak">
+<tbody>
+<tr>
+<th class=3D"block" align=3D"left" style=3D"color: #6b6b6b; font-family: 'S=
+egoe UI',Verdana,Geneva,Sans-serif; font-size: 10px; font-weight: normal; l=
+ine-height: 14px; padding-right: 3px;">
+<p>Microsoft Corporation<br>One Microsoft Way<br>Redmond, WA 98052</p>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- 20px spacer start -->
+<tr>
+<td height=3D"20">&nbsp;</td>
+</tr>
+<!-- 20px spacer end -->
+<tr>
+<td width=3D"100" style=3D"line-height: 14px;"><a href=3D"https://emails.mi=
+crosoft.com/MTU3LUdRRS0zODIAAAGbsVRx21-YPe58uwieOzEmyyEQ43a3yc9eOf_jGTd4XCn=
+QhPWHvEU78AWQwvRGhZup79d6rq0=3D" target=3D"_blank"><img style=3D"display: b=
+lock;" src=3D"https://info.microsoft.com/rs/157-GQE-382/images/EN-BASICE-Lo=
+go-MSFTLogo.png" height=3D"20" border=3D"0" alt=3D"Microsoft"></a></td>
+</tr>
+<!-- 30px spacer start -->
+<tr>
+<td height=3D"30">&nbsp;</td>
+</tr>
+<!-- 30px spacer end --></tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--footer ends-->
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--Module Promotional Footer ends--> </td>=20
+</tr>
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> =20
+<a href=3D"https://emails.microsoft.com/MTU3LUdRRS0zODIAAAGbsVRx2_shGUgnkq-=
+sBXrzhmcJtBKWjMGqyPjOaH1S1O8WVgEtiGUdq7B11TcFI2kV9QmPArQ=3D"></a>
+<img src=3D"https://emails.microsoft.com/trk?t=3D1&amp;mid=3DMTU3LUdRRS0zOD=
+IAAAGbsVRx3B4wCG5ni-QGngjI2DkfwYXc-_3-sR0I810S_FmKnxSPFVv_rM-mNy0tCaxNSuRw6=
+4ZvW2FHziyO1DGCQc2zdIBs7LlwiOHyTpCPmuYT6ah-Lf_t0kppSQgPQrciXNa5pKZVG9XPbY-_=
+2SYsh6mUk-O35GX7BSEq10Q" width=3D"1" height=3D"1" style=3D"display:none !im=
+portant;" alt=3D"">
+
+<!-- footer -->
+</body>
+</html>=
+
+------=_Part_29770345_788732084.1752654660075--
