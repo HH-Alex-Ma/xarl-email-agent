@@ -7,8 +7,16 @@ on:
 jobs:
   test-build:
     runs-on: ubuntu-latest
+    env:
+      RAW_REPO: ${{ github.repository }}
     steps:
     - uses: actions/checkout@v4
+
+    - name: Normalize image tag
+      id: normalize
+      run: |
+        SAFE_REPO=$(echo "${RAW_REPO}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
+        echo "safe_repo=$SAFE_REPO" >> $GITHUB_OUTPUT
 
     - name: Install deps
       run: pip install -r requirements.txt
@@ -19,7 +27,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: ghcr.io/${{ github.repository }}/myapi:${{ github.sha }}
+        tags: ghcr.io/${{ steps.normalize.outputs.safe_repo }}/myapi:${{ github.sha }}
         secrets: |
           GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
 
