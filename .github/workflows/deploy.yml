@@ -12,7 +12,7 @@ jobs:
 
     - name: Install deps
       run: pip install -r requirements.txt
-    - run: pytest -q
+    # - run: pytest -q # 暂无测试
 
     - name: Build & Push
       uses: docker/build-push-action@v5
