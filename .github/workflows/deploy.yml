@@ -4,6 +4,11 @@ on:
   push:
     branches: [ main ]
 
+# 添加权限配置
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   test-build:
     runs-on: ubuntu-latest
@@ -46,4 +51,4 @@ jobs:
           docker pull ghcr.io/${{ github.repository }}/myapi:${{ github.sha }}
           docker stop myapi || true && docker rm myapi || true
           docker run -d --name myapi -p 8000:8080 --restart always \
-            ghcr.io/${{ github.repository }}/myapi:${{ github.sha }} 
+            ghcr.io/${{ steps.normalize.outputs.safe_repo }}/myapi:${{ github.sha }} 

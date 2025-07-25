@@ -18,7 +18,6 @@ DIFY_API_KEY = os.environ.get('DIFY_API_KEY', 'app-jF3mB60uIx9kgOQxzLseYZis')
 USER_ID = os.environ.get('USER_ID', 'Alex Ma')
 PROCESSED_DIR = os.environ.get('PROCESSED_DIR', 'processed_emails')
 WORKFLOW_RESPONSES_DIR = os.environ.get('WORKFLOW_RESPONSES_DIR', 'workflow_responses')
-# 已移除 WEBHOOK_URL
 
 # 企业微信应用推送相关配置
 WECOM_CORPID = os.environ.get("WECOM_CORPID")
@@ -48,225 +47,226 @@ class ProcessResult(BaseModel):
     webhook_response: Optional[dict] = None
     error: Optional[str] = None
 
+# 辅助函数 - 移到全局作用域
+def file_is_newer_than(path, dt):
+    mtime = datetime.fromtimestamp(os.path.getmtime(path), tz=timezone.utc)
+    return mtime > dt
+
+def guess_mime_type(filename):
+    mime_type, _ = mimetypes.guess_type(filename)
+    return mime_type or 'application/octet-stream'
+
+def upload_file(filepath):
+    url = f"{DIFY_BASE_URL}/files/upload"
+    headers = {'Authorization': f'Bearer {DIFY_API_KEY}'}
+    mime_type = guess_mime_type(filepath)
+    with open(filepath, 'rb') as f:
+        files = {'file': (os.path.basename(filepath), f, mime_type)}
+        data = {'user': USER_ID}
+        resp = requests.post(url, headers=headers, files=files, data=data, timeout=30)
+    if resp.status_code == 201:
+        data = resp.json()
+        return data.get('id') or data.get('file_id')
+    else:
+        logging.error(f"Failed to upload {filepath}: {resp.status_code} {resp.text}")
+        return None
+
+def get_api_file_type(filename):
+    ext = filename.lower().split('.')[-1]
+    if ext in ['txt', 'md', 'markdown', 'pdf', 'html', 'xlsx', 'xls', 'docx', 'csv', 'eml', 'msg', 'pptx', 'ppt', 'xml', 'epub']:
+        return 'document'
+    elif ext in ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg']:
+        return 'image'
+    elif ext in ['mp3', 'm4a', 'wav', 'webm', 'amr']:
+        return 'audio'
+    elif ext in ['mp4', 'mov', 'mpeg', 'mpga']:
+        return 'video'
+    else:
+        return 'custom'
+
+def get_wecom_access_token(corpid, corpsecret):
+    url = f"https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid={corpid}&corpsecret={corpsecret}"
+    resp = requests.get(url, timeout=10)
+    data = resp.json()
+    return data["access_token"]
+
+def send_wecom_app_message(access_token, agentid, touser, content):
+    url = f"https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token={access_token}"
+    payload = {
+        "touser": touser,
+        "msgtype": "text",
+        "agentid": agentid,
+        "text": {"content": content},
+        "safe": 0
+    }
+    resp = requests.post(url, json=payload, timeout=10)
+    return resp
+
+def get_last_run_time():
+    if not os.path.exists(EMAIL_LOG_FILE):
+        return None
+    with open(EMAIL_LOG_FILE, 'r') as f:
+        ts = f.read().strip()
+        if ts:
+            try:
+                return datetime.fromisoformat(ts)
+            except Exception:
+                return None
+    return None
+
+def log_run_time():
+    now = datetime.now(timezone.utc).isoformat()
+    with open(EMAIL_LOG_FILE, 'w') as f:
+        f.write(now)
+    return now
+
+def list_emails(since_datetime=None):
+    url = 'https://graph.microsoft.com/v1.0/me/messages?$top=50&$orderby=receivedDateTime desc'
+    resp = requests.get(url, headers=EMAIL_HEADERS)
+    if resp.status_code != 200:
+        logging.error(f"Error fetching emails: {resp.status_code}\n{resp.text}")
+        return []
+    emails = resp.json().get('value', [])
+    filtered_emails = []
+    for msg in emails:
+        received = msg.get('receivedDateTime')
+        if received and since_datetime:
+            try:
+                received_dt = datetime.fromisoformat(received.replace('Z', '+00:00'))
+                if received_dt <= since_datetime:
+                    continue
+            except Exception:
+                pass
+        filtered_emails.append(msg)
+    return filtered_emails
+
+def sanitize_filename(name):
+    return re.sub(r'[\\/:*?"<>|]', '_', name)
+
+def get_email_folder_name(msg):
+    date = msg.get('Date', '').replace(',', '').replace(':', '').replace(' ', '_')[:20]
+    from_ = msg.get('From', '').split('<')[0].strip().replace(' ', '_')[:20]
+    to = msg.get('To', '').split('<')[0].strip().replace(' ', '_')[:20]
+    subject = msg.get('Subject', '').replace(' ', '_')[:30]
+    folder_name = f"{date}_{from_}_{to}_{subject}"
+    return sanitize_filename(folder_name)
+
+def download_eml(message_id, filename, folder):
+    os.makedirs(folder, exist_ok=True)
+    filepath = os.path.join(folder, filename)
+    url = f'https://graph.microsoft.com/v1.0/me/messages/{message_id}/$value'
+    resp = requests.get(url, headers=EMAIL_HEADERS)
+    if resp.status_code == 200:
+        with open(filepath, 'wb') as f:
+            f.write(resp.content)
+    else:
+        logging.error(f"Error downloading .eml: {resp.status_code}\n{resp.text}")
+    return filepath
+
+def download_attachments(message_id, folder):
+    url = f'https://graph.microsoft.com/v1.0/me/messages/{message_id}/attachments'
+    resp = requests.get(url, headers=EMAIL_HEADERS)
+    if resp.status_code != 200:
+        logging.error(f"Error fetching attachments: {resp.status_code}\n{resp.text}")
+        return []
+    attachments = resp.json().get('value', [])
+    if not attachments:
+        return []
+    att_names = []
+    for att in attachments:
+        att_id = att['id']
+        att_name = att['name']
+        att_names.append(att_name)
+        if att.get('@odata.mediaContentType'):
+            att_url = f'https://graph.microsoft.com/v1.0/me/messages/{message_id}/attachments/{att_id}/$value'
+            att_resp = requests.get(att_url, headers=EMAIL_HEADERS)
+            if att_resp.status_code == 200:
+                att_path = os.path.join(folder, att_name)
+                with open(att_path, 'wb') as f:
+                    f.write(att_resp.content)
+            else:
+                logging.error(f"Failed to download attachment {att_name}: {att_resp.status_code}")
+        elif 'contentBytes' in att:
+            att_path = os.path.join(folder, att_name)
+            with open(att_path, 'wb') as f:
+                f.write(base64.b64decode(att['contentBytes']))
+        else:
+            logging.warning(f"Unknown attachment type for {att_name}")
+    return att_names
+
+def eml_to_pdf(eml_path, pdf_path, attachment_names):
+    with open(eml_path, 'rb') as f:
+        msg = email.message_from_binary_file(f, policy=policy.default)
+    headers = [
+        ('From', msg.get('From', '')),
+        ('To', msg.get('To', '')),
+        ('Subject', msg.get('Subject', '')),
+        ('Date', msg.get('Date', '')),
+        ('Cc', msg.get('Cc', '')),
+        ('Bcc', msg.get('Bcc', '')),
+        ('Message-ID', msg.get('Message-ID', '')),
+    ]
+    body = ''
+    if msg.is_multipart():
+        for part in msg.walk():
+            ctype = part.get_content_type()
+            if ctype == 'text/plain' and part.get_content_disposition() is None:
+                payload = part.get_payload(decode=True)
+                if payload and isinstance(payload, bytes):
+                    try:
+                        body = payload.decode(part.get_content_charset() or 'utf-8', errors='replace')
+                    except Exception:
+                        body = payload.decode('utf-8', errors='replace')
+                    break
+            elif ctype == 'text/html' and part.get_content_disposition() is None and not body:
+                payload = part.get_payload(decode=True)
+                if payload and isinstance(payload, bytes):
+                    try:
+                        body = payload.decode(part.get_content_charset() or 'utf-8', errors='replace')
+                    except Exception:
+                        body = payload.decode('utf-8', errors='replace')
+    else:
+        if msg.get_content_type() == 'text/plain' or msg.get_content_type() == 'text/html':
+            payload = msg.get_payload(decode=True)
+            if payload and isinstance(payload, bytes):
+                try:
+                    body = payload.decode(msg.get_content_charset() or 'utf-8', errors='replace')
+                except Exception:
+                    body = payload.decode('utf-8', errors='replace')
+    pdf = FPDF()
+    pdf.add_page()
+    font_path = os.path.join('fonts', 'DejaVuSans.ttf')
+    pdf.add_font('DejaVu', '', font_path, uni=True)
+    pdf.set_font('DejaVu', '', 12)
+    pdf.cell(0, 10, 'Email Details', ln=True, align='C')
+    pdf.ln(5)
+    for k, v in headers:
+        if v:
+            pdf.set_font('DejaVu', '', 10)
+            pdf.cell(25, 8, f'{k}:', ln=0)
+            pdf.set_font('DejaVu', '', 10)
+            pdf.multi_cell(0, 8, v)
+    pdf.ln(5)
+    pdf.set_font('DejaVu', '', 12)
+    pdf.cell(0, 10, 'Body:', ln=True)
+    pdf.set_font('DejaVu', '', 10)
+    pdf.multi_cell(0, 8, body if body else '[No plain text or html body found]')
+    pdf.ln(5)
+    pdf.set_font('DejaVu', '', 12)
+    pdf.cell(0, 10, 'Attachments:', ln=True)
+    pdf.set_font('DejaVu', '', 10)
+    if attachment_names:
+        for i, name in enumerate(attachment_names, 1):
+            pdf.cell(0, 8, f'{i}. {name}', ln=True)
+    else:
+        pdf.cell(0, 8, 'No attachments.', ln=True)
+    pdf.output(pdf_path)
+
 @app.post("/process_emails", response_model=List[ProcessResult], summary="Process all new emails in the processed_emails folder.")
 def process_emails():
     results = []
     pre_run_time = datetime.now(timezone.utc)
     os.makedirs(WORKFLOW_RESPONSES_DIR, exist_ok=True)
-
-    def file_is_newer_than(path, dt):
-        mtime = datetime.fromtimestamp(os.path.getmtime(path), tz=timezone.utc)
-        return mtime > dt
-
-    def guess_mime_type(filename):
-        mime_type, _ = mimetypes.guess_type(filename)
-        return mime_type or 'application/octet-stream'
-
-    def upload_file(filepath):
-        url = f"{DIFY_BASE_URL}/files/upload"
-        headers = {'Authorization': f'Bearer {DIFY_API_KEY}'}
-        mime_type = guess_mime_type(filepath)
-        with open(filepath, 'rb') as f:
-            files = {'file': (os.path.basename(filepath), f, mime_type)}
-            data = {'user': USER_ID}
-            resp = requests.post(url, headers=headers, files=files, data=data, timeout=30)
-        if resp.status_code == 201:
-            data = resp.json()
-            return data.get('id') or data.get('file_id')
-        else:
-            logging.error(f"Failed to upload {filepath}: {resp.status_code} {resp.text}")
-            return None
-
-    def get_api_file_type(filename):
-        ext = filename.lower().split('.')[-1]
-        if ext in ['txt', 'md', 'markdown', 'pdf', 'html', 'xlsx', 'xls', 'docx', 'csv', 'eml', 'msg', 'pptx', 'ppt', 'xml', 'epub']:
-            return 'document'
-        elif ext in ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg']:
-            return 'image'
-        elif ext in ['mp3', 'm4a', 'wav', 'webm', 'amr']:
-            return 'audio'
-        elif ext in ['mp4', 'mov', 'mpeg', 'mpga']:
-            return 'video'
-        else:
-            return 'custom'
-
-    def get_wecom_access_token(corpid, corpsecret):
-        url = f"https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid={corpid}&corpsecret={corpsecret}"
-        resp = requests.get(url, timeout=10)
-        data = resp.json()
-        return data["access_token"]
-
-    def send_wecom_app_message(access_token, agentid, touser, content):
-        url = f"https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token={access_token}"
-        payload = {
-            "touser": touser,
-            "msgtype": "text",
-            "agentid": agentid,
-            "text": {"content": content},
-            "safe": 0
-        }
-        resp = requests.post(url, json=payload, timeout=10)
-        return resp
-
-    def get_last_run_time():
-        if not os.path.exists(EMAIL_LOG_FILE):
-            return None
-        with open(EMAIL_LOG_FILE, 'r') as f:
-            ts = f.read().strip()
-            if ts:
-                try:
-                    return datetime.fromisoformat(ts)
-                except Exception:
-                    return None
-        return None
-
-    def log_run_time():
-        now = datetime.now(timezone.utc).isoformat()
-        with open(EMAIL_LOG_FILE, 'w') as f:
-            f.write(now)
-        return now
-
-    def list_emails(since_datetime=None):
-        url = 'https://graph.microsoft.com/v1.0/me/messages?$top=50&$orderby=receivedDateTime desc'
-        resp = requests.get(url, headers=EMAIL_HEADERS)
-        if resp.status_code != 200:
-            logging.error(f"Error fetching emails: {resp.status_code}\n{resp.text}")
-            return []
-        emails = resp.json().get('value', [])
-        filtered_emails = []
-        for msg in emails:
-            received = msg.get('receivedDateTime')
-            if received and since_datetime:
-                try:
-                    received_dt = datetime.fromisoformat(received.replace('Z', '+00:00'))
-                    if received_dt <= since_datetime:
-                        continue
-                except Exception:
-                    pass
-            filtered_emails.append(msg)
-        return filtered_emails
-
-    def sanitize_filename(name):
-        return re.sub(r'[\\/:*?"<>|]', '_', name)
-
-    def get_email_folder_name(msg):
-        date = msg.get('Date', '').replace(',', '').replace(':', '').replace(' ', '_')[:20]
-        from_ = msg.get('From', '').split('<')[0].strip().replace(' ', '_')[:20]
-        to = msg.get('To', '').split('<')[0].strip().replace(' ', '_')[:20]
-        subject = msg.get('Subject', '').replace(' ', '_')[:30]
-        folder_name = f"{date}_{from_}_{to}_{subject}"
-        return sanitize_filename(folder_name)
-
-    def download_eml(message_id, filename, folder):
-        os.makedirs(folder, exist_ok=True)
-        filepath = os.path.join(folder, filename)
-        url = f'https://graph.microsoft.com/v1.0/me/messages/{message_id}/$value'
-        resp = requests.get(url, headers=EMAIL_HEADERS)
-        if resp.status_code == 200:
-            with open(filepath, 'wb') as f:
-                f.write(resp.content)
-        else:
-            logging.error(f"Error downloading .eml: {resp.status_code}\n{resp.text}")
-        return filepath
-
-    def download_attachments(message_id, folder):
-        url = f'https://graph.microsoft.com/v1.0/me/messages/{message_id}/attachments'
-        resp = requests.get(url, headers=EMAIL_HEADERS)
-        if resp.status_code != 200:
-            logging.error(f"Error fetching attachments: {resp.status_code}\n{resp.text}")
-            return []
-        attachments = resp.json().get('value', [])
-        if not attachments:
-            return []
-        att_names = []
-        for att in attachments:
-            att_id = att['id']
-            att_name = att['name']
-            att_names.append(att_name)
-            if att.get('@odata.mediaContentType'):
-                att_url = f'https://graph.microsoft.com/v1.0/me/messages/{message_id}/attachments/{att_id}/$value'
-                att_resp = requests.get(att_url, headers=EMAIL_HEADERS)
-                if att_resp.status_code == 200:
-                    att_path = os.path.join(folder, att_name)
-                    with open(att_path, 'wb') as f:
-                        f.write(att_resp.content)
-                else:
-                    logging.error(f"Failed to download attachment {att_name}: {att_resp.status_code}")
-            elif 'contentBytes' in att:
-                att_path = os.path.join(folder, att_name)
-                with open(att_path, 'wb') as f:
-                    f.write(base64.b64decode(att['contentBytes']))
-            else:
-                logging.warning(f"Unknown attachment type for {att_name}")
-        return att_names
-
-    def eml_to_pdf(eml_path, pdf_path, attachment_names):
-        with open(eml_path, 'rb') as f:
-            msg = email.message_from_binary_file(f, policy=policy.default)
-        headers = [
-            ('From', msg.get('From', '')),
-            ('To', msg.get('To', '')),
-            ('Subject', msg.get('Subject', '')),
-            ('Date', msg.get('Date', '')),
-            ('Cc', msg.get('Cc', '')),
-            ('Bcc', msg.get('Bcc', '')),
-            ('Message-ID', msg.get('Message-ID', '')),
-        ]
-        body = ''
-        if msg.is_multipart():
-            for part in msg.walk():
-                ctype = part.get_content_type()
-                if ctype == 'text/plain' and part.get_content_disposition() is None:
-                    payload = part.get_payload(decode=True)
-                    if payload and isinstance(payload, bytes):
-                        try:
-                            body = payload.decode(part.get_content_charset() or 'utf-8', errors='replace')
-                        except Exception:
-                            body = payload.decode('utf-8', errors='replace')
-                        break
-                elif ctype == 'text/html' and part.get_content_disposition() is None and not body:
-                    payload = part.get_payload(decode=True)
-                    if payload and isinstance(payload, bytes):
-                        try:
-                            body = payload.decode(part.get_content_charset() or 'utf-8', errors='replace')
-                        except Exception:
-                            body = payload.decode('utf-8', errors='replace')
-        else:
-            if msg.get_content_type() == 'text/plain' or msg.get_content_type() == 'text/html':
-                payload = msg.get_payload(decode=True)
-                if payload and isinstance(payload, bytes):
-                    try:
-                        body = payload.decode(msg.get_content_charset() or 'utf-8', errors='replace')
-                    except Exception:
-                        body = payload.decode('utf-8', errors='replace')
-        pdf = FPDF()
-        pdf.add_page()
-        font_path = os.path.join('fonts', 'DejaVuSans.ttf')
-        pdf.add_font('DejaVu', '', font_path, uni=True)
-        pdf.set_font('DejaVu', '', 12)
-        pdf.cell(0, 10, 'Email Details', ln=True, align='C')
-        pdf.ln(5)
-        for k, v in headers:
-            if v:
-                pdf.set_font('DejaVu', '', 10)
-                pdf.cell(25, 8, f'{k}:', ln=0)
-                pdf.set_font('DejaVu', '', 10)
-                pdf.multi_cell(0, 8, v)
-        pdf.ln(5)
-        pdf.set_font('DejaVu', '', 12)
-        pdf.cell(0, 10, 'Body:', ln=True)
-        pdf.set_font('DejaVu', '', 10)
-        pdf.multi_cell(0, 8, body if body else '[No plain text or html body found]')
-        pdf.ln(5)
-        pdf.set_font('DejaVu', '', 12)
-        pdf.cell(0, 10, 'Attachments:', ln=True)
-        pdf.set_font('DejaVu', '', 10)
-        if attachment_names:
-            for i, name in enumerate(attachment_names, 1):
-                pdf.cell(0, 8, f'{i}. {name}', ln=True)
-        else:
-            pdf.cell(0, 8, 'No attachments.', ln=True)
-        pdf.output(pdf_path)
 
     # --- Collect email-attachments groups from processed_emails/ subfolders ---
     email_groups = []
