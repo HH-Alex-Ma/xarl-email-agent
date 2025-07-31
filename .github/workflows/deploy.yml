@@ -34,7 +34,7 @@ jobs:
         push: true
         tags: ghcr.io/${{ steps.normalize.outputs.safe_repo }}/myapi:${{ github.sha }}
         secrets: |
-          GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN=${{ secrets.CR_PAT }}
 
   deploy:
     needs: test-build
