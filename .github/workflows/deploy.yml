@@ -39,7 +39,15 @@ jobs:
   deploy:
     needs: test-build
     runs-on: ubuntu-latest
+    env:
+      RAW_REPO: ${{ github.repository }}
     steps:
+    - name: Normalize image tag
+      id: normalize
+      run: |
+        SAFE_REPO=$(echo "${RAW_REPO}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
+        echo "safe_repo=$SAFE_REPO" >> $GITHUB_OUTPUT
+
     - name: Run on Azure VM via SSH
       uses: appleboy/ssh-action@v1
       with:
@@ -47,8 +55,8 @@ jobs:
         username: root
         key: ${{ secrets.AZURE_SSH_KEY }}
         script: |
-          docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
-          docker pull ghcr.io/${{ github.repository }}/myapi:${{ github.sha }}
+          docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.CR_PAT }}
+          docker pull ghcr.io/${{ steps.normalize.outputs.safe_repo }}/myapi:${{ github.sha }}
           docker stop myapi || true && docker rm myapi || true
           docker run -d --name myapi -p 8000:8080 --restart always \
             ghcr.io/${{ steps.normalize.outputs.safe_repo }}/myapi:${{ github.sha }} 
