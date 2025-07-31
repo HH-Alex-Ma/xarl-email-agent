@@ -55,7 +55,7 @@ jobs:
         username: root
         key: ${{ secrets.AZURE_SSH_KEY }}
         script: |
-          docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.CR_PAT }}
+          docker login ghcr.io -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.CR_PAT }}
           docker pull ghcr.io/${{ steps.normalize.outputs.safe_repo }}/myapi:${{ github.sha }}
           docker stop myapi || true && docker rm myapi || true
           docker run -d --name myapi -p 8000:8080 --restart always \
