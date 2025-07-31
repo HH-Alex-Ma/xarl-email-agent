@@ -44,7 +44,7 @@ jobs:
       uses: appleboy/ssh-action@v1
       with:
         host: ${{ secrets.AZURE_HOST }}
-        username: azureuser
+        username: root
         key: ${{ secrets.AZURE_SSH_KEY }}
         script: |
           docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
